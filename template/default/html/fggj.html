@@ -1,0 +1,299 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/fggj.css" />
+
+
+<div class="fggj-container" style="overflow: hidden;">
+
+	<div class="ztbd">
+		<style type="text/css">
+			.sf {
+				width: 1920px;
+				height: 850px;
+				position: absolute;
+				top: 0;
+				right: -360px;
+				z-index: 1;
+				overflow: hidden;
+			}
+
+			.sf .bgsfbox {
+				width: 100%;
+				height: 850px;
+				transform: scale(1, 1);
+				-webkit-transform: scaleX(1, 1);
+				-moz-transform: scaleX(1, 1);
+				-webkit-animation: 60s sf linear infinite normal;
+				animation: 60s sf linear infinite normal;
+				position: relative;
+				background-image: url({pboot:sitetplpath}/img/fs.jpg);
+				background-size: 1920px 850px;
+				background-position: top center;
+			}
+
+			.sf img {
+				width: 100%;
+				height: 850px;
+				position: absolute;
+				top: 0;
+				left: 0
+			}
+
+			@keyframes sf {
+				0% {
+					transform: scale(1, 1);
+					-webkit-transform: scale(1, 1);
+					-moz-transform: scale(1, 1);
+				}
+
+				50% {
+					transform: scale(1.3);
+					-webkit-transform: scale(1.3, 1.3);
+					-moz-transform: scale(1.3, 1.3);
+				}
+
+				100% {
+					transform: scale(1, 1);
+					-webkit-transform: scale(1, 1);
+					-moz-transform: scale(1, 1);
+				}
+			}
+		</style>
+		<img src="{pboot:sitetplpath}/img/fggj-1_02.jpg">
+
+		<div class="sf">
+			<div class="bgsfbox">
+
+			</div>
+			<img src="{pboot:sitetplpath}/img/fsbg.png">
+		</div>
+
+
+	</div>
+
+
+
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_04.jpg">
+		<div class="bmtopfg">
+	
+<form action="{pboot:form fcode=3}"  method="post">		
+			<input type="text" id="" style="left: 319px;width: 144px" placeholder="您的称呼" name="name" required>
+			<input type="tel" id="" style="left: 477px;width: 296px" placeholder="您的电话" name="tel" required>
+			<div style="left: 787px;width: 176px;position: absolute;height: 39px;top: 34px;cursor: pointer;">
+				<input type="submit"  value="" style="width: 100%;height: 100%;border: none;background: transparent;font-size: 18px;color: #686868;text-indent: 10px;outline: none;margin-top: -32px;">
+			</div>
+</form>		
+		</div>
+		<div class="swiper1-tab">
+			<div class="active"><img src="{pboot:sitetplpath}/img/sl1.png">
+				<img class="default2" src="{pboot:sitetplpath}/img/sl1b.png">
+			</div>
+			<div class=""><img src="{pboot:sitetplpath}/img/sl2.png">
+				<img class="default2" src="{pboot:sitetplpath}/img/sl2b.png">
+			</div>
+			<div class=""><img src="{pboot:sitetplpath}/img/sl3.png">
+				<img class="default2" src="{pboot:sitetplpath}/img/sl3b.png">
+			</div>
+			<div class=""><img src="{pboot:sitetplpath}/img/sl4.png">
+				<img class="default2" src="{pboot:sitetplpath}/img/sl4b.png">
+			</div>
+			<div class=""><img src="{pboot:sitetplpath}/img/sl5.png">
+				<img class="default2" src="{pboot:sitetplpath}/img/sl5b.png">
+			</div>
+		</div>
+	</div>
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_05.jpg">
+
+		<div class="swiper-container1"
+			style="width: 1200px;height: 736px;position: absolute;top: -87px;left: 60px;z-index: 30;box-shadow: 0 0 20px rgb(0 0 0 / 50%);overflow: hidden;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/sl1.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/sl2.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/sl3.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/sl4.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/sl5.jpg"></div>
+			</div>
+		</div>
+
+		<script>
+			var swiper = new Swiper('.swiper-container1', {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+
+
+
+
+
+	</div>
+
+	<div class="ztbd">
+
+
+
+		<img src="{pboot:sitetplpath}/img/fggj-1_06.jpg">
+
+		<div class="swiper-container2"
+			style="width: 100%;height: 736px;position: absolute;top: 158px;left: -40px;z-index: 30;box-shadow: 0 0 20px rgb(0 0 0 / 50%);overflow: hidden;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="{pboot:sitetplpath}/img/x21.jpg"><img src="{pboot:sitetplpath}/img/ms4.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{pboot:sitetplpath}/img/xz1.jpg"><img src="{pboot:sitetplpath}/img/ms5.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{pboot:sitetplpath}/img/qs1.jpg"><img src="{pboot:sitetplpath}/img/ms3.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{pboot:sitetplpath}/img/rs1.jpg"><img src="{pboot:sitetplpath}/img/ms1.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{pboot:sitetplpath}/img/x11.jpg"><img src="{pboot:sitetplpath}/img/ms2.jpg">
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+			var swiper = new Swiper('.swiper-container2', {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+
+
+	</div>
+
+
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_07.jpg">
+		<div class="zsbm">
+			
+			
+<form action="{pboot:form fcode=3}"  method="post">				
+			<input type="text" id="" style="left: 1px;width: 144px" placeholder="您的称呼" name="name" required>
+			<input type="tel" id="" style="left: 156px;width: 166px" placeholder="您的电话" name="tel" required>
+			<div style="left: 333px;width: 144px;position: absolute;height: 33px;top: 1px;cursor: pointer;">
+			<input type="submit"  value="" style="width: 100%;height: 100%;border: none;background: transparent;font-size: 18px;color: #686868;text-indent: 10px;outline: none;">
+			</div>
+</form>				
+			
+			
+		</div>
+	</div>
+
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_08.jpg">
+	</div>
+
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_09.jpg">
+
+
+
+
+
+		<div class="swiper-container" style="width: 1039px;height: 526px;position: absolute;top: 119px;left: 101px;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/gy1.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/gy2.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/gy3.jpg"></div>
+				<div class="swiper-slide"><img src="{pboot:sitetplpath}/img/gy4.jpg"></div>
+
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<!-- Swiper JS -->
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				slidesPerView: 1,
+				spaceBetween: 30,
+				mousewheel: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		</script>
+
+
+
+
+
+
+
+
+
+	</div>
+
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_10.jpg">
+	</div>
+
+	<div class="ztbd">
+		<img src="{pboot:sitetplpath}/img/fggj-1_11.jpg">
+		<div class="teamBox">
+			<div>
+				<img src="{pboot:sitetplpath}/img/d1.jpg">
+				<img src="{pboot:sitetplpath}/img/d1b.jpg" class="onn">
+			</div>
+			<div>
+				<img src="{pboot:sitetplpath}/img/d2.jpg">
+				<img src="{pboot:sitetplpath}/img/d2b.jpg" class="onn">
+			</div>
+			<div>
+				<img src="{pboot:sitetplpath}/img/d3.jpg">
+				<img src="{pboot:sitetplpath}/img/d3b.jpg" class="onn">
+			</div>
+		</div>
+	</div>
+
+	<div class="ztbd from">
+		<img src="{pboot:sitetplpath}/img/fggj-1_12.jpg">
+		
+		
+<form action="{pboot:form fcode=3}"  method="post">	
+		<input type="text" style="top: 272px;left: 292px;" placeholder="您的称呼" name="name" required>
+		<input type="tel" style="top: 272px;left: 628px;" placeholder="您的电话" name="tel" required>
+		<div style="top: 369px;left: 472px;width: 252px;height: 50px;position: absolute;">
+		<input type="submit"  value="" style="width: 100%;height: 100%;border: none;background: transparent;font-size: 18px;color: #686868;text-indent: 10px;outline: none;">	
+		</div>
+</from>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+{include file=footer.html}

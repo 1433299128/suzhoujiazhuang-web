@@ -1,0 +1,376 @@
+.hot-content-top{
+	width: 1240px;
+	    height: 370px;
+	    display: flex;
+	    margin: 35px auto;
+	    flex-direction: row;
+}
+.hot-content-top .hot-content-top-left{
+	    width: 660px;
+	    height: 370px;
+	    background-position: center;
+	    background-repeat: no-repeat;
+}
+.hot-content-top .hot-content-top-right{
+	width: 580px;
+	    padding-left: 32px;
+}
+.hot-content-top .hot-content-top-right h1{
+	font-size: 28px;
+	    color: #373737;
+}
+.hot-content-top .hot-content-top-right h3.border-top{
+	    border-top: 2px solid #d1d1d1;
+	    display: inline-block;
+	    padding-top: 25px;
+	    margin-top: 14px;
+}
+.hot-content-top .hot-content-top-right p{
+	    font-size: 14px;
+	    color: #666;
+	    margin-top: 7px;
+	    margin-bottom: 30px;
+}
+.hot-content-top .hot-content-top-right h3{
+	font-size: 16px;
+	    color: #666;
+}
+.hot-content-top .hot-content-top-right h3 span{
+	font-size: 20px;
+	    color: #c79e68;
+}
+.hot-content-top .hot-content-top-right div.butt{
+	    height: 40px;
+	    width: 100%;
+	    margin-top: 25px;
+	    margin-bottom: 33px;
+}
+.hot-content-top .hot-content-top-right div.butt a{
+	display: block;
+	    float: left;
+	    height: 40px;
+	    width: 240px;
+	    font-size: 14px;
+	    color: #666;
+	    text-align: center;
+	    line-height: 40px;
+	    border: 1px solid #aaaaaa;
+	    margin-right: 20px;
+	    position: relative;
+	    padding-left: 30px;
+}
+.hot-content-top .hot-content-top-right div.butt a i{
+	display: block;
+	    width: 18px;
+	    height: 18px;
+	    position: absolute;
+	    overflow: hidden;
+	    background-image: url(../img/icon.png);
+	    background-position: -20px -1825px;
+	    top: 11px;
+}
+.hot-content-top .hot-content-top-right div.butt a:nth-child(2) i{
+	display: block;
+	    width: 18px;
+	    height: 18px;
+	    position: absolute;
+	    overflow: hidden;
+	    background-image: url(../img/icon.png);
+	    background-position: -42px -1825px;
+	    top: 11px;
+}
+.hot-content{
+	    width: 100%;
+	    background-color: #eeeeee;
+}
+.hot-content .hot-content-box{
+	    width: 1240px;
+	    padding: 25px 0px;
+	    margin: 0 auto;
+}
+.hot-banner-one{
+	width: 100%;
+	    height: 440px;
+}
+.hot-content .hot-content-box .addy-one{
+	width: 100%;
+	    display: flex;
+	    display: -webkit-flex;
+	    flex-direction: row;
+	    height: 110px;
+	    margin-top: 20px;
+	    background: url(../img/icon15.png);
+	    background-repeat: repeat;
+	    background-size: 310px 110px;
+}
+.hot-content .hot-content-box .addy-one a{
+	display: flex;
+	    display: -webkit-flex;
+	    width: 25%;
+	    height: 100%;
+	    font-size: 18px;
+	    color: #fff;
+	    justify-content: center;
+	    line-height: 170px;
+	    background-position: 50% 26%;
+	    background-repeat: no-repeat;
+}
+.hot-content-article{
+	width: 1240px;
+	    margin: 72px auto 0;
+}
+.hot-content-article h3{
+	    font-size: 35px;
+	    font-weight: bold;
+	    color: #2d2d2d;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: center;
+}
+.hot-content-article h3 span{
+	color: #00ae66;
+}
+.hot-content-article h5{
+	margin-top: 11px;
+	    font-size: 24px;
+	    color: #555555;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: center;
+}
+.hot-content-article .hot-content-article-hxone{
+	margin-top: 69px;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: space-between;
+	    width: 100%;
+	    height: 400px;
+}
+.hot-content-article .hot-content-article-hxone div:nth-child(1){
+	width: 400px;
+	    height: 100%;
+	    position: relative;
+}
+.hot-content-article .hot-content-article-hxone div:nth-child(1) span{
+	display: block;
+	    width: 138px;
+	    height: 45px;
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    background-color: #c79e68;
+	    color: #fff;
+	    font-size: 22px;
+	    text-align: center;
+	    line-height: 45px;
+}
+.hot-content-article .hot-content-article-hxone div:nth-child(2){
+	width: 817px;
+	    height: 100%;
+}
+.hot-content-article .hot-content-article-hxtwo{
+	margin-top: 20px;
+	    width: 100%;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: space-between;
+}
+.hot-content-article .hot-content-article-hxtwo div{
+	width: 610px;
+	    height: 400px;
+}
+.hot-content-article .hot-content-article-des{
+	width: 100%;
+	    margin-top: 20px;
+	    height: 170px;
+	    background-color: #eef2f3;
+	    display: flex;
+	    display: -webkit-flex;
+	    flex-direction: row;
+	    align-items: center;
+}
+	
+.hot-content-article .hot-content-article-des div{
+	width: 600px;
+	    padding-left: 75px;
+}
+.hot-content-article .hot-content-article-des div h6{
+	font-size: 18px;
+	    color: #000;
+}
+.hot-content-article .hot-content-article-des div p{
+	font-size: 14px;
+	    color: #444;
+	    margin-top: 9px;
+	    line-height: 22px;
+}
+.addy-two{
+	    width: 100%;
+	    height: 726px;
+	    background-image: url(../img/banner2dy.jpg);
+		background-size: 100% 100%;
+	    margin-top: 30px;
+}
+.addy-three{
+	width: 100%;
+	    position: relative;
+	    margin-top: 72px;
+}
+.addy-three h3{
+	font-size: 35px;
+	    font-weight: bold;
+	    color: #2d2d2d;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: center;
+}
+.addy-three h5{
+	margin-top: 11px;
+	    font-size: 24px;
+	    color: #555555;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: center;
+}
+.addy-three .swiper-container{
+	    width: 1198px;
+	    height: 240px;
+	    margin-top: 58px;
+}
+.addy-three .swiper-button-next{
+	right: 300px;
+	    top: 240px;
+}
+.addy-three .swiper-button-prev{
+	left: 300px;
+	    top: 240px;
+}
+.addy-four{
+	width: 100%;
+	    height: 620px;
+	    background-image: url(../img/bottomdy.jpg);
+	    background-size: cover;
+	    margin-top: 62px;
+}
+.addy-form{
+	width: 100%;
+	    height: 315px;
+	    background-color: #b18853;
+	    display: flex;
+	    display: -webkit-flex;
+	    flex-direction: column;
+}
+.addy-form .addy-form-box{
+	    width: 1240px;
+	    height: 85px;
+	    margin: 0 auto;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: space-between;
+	    margin-top: 36px;
+}
+.addy-form .addy-form-box div{
+	width: 295px;
+	    height: 85px;
+	    background-image: url(../img/icon16.png);
+}
+.addy-form .addy-form-box div a{
+	    display: flex;
+	    display: -webkit-flex;
+	    width: 100%;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: 50% 40%;
+	    color: #fff;
+	    font-size: 18px;
+	    line-height: 169px;
+	    justify-content: center;
+}
+.addy-form h6{
+	font-size: 16px;
+	    color: #fff;
+	    display: flex;
+	    display: -webkit-flex;
+	    width: 1240px;
+	    margin: 42px auto 0;
+}
+.addy-form h6 span{
+	font-size: 18px;
+}
+.addy-form .dyform-box{
+	width: 1240px;
+	    margin: 0 auto;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: space-between;
+	    margin-top: 19px;
+}
+.addy-form .dyform-box input{
+	width: 295px;
+	    height: 75px;
+	    background-color: #fff;
+	    border-radius: 21px;
+	    border: 0;
+	    font-size: 20px;
+	    color: #000;
+	    display: flex;
+	    display: -webkit-flex;
+	    padding-left: 29px;
+	    justify-content: center;
+}
+.addy-form .dyform-box input:last-child{
+	font-size: 24px;
+	    color: #000;
+	    font-weight: bold;
+	    background-image: url(../img/icon9.png);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    color: #fff;
+	    padding: 0;
+}
+.footdy{
+width: 100%;
+    height: 530px;
+    background-image: url(../img/bgbottomdy.jpg);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;	
+}
+.footdy h3{
+	font-size: 35px;
+	    font-weight: bold;
+	    text-align: center;
+	    color: #fff;
+	    margin-top: 62px;
+}
+.footdy h3 span{
+	color: #00ae66;
+}
+.footdy h5{
+	font-size: 24px;
+	    color: #ccc;
+	    text-align: center;
+	    margin-top: 6px;
+}
+.footdy .footdy-box{
+	width: 1240px;
+	    height: 212px;
+	    margin: 0 auto;
+	    display: flex;
+	    display: -webkit-flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    margin-top: 80px;
+}
+.footdy .footdy-box div{
+	    width: 212px;
+	    height: 212px;
+	    border-radius: 106px;
+	    background-color: #fff;
+	    background-repeat: no-repeat;
+	    background-position: 50% 30%;
+	    text-align: center;
+	    font-size: 18px;
+	    color: #108c59;
+	    line-height: 280px;
+}

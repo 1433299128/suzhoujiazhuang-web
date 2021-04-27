@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.case-banner {
+	display: block;
+	width: 100%;
+	height: 500px;
+	background: url(../img/designerbanner.jpg);
+}
+
+.des-lists-container {
+	width: 100%;
+	height: auto;
+	background: #f4f4f4;
+	padding-bottom: 60px;
+}
+
+.des-lists-container ul {
+	width: 1260px;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	/* justify-content: space-between; */
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.des-lists-container ul li {
+		width: 400px;
+	/* width: 610px; */
+	height: 310px;
+	padding: 20px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 20px 20px 0;
+	list-style: none;
+}
+
+.des-lists-container ul li:hover {
+	box-shadow: 0 0 20px #d2d0d0;
+	transition: 0.6s;
+}
+
+.des-lists-container ul li .des-list-heading {
+	display: inline-block;
+	position: relative;
+	width: 180px;
+	height: 270px;
+	overflow: hidden;
+}
+
+.des-lists-container ul li .des-list-info {
+	width: 370px;
+	height: 270px;
+}
+
+.des-lists-container ul li .des-list-info .des-list-name {
+	display: flex;
+	justify-content: space-between;
+}
+
+.des-lists-container ul li .des-list-info .des-list-name h5 {
+	font-size: 14px;
+	color: #6f6f6f;
+}
+
+.des-lists-container ul li .des-list-info .des-list-name h5 span {
+	font-size: 20px;
+	color: #000;
+	margin-right: 10px;
+}
+
+.des-lists-container ul li .des-list-info .des-list-name i {
+	vertical-align: middle;
+	font-style: normal;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/icon.png);
+	background-position: 0 -1482px;
+	margin: 0 1px;
+}
+
+.des-lists-container ul li .des-list-info .des-list-name a {
+	text-decoration: none;
+	color: #6f6f6f;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+}
+
+.des-lists-container ul li .des-list-info .des-list-name a i {
+	vertical-align: middle;
+	font-style: normal;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+	background: url(../img/icon.png);
+	background-position: 18px -337px;
+
+}
+
+.des-lists-container ul li .des-list-info p {
+	font-size: 14px;
+	height: 48px;
+	line-height: 48px;
+	margin: 12px 0 12px;
+	color: #6f6f6f;
+	overflow: hidden;
+}
+
+.des-lists-container ul li .des-list-info h5 {
+	font-size: 14px;
+	color: #000;
+}
+
+.des-lists-container ul li .des-list-info dl {
+	width: 100%;
+	height: 110px;
+	margin-top: 12px;
+}
+
+.des-lists-container ul li .des-list-info dl a {
+	width: 116px;
+	height: 110px;
+	display: inline-block;
+}
+
+.des-lists-container ul li:nth-child(1) .des-list-heading {
+	background: url(../img/c9b54e94d63b100dce69d644e27bcdfc.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(1) .des-list-info dl a:nth-child(1) {
+	background: url(../img/fc233cc05414193e813d5f5b2315d718.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(1) .des-list-info dl a:nth-child(2) {
+	background: url(../img/2790d961e9699fb3b376910c0242a61b.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(1) .des-list-info dl a:nth-child(3) {
+	background: url(../img/d6e253a23b61001d8a40f39ddc424012.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(2) .des-list-heading {
+	background: url(../img/a296e348cc5d0782ce56eec34addbfcd.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(2) .des-list-info dl a:nth-child(1) {
+	background: url(../img/6cd80c20343c8d48ec6a1f35089e88a8.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(3) .des-list-heading {
+	background: url(../img/3792007f819c8ea0387b468645841577.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(3) .des-list-info dl a:nth-child(1) {
+	background: url(../img/2f0053c76344929122324cbb76fc3320.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(3) .des-list-info dl a:nth-child(2) {
+	background: url(../img/7e465c33342c70fe88fe860c6df43a34.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(3) .des-list-info dl a:nth-child(3) {
+	background: url(../img/ab03533d7a8d998c8527e8d551de961a.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(4) .des-list-heading {
+	background: url(../img/a09393e6e8d2d5767d571134dcb04b7b.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.des-lists-container ul li:nth-child(4) .des-list-info dl a:nth-child(1) {
+	background: url(../img/ec5cb674420a47cc4ab9b665bfd0fd57.jpg);
+	background-size: cover;
+	background-position: center center;
+}

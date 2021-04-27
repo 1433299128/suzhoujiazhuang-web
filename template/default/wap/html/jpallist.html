@@ -1,0 +1,85 @@
+{include file=header.html}
+
+
+
+
+<link rel="stylesheet" href="{pboot:sitetplpath}/css/zxal.css" />
+		<div class="page">
+			<div class="page-container">
+				<!-- <div class="casus-select">
+					<div>
+						<ul class="nav">
+							<li>
+								<h5>类型</h5>
+								<i></i>
+							</li>
+							<li>
+								<h5>风格</h5>
+								<i></i>
+							</li>
+							<li>
+								<h5>户型</h5>
+								<i></i>
+							</li>
+							<li>
+								<h5>面积</h5>
+								<i></i>
+							</li>
+						</ul>
+
+					</div>
+				</div> -->
+
+
+				<ul class="case-lists">
+					{pboot:list scode=8 num=999999999}
+					<li>
+						<a href="[list:link]">
+							<div class="image-center case-img" style="background: url([list:ico]);background-size: cover;
+    background-position: top center;">
+
+							</div>
+						</a>
+						<div class="case-info">
+							<a href="[list:link]">
+								<div class="info">
+									<h3>[list:title]</h3>
+									<h5>[list:tags]</h5>
+								</div>
+							</a>
+							<a href="javascript:void(0);">
+								<div class="info-btn hqbj">
+									获取报价
+								</div>
+							</a>
+						</div>
+					</li>
+					{/pboot:list}
+
+
+
+
+
+
+				</ul>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{include file=footer.html}

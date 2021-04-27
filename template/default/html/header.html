@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{pboot:pagetitle} </title>
+	<meta name="keywords" content="{pboot:pagekeywords} ">
+	<meta name="description" content="{pboot:pagedescription} ">
+	{pboot:sitestatistical}
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/swiper.min.css" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/swiper.css" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/swiper1.css" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/layui.css" />
+    <link rel="stylesheet" href="{pboot:sitetplpath}/css/index.css" />
+
+    <script src="{pboot:sitetplpath}/js/jquery-3.5.1.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/swiper.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrap.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/swiper.js"></script>
+    <script src="{pboot:sitetplpath}/js/swiper1.js"></script>
+    <script src="{pboot:sitetplpath}/js/layui.js"></script>
+    <script src="{pboot:sitetplpath}/js/swiper-bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="content">
+			<div style="color: #fff;">欢迎访问东兔装饰网</div>
+            <ul>
+                {pboot:sort scode=5}
+                <li style="border: 0;"><a href="[sort:link]">装修攻略</a></li>
+                {/pboot:sort} {pboot:sort scode=48}
+                <li><a href="[sort:link]">在建工地</a></li>
+                {/pboot:sort}
+                <li style="color: #fff;">咨询热线：{pboot:companyphone}</li>
+                <!-- <li><a href="">点击报价</a></li> -->
+				 <li style="color: #fff;">联系邮箱：1120768800@qq.com </li>
+            </ul>
+        </div>
+    </header>
+	
+	<style type="text/css">
+		nav .content .nav li:hover nav .content .nav li a{
+			color: #fff!important;
+		}
+	</style>
+    <nav class="active">
+        <div class="content">
+			<i>
+            <a href="{pboot:sitedomain}" style="display: block;">
+				<div style="display: flex;align-items: center;margin-top: 10px;">
+					<img src="{pboot:sitelogo}" width="" height="60px">
+					<h2 style="font-style: normal;color: #000;">东兔</h2>
+				</div>
+				
+                <!-- <div style="background: url({pboot:sitelogo})no-repeat;background-size: contain;background-position:top center;width: 171px;height: 60px; position: absolute;top: 15%;"></div> -->
+
+            </a>
+			</i>
+			
+            <ul class="nav">
+                <li><a href="{pboot:sitedomain}">首页</a></li>
+                {pboot:if(' {sort:tcode}'=='7')} {pboot:nav parent=7}
+                <li> <a href="[nav:link]">[nav:name]</a></li>
+                {/pboot:nav} {else} {pboot:nav}
+                <li><a href="[nav:link]">[nav:name]</a>
+                    <ul>
+                        {pboot:2nav parent=[nav:scode]}
+                        <li><a href="[2nav:link]">[2nav:name]</a></li>
+                        {/pboot:2nav} {pboot:2if( '[nav:scode]'=='1' )} {pboot:sort scode=8}
+                        <li><a href="[sort:link]">[sort:name]</a></li>
+                        {/pboot:sort} {/pboot:2if}
+                    </ul>
+                </li>
+                {/pboot:nav} {/pboot:if}
+
+            </ul>
+            <i><a href="/" style="display: block;"><img src="{label:logo_lxdh_pic}">
+			<!-- <div style="background: url({label:logo_lxdh_pic});background-size: cover;background-position: center;display: inline-block;width: 171px;"></div> --></a></i>
+        </div>
+    </nav>

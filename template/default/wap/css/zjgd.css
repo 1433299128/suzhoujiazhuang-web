@@ -1,0 +1,121 @@
+h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
+	    color: #000;
+}
+input, button{
+	outline: none;
+	    border: none;
+	    background: none;
+	    touch-action: none;
+}
+h3{
+	    font-size: 0.34rem;
+}
+.page {
+	width:100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% -100%) / 2) */
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+.site-show{
+	width: 100%;
+	    height: auto;
+}
+.site-show .site-image{
+	width: 100%;
+	    height: 3.4rem;
+}
+.site-show .site-info{
+
+	    height: auto;
+	    padding: .24rem;
+	    background: #fff;
+		
+		padding-bottom: .5rem;
+		margin-bottom: .3rem;
+}
+.site-show .site-info .title{
+	font-size: .3rem;
+	    font-weight: 600;
+}
+.site-show .site-info p{
+	margin: .3rem 0;
+	    line-height: .4rem;
+	    font-size: .26rem;
+}
+.site-show .site-info .info{
+	width: 100%;
+	    height: .3rem;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-align-items: center;
+	    align-items: center;
+}
+i{
+	    display: inline-block;
+	    background-size: 100% 100%;
+}
+.site-show .site-info .info i{
+	    width: .23rem;
+	    height: .23rem;
+	    background-image: url(../img/sjs_icon2.jpg);
+	    margin-right: .1rem;
+}
+.site-show .site-info .info h4{
+	font-size: .26rem;
+}
+.site-show .site-info .info h4 span{
+	color: #ceab7e;
+	    font-size: .26rem;
+}
+.site-show .site-info .info h4{
+	    font-size: .26rem;
+}
+.site-show .site-info .info a{
+	margin-left: .5rem;
+	    font-size: .26rem;
+	    display: inline-block;
+	    padding: 0.1rem;
+	    background-color: #c79e68;
+	    color: #fff;
+	    padding-right: 0;
+	    border-radius: 0.1rem;
+}
+.site-show .site-info .info a i{
+	width: .08rem;
+	    height: .17rem;
+	    background-image: url(../img/jt_icon1.png);
+	    margin-left: .1rem;
+}
+.site-show .site-stage{
+	    width: 100%;
+	    height: auto;
+	    background: #fff;
+	    padding-bottom: .3rem;
+}
+
+.site-show .site-stage p{
+	line-height: .4rem;
+	    font-size: .26rem;
+	    padding: .24rem;
+}
+.site-show .site-stage h4{
+	 padding: .24rem;
+	font-size: 0.3rem;
+	color: #298769;
+}
+.site-show .site-stage h5{
+	font-size: 0.24rem;
+	overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: box;
+	    display: -webkit-box;
+	    -webkit-box-orient: vertical;
+	    -webkit-line-clamp: 2;
+}

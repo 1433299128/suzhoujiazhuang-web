@@ -1,0 +1,335 @@
+{include file=header.html}
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/sjs_tz.css" />
+
+<div class="show-container" style="padding-top: 0">
+    <input type="hidden" id="id" value="1548">
+    <div class="des-show-head">
+        <div class="crumbs-container background-none">
+            <div class="crumbs">
+                <a href="">首页</a><span>/</span><a href="" class="active">设计师列表页</a>
+            </div>
+        </div>
+        <div class="show-center">
+            <div class="des-head-left">
+                <!-- <div class="des-show-headimg" style="background-image: url({content:ico});"></div> -->
+					<style type="text/css">
+						.des-show-head .des-head-left .des-show-info{
+							margin: 0 auto;
+						}
+					</style>
+                <div class="des-show-info">
+                    <h2>DESIGNER</h2>
+                    <h3>{content:title}<span>
+									<i></i><i></i><i></i><i></i><i></i> </span></h3>
+                    <h5>{content:author}</h5>
+                    <p>{content:tags}</p>
+                    <h5>
+                        {content:content}
+                    </h5>
+                    <!-- <div>
+                        <h5><span>11</span>评论<span>1627</span>人气</h5>
+                        <div>
+                            <a href="">找TA设计</a>
+                            <a href="">我要评论</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+			
+<form action="{pboot:form fcode=10}"  method="post">				
+            <div class="des-head-right">
+                <img src="{pboot:sitetplpath}/img/showbmbg.jpg" alt="">
+                <input type="text" id="name" placeholder="先生\女士" required name="name">
+                <input type="text" id="xiaoqu" placeholder="请输入小区名称" required name="xq"> 
+                <input type="tel" id="area" placeholder="请输入套内面积" required name="size">
+                <input type="tel" id="tel" placeholder="请输入手机号码" required name="tel">
+                <button type="submit">确认报名</button>
+            </div>
+</form>				
+			
+			
+        </div>
+    </div>
+    <!-- <div class="show-center">
+        <div class="show-left des-show-left">
+            <div class="des-show-production">
+                <h5><span>代表作品</span>/ REPRESENTATIVE&nbsp;&nbsp;WORKS
+                    <div></div>
+                </h5>
+                <ul>
+                    <a href="" target="_blank">
+                        <li>
+                            <div class="des-show-caseimg" style="background-image: url({pboot:sitetplpath}/img/fc233cc05414193e813d5f5b2315d718.jpg);position: relative;">
+                            </div>
+                            <div class="des-show-caseinfo">
+                                <h5><span>旭辉香格里叠加275平现代风</span><i></i></h5>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="" target="_blank">
+                        <li>
+                            <div class="des-show-caseimg" style="background-image: url({pboot:sitetplpath}/img/2790d961e9699fb3b376910c0242a61b.jpg);position: relative;">
+                            </div>
+                            <div class="des-show-caseinfo">
+                                <h5><span>湖左岸315平大平层新中式</span><i></i></h5>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="" target="_blank">
+                        <li>
+                            <div class="des-show-caseimg" style="background-image: url({pboot:sitetplpath}/img/d6e253a23b61001d8a40f39ddc424012.jpg);position: relative;">
+                            </div>
+                            <div class="des-show-caseinfo">
+                                <h5><span>保利悦都142平欧式风格</span><i></i></h5>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+                <div class="login-more" disabled="disabled">
+                    <div class="loading" style="display: none;">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div><span>没有更多了</span>
+                </div>
+            </div>
+            <div class="des-show-site">
+                <h5><span>代表工地</span>/ REPRESENTATIVE&nbsp;&nbsp;SITE
+                    <div></div>
+                </h5>
+                <ul>
+                    <a href="" target="_blank">
+                        <li>
+                            <div class="des-show-caseimg" style="background-image: url({pboot:sitetplpath}/img/6f9c80efe69c05acb90200636612f656.jpg);">
+                            </div>
+                            <div class="des-show-caseinfo">
+                                <h5><span>保利悦玺北欧二居室115平</span><i></i></h5>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+                <div class="login-more" disabled="disabled">
+                    <div class="loading" style="display: none;">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div><span>没有更多了</span>
+                </div>
+            </div> -->
+
+
+
+            <!-- 
+						
+						
+						<div class="des-show-comment">
+						<h5><span>业主评论</span>/ OWNER&nbsp;&nbsp;COMMENTS<div></div>
+						</h5>
+						<ul>
+							<style type="text/css">
+								.des-show-comment ul li .des-show-comhead {
+									display: block;
+								}
+
+								.des-show-comment ul li .des-show-comhead h2 {
+									float: left;
+								}
+
+								.des-show-comment ul li .des-show-comhead div {
+									display: block;
+									width: auto;
+									float: left;
+									margin-left: 30px
+								}
+
+								.des-show-comment ul li .des-show-comhead h5 {
+									float: right;
+								}
+
+								.des-show-comment ul li .des-show-comhead-more {
+									display: flex;
+									flex-direction: row;
+									justify-content: flex-start;
+									margin-top: 15px
+								}
+
+								.des-show-comhead-more span {
+									margin-left: 20px;
+								}
+
+								.des-show-comhead-more span:first-child {
+									margin-left: 0
+								}
+
+								.des-show-comhead-more span i {
+									margin-left: 10px
+								}
+							</style>
+							<li>
+								<div class="des-show-comhead">
+									<h2>范范<span>服务评分</span></h2>
+									<div>
+										<i></i><i></i><i></i><i></i><i></i>
+									</div>
+									<h5>20-07-30</h5>
+								</div>
+								<div class="des-show-comhead des-show-comhead-more">
+									<span>专业能力<i>10分</i></span>
+									<span>责任心<i>10分</i></span>
+									<span>沟通能力<i>10分</i></span>
+									<span>预算把控能力<i>10分</i></span>
+								</div>
+								<p>装修快结束了，就等着软装进场了。很高兴。一直忙没时间来评价。因为本人常年出差，去年媳妇说新房子该装修一下了，在网上搜了一下装修公司，看到生活家装饰的评价还蛮高的，抱着看看的态度，在网上报了名，业务员小袁介绍了公司，材料的品牌，施工工艺，工地管理，售后服务，质保。给我们推荐了高满霞老师，高老师的专业，根据我的实际情况和预算给我设计出了符合我要求的方案来。施工时整个施工团队都非常的负责任，每一个项目都很仔细，验收都是一丝不苟的，没有一点差错，并可以在手机APP上24小时都能看到现场施工情况，嗯，生活家值得推荐！
+								</p>
+							</li>
+							<li>
+								<div class="des-show-comhead">
+									<h2>王先生<span>服务评分</span></h2>
+									<div>
+										<i></i><i></i><i></i><i></i><i></i>
+									</div>
+									<h5>20-05-10</h5>
+								</div>
+								<div class="des-show-comhead des-show-comhead-more">
+									<span>专业能力<i>10分</i></span>
+									<span>责任心<i>10分</i></span>
+									<span>沟通能力<i>10分</i></span>
+									<span>预算把控能力<i>10分</i></span>
+								</div>
+								<p>当时买的是学区房，准备一家人住的。高老师给我们设计了个多功能房间，我们当时很喜欢，平时儿子可以回来住住。装的是现代日系风，把所有空间都利用上了。家人都很满意。我们一起定的，希望能看到房子早日完工。生活家服务很细致，从进店第一次到第二次签合同，每次都能体会到为我们装修的细心。尤其是材料和工程工艺，我家人也很放心。赞一个。
+								</p>
+							</li>
+							<li>
+								<div class="des-show-comhead">
+									<h2>王磊<span>服务评分</span></h2>
+									<div>
+										<i></i><i></i><i></i><i></i><i></i>
+									</div>
+									<h5>20-04-14</h5>
+								</div>
+								<div class="des-show-comhead des-show-comhead-more">
+									<span>专业能力<i>10分</i></span>
+									<span>责任心<i>10分</i></span>
+									<span>沟通能力<i>10分</i></span>
+									<span>预算把控能力<i>10分</i></span>
+								</div>
+								<p>总得来说很不错，价钱透明，也没有什么增项，虽然价钱比别的公司贵一点，但是材料真的比别的公司好很多。满意</p>
+							</li>
+						</ul>
+						<div class="login-more">
+							<div class="loading" style="display: none;">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div><span>加载更多</span>
+						</div>
+					</div>
+
+					-->
+        </div>
+
+
+
+
+
+       <!-- <div class="show-right des-show-right">
+            <div class="sidebar-recommend" style="margin-top: 0">
+                <h4><span>家装案例推荐</span><a href="">查看更多</a></h4>
+                <ul>
+                    <a href="">
+                        <li>
+                            <div class="recommend-headimg" style="background-image: url({pboot:sitetplpath}/img/3f9090900f6e4af223b4bfa9eaa594a1.jpg);">
+                            </div>
+                            <div class="recommend-title">南山维拉105平现代风</div>
+                            <button>查看详情</button>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <div class="recommend-headimg" style="background-image: url({pboot:sitetplpath}/img/531e4a422d83ca396305ba527c8bc87c.jpg);">
+                            </div>
+                            <div class="recommend-title">吴江自建房180现代简约</div>
+                            <button>查看详情</button>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <div class="recommend-headimg" style="background-image: url({pboot:sitetplpath}/img/6279629a83a6f996a4404bf6f82f6055.jpg);">
+                            </div>
+                            <div class="recommend-title">美庐450平新中式案例</div>
+                            <button>查看详情</button>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="sidebar-recommend designer-recommend">
+                <h4><span>推荐设计师</span><a href="">查看更多</a></h4>
+                <ul>
+                    <a href="">
+                        <li>
+                            <div class="designer-recommend-headimg" style="background-image: url({pboot:sitetplpath}/img/1eb3369fa4ecf183f68f42d995f2c3ee.jpg);">
+                            </div>
+                            <div class="designer-recommend-title">
+                                <h4>黄书志&nbsp;&nbsp;主任设计师</h4>
+                                <div>
+                                    <i></i><i></i><i></i><i></i><i></i><span>10分</span>
+                                </div>
+                                <h6>累计服务业主<span>300</span></h6>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <div class="designer-recommend-headimg" style="background-image: url({pboot:sitetplpath}/img/642f12b945877ebca5686fa65c155a51.jpg);">
+                            </div>
+                            <div class="designer-recommend-title">
+                                <h4>马萌&nbsp;&nbsp;资深设计师</h4>
+                                <div>
+                                    <i></i><i></i><i></i><i></i><i></i><span>10分</span>
+                                </div>
+                                <h6>累计服务业主<span>570</span></h6>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <div class="designer-recommend-headimg" style="background-image: url({pboot:sitetplpath}/img/cfe557544dca95f2955f77d87458f312.jpg);">
+                            </div>
+                            <div class="designer-recommend-title">
+                                <h4>施鹏&nbsp;&nbsp;主任设计师</h4>
+                                <div>
+                                    <i></i><i></i><i></i><i></i><i></i><span>10分</span>
+                                </div>
+                                <h6>累计服务业主<span>150</span></h6>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+
+
+
+
+
+{include file=footer.html}

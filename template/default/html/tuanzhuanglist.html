@@ -1,0 +1,78 @@
+{include file=header.html}
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/tuanzhuanglist.css" />
+
+
+<a href="#" class="case-banner" style="background: url({pboot:sitetplpath}/img/hotbanner.jpg) center center"></a>
+<div class="crumbs-container">
+    <div class="crumbs">
+        {pboot:position}
+    </div>
+</div>
+
+
+<div class="hot-filter-container">
+    <div class="hot-filter-center">
+        <div class="hot-search">
+            <input type="text" id="title" value="" placeholder="输入小区名称" required>
+            <input type="button" id="searchDy" value="搜索">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="hot-lists-container">
+    <ul>
+        {pboot:list}
+        <a href="[list:link]">
+            <li>
+                <div class="hot-headimg" style="background-image: url([list:ico]);"></div>
+                <div class="hot-label">
+                    <h5>服务客户</h5>
+                    <h4><span>54</span>位</h4>
+                </div>
+                <h5>[list:title]</h5>
+            </li>
+        </a>
+        {/pboot:list}
+    </ul>
+    <div class="login-more">
+        <style type="text/css">
+            .login-more a {
+                border: 1px solid silver;
+                margin: 0 3px;
+                border-radius: 3px;
+                padding: 5px;
+                display: inline-block;
+            }
+            
+            .login-more-active {
+                color: #fff;
+                background: #5eb95e;
+                border-color: #5eb95e;
+            }
+            
+            .login-more-active:hover {
+                color: #fff;
+            }
+        </style>
+        <span class="login-more-span">{page:bar}</span>
+        <script>
+            $(".login-more-span span>a").click(function() {
+                $(this).toggleClass('login-more-active').parent().siblings().children().removeClass('login-more-active');
+            })
+        </script>
+    </div>
+</div>
+
+
+
+
+
+{include file=footer.html}

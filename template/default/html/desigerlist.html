@@ -1,0 +1,102 @@
+{include file=header.html}
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/sjs.css" />
+
+<a href="" class="case-banner"></a>
+
+<div class="crumbs-container">
+    <div class="crumbs">
+        {pboot:position}
+    </div>
+</div>
+
+
+<div class="des-lists-container">
+    <ul>
+        {pboot:list}
+			
+        <li onclick="window.location.href='[list:link]'">
+			
+            <!-- <a href="[list:link]">
+                <div class="des-list-heading" style="background: url([list:ico]);background-size: cover;background-position: center center;"></div>
+            </a> -->
+
+            <div class="des-list-info">
+                <div class="des-list-name">
+                    <h5>
+                        <span>[list:title]</span> [list:author]
+                    </h5>
+                    <div>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <a href="[list:link]">查看详情<i></i></a>
+                </div>
+                <p>[list:tags]</p>
+                <h6></h6>
+                <h5>作品精选</h5>
+                <dl>
+                    {pboot:pics id=[list:id] num=3}
+
+                    <a href="#" style="background: url([pics:src]);background-size: cover;background-position: center center;">
+                    </a>
+                    {/pboot:pics}
+                </dl>
+            </div>
+			
+        </li>
+
+			
+
+
+
+
+
+
+        {/pboot:list}
+
+    </ul>
+
+    <div class="login-more">
+        <style type="text/css">
+            .login-more a {
+                border: 1px solid silver;
+                margin: 0 3px;
+                border-radius: 3px;
+                padding: 5px;
+                display: inline-block;
+            }
+            
+            .login-more-active {
+                color: #fff;
+                background: #5eb95e;
+                border-color: #5eb95e;
+            }
+            
+            .login-more-active:hover {
+                color: #fff;
+            }
+        </style>
+        <span class="login-more-span">{page:bar}</span>
+        <script type="text/javascript">
+            $(".login-more-span span>a").click(function() {
+                $(this).toggleClass('login-more-active').parent().siblings().children().removeClass('login-more-active');
+            })
+        </script>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{include file=footer.html}

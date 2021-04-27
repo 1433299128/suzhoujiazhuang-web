@@ -1,0 +1,150 @@
+.case-banner{
+	display: block;
+	    width: 100%;
+	    height: 500px;
+}
+.hot-filter-container{
+	width: 100%;
+	    height: auto;
+	    padding: 30px 0 20px;
+	    background: #fdfdfd;
+}
+.hot-filter-center{
+	    width: 1240px;
+	    height: auto;
+	    margin: 0 auto;
+}
+.hot-filter-center .hot-search{
+	width: 500px;
+	    height: 40px;
+	    margin: 0 auto;
+	    display: flex;
+	    display: -webkit-flex;
+	    display: -ms-flex;
+	    margin-bottom: 30px;
+}
+.hot-filter-center .hot-search input[type='text']{
+	height: 40px;
+	    width: 410px;
+	    font-size: 14px;
+	    text-indent: 30px;
+	    border: 1px solid #dcdcdc;
+}
+.hot-filter-center .hot-search input[type='button']{
+	height: 40px;
+	    width: 90px;
+	    font-size: 14px;
+	    text-align: center;
+	    color: #fff;
+	    background: #c79e68;
+	    border: none;
+	    cursor: pointer;
+}
+.hot-lists-container{
+	width: 100%;
+	    height: auto;
+	    padding: 30px 0 40px;
+	    background: #f4f4f4;
+}
+.hot-lists-container ul{
+	    width: 1240px;
+	    height: auto;
+	    margin: 0 auto;
+	    display: flex;
+	    display: -webkit-flex;
+	    display: -ms-flex;
+	    -webkit-flex-wrap: wrap;
+	    flex-wrap: wrap
+}
+.hot-lists-container ul a{
+	display: block;
+	    margin: 0 20px 20px 0;
+}
+.hot-lists-container ul li{
+	width: 400px;
+	    height: 250px;
+	    position: relative;
+	    overflow: hidden;
+}
+.hot-lists-container ul li .hot-headimg{
+	    background-size: cover;
+	    background-position: center center;
+	    width: 400px;
+	    height: 250px;
+	    transition: transform .5s;
+	    -moz-transition: -moz-transform .5s;
+	    -webkit-transition: -webkit-transform .5s;
+	    -o-transition: -o-transform .5s;
+}
+.hot-lists-container ul li .hot-label{
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 90px;
+	    height: 80px;
+	    background: #c79e68;
+	    padding: 10px;
+}
+.hot-lists-container ul li .hot-label h5{
+	    line-height: 28px;
+}
+.hot-lists-container ul li .hot-label *{
+	color: #fff;
+}
+h4{
+	font-size: 16px;
+}
+.hot-lists-container ul li .hot-label h4 span{
+	    font-size: 30px;
+	    font-weight: bol
+}
+.hot-lists-container ul li>h5{
+	    width: 100%;
+	    height: 40px;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    color: #fff;
+	    line-height: 40px;
+	    background: -webkit-linear-gradient(bottom, rgba(32,36,74,.8), rgba(112,105,111,.4));
+	    background: -o-linear-gradient(top,rgba(32,36,74,.8), rgba(112,105,111,.4));
+	    background: -moz-linear-gradient(top, rgba(32,36,74,.8), rgba(112,105,111,.4));
+	    background: linear-gradient(to top, rgba(32,36,74,.8), rgba(112,105,111,.4));
+	    text-align: center;
+}
+.hot-lists-container ul a:nth-child(3n){
+	margin-right: 0;
+}
+.login-more{
+	width: 1240px;
+	    height: 50px;
+	    margin: 0 auto;
+	    font-size: 14px;
+	    background: #fdfdfd;
+	    color: #565656;
+	    cursor: pointer;
+	    display: flex;
+	    display: -webkit-flex;
+	    display: -ms-flex;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+}
+.loading, .loading>div{
+	position: relative;
+}
+.loading{
+	display: none;
+	    font-size: 0;
+	    color: #8a8888;
+	    margin-right: 10px;
+}
+.loading{
+	    width: 20px;
+	    height: 20px;
+}
+.hot-lists-container ul li:hover .hot-headimg{
+	transform: scale(1.2);
+	transition: 0.6s;
+}

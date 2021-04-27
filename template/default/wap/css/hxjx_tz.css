@@ -1,0 +1,294 @@
+h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
+	    color: #000;
+}
+input, button{
+	outline: none;
+	    border: none;
+	    background: none;
+	    touch-action: none;
+}
+h3{
+	    font-size: 0.34rem;
+}
+.page {
+	width:100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% -100%) / 2) */
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+.analysis-show{
+	width: 100%;
+	    height: auto;
+}
+.analysis-show .headimg{
+	height: 4rem;
+}
+.analysis-show .house-info{
+	    height: auto;
+	    background: #fff;
+	    padding: .1rem .3rem .4rem;
+}
+.analysis-show .house-info li{
+	width: 100%;
+	    height: auto;
+	    display: flex;
+}
+
+.analysis-show .house-info li i{
+	width: .5rem;
+	    height: .7rem;
+	    background-position: left center;
+	    background-repeat: no-repeat;
+}
+
+.analysis-show .house-info li:nth-child(1) i{
+	background-size: .21rem .34rem;
+	    background-image: url(../img/analysis_icon1.png);
+}
+.analysis-show .house-info li div{
+	    width: 6.4rem;
+	    height: auto;
+	    border-bottom: 1px solid #eff3f6;
+	    line-height: .7rem;
+}
+.analysis-show .house-info li div p{
+	    word-wrap: break-word;
+	    word-break: normal;
+}
+.analysis-show .house-info li div h5{
+	font-size: 0.24rem;
+}
+.analysis-show .house-info li:nth-child(2) i{
+	background-size: .29rem .27rem;
+	    background-image: url(../img/analysis_icon2.png);
+}
+.analysis-show .house-info li:nth-child(3) i{
+	background-size: .29rem .27rem;
+	    background-image: url(../img/analysis_icon3.png);
+}
+.analysis-show .house-info li:nth-child(3) div h5{
+	width: 1.3rem;
+	    float: left;
+}
+.analysis-show .house-info li:nth-child(3) div p{
+	line-height: .4rem;
+	    float: left;
+	    font-size: .24rem;
+	    width: 5.1rem;
+	    padding: .15rem 0;
+}
+
+
+.analysis-show .house-type{
+	    height: auto;
+	    padding: .4rem .3rem;
+	    margin-top: .3rem;
+	    background: #fff;
+}
+.analysis-show .house-type .title{
+	font-size: .4rem;
+	    font-weight: 600;
+	    text-align: center;
+	    line-height: .7rem;
+}
+.analysis-show .house-type .title span{
+	color: #00ae66;
+	    font-size: .4rem;
+}
+.analysis-show .house-type .flag{
+	    text-align: center;
+	    font-size: .3rem;
+	    color: #555555;
+	    height: .5rem;
+	    line-height: .5rem;
+}
+.analysis-show .house-type .house-type-image{
+	    width: 100%;
+	    height: 7.6rem;
+	    margin-top: .4rem;
+	    display: flex;
+	    justify-content: space-between;
+	    align-content: space-between;
+	    flex-wrap: wrap;
+}
+.analysis-show .house-type .house-type-image li{
+	width: 3.35rem;
+	    height: 3.7rem;
+	    position: relative;
+}
+.analysis-show .house-type .house-type-image li div{
+	background: #c79e68;
+	    width: 1.4rem;
+	    height: .5rem;
+	    color: #fff;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    text-align: center;
+	    line-height: .5rem;
+	    font-size: .24rem;
+}
+.analysis-show .house-type .explain{
+
+	    height: auto;
+	    padding: .3rem;
+	    background: #eef2f3;
+	    margin-top: .2rem;
+}
+.analysis-show .house-type .explain .title{
+	width: 100%;
+	    text-align: center;
+	    font-size: .3rem;
+	    font-weight: 600;
+}
+.analysis-show .house-type .explain p{
+	width: 100%;
+	    line-height: .4rem;
+	    font-size: .26rem;
+	    margin-bottom: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-center{
+	background-size: cover;
+	    background-position: top center;
+}
+.formnew{
+	    background-color: #fff;
+	    margin-bottom: 0.2rem;
+	    margin-top: 0.2rem;
+	    padding-top: 0.01rem;
+	    padding-bottom: 0.3rem;
+}
+.formnew{
+		width:100%;
+		height: auto;
+	    background-image: url(../img/case_show_offer_bg.jpg);
+	    background-size: cover;
+	    padding-top: 1.8rem;
+}
+.formnew input{
+    display: block;
+    height: 0.75rem;
+    border-radius: 0.05rem;
+    margin: 0 auto;
+    font-size: 0.26rem;	
+}
+.formnew input{
+	border-radius: .1rem;
+	margin-bottom: .2rem;
+}
+
+.formnew input[type='text']{
+	    background-image: url(../img/dh.png);
+	    background-color: #eaeaea;
+	    padding-left: 1rem;
+	    padding-right: 0.2rem;
+	    background-size: 0.35rem 0.34rem;
+	    background-repeat: no-repeat;
+	    background-position: left;
+	    background-position-x: 0.3rem;
+	background-color: #fff !important;
+}
+
+.formnew input[type='tel'] {
+	background-image: url(../img/fz.png);
+	    background-color: #eaeaea;
+	    padding-left: 1rem;
+	    padding-right: 0.2rem;
+	    background-size: 0.39rem 0.37rem;
+	    background-repeat: no-repeat;
+	    background-position: left;
+	    background-position-x: 0.3rem;
+	    margin-bottom: 0.2rem;
+	background-color: #fff !important;
+}
+.formnew .input_button{
+	background-image: url(../img/bgyy.jpg);
+	    background-size: 0.82rem 0.85rem;
+	    background-position: left;
+	    color: #fff;
+	    margin-top: 0.3rem;
+}
+.case-show{
+	height: auto;
+}
+.case-show-lists{
+	background: #fff;
+	    height: auto;
+	    padding: .3rem .2rem;
+	    display: flex;
+	    flex-wrap: wrap;
+}
+.case-show-lists li{
+	    width: 3.45rem;
+	    height: auto;
+}
+.case-show-lists li:nth-child(odd){
+	margin-right: .2rem;
+}
+.case-show-lists li a{
+	display: block;
+}
+.case-show-lists li a .case-image{
+	    width: 3.45rem;
+	    height: 2.6rem;
+	    border-radius: .12rem;
+}
+.case-show-lists li a h5{
+	font-size: 0.24rem;
+	    text-align: center;
+	    line-height: .6rem;
+	    margin-bottom: .1rem;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+}
+.layui-flow-more{
+	margin: 10px 0;
+	    text-align: center;
+	    color: #999;
+	    font-size: 14px;
+}
+.layui-flow-more{
+	width: 100%;
+	    padding: .3rem 0;
+}
+.case-show-lists li:nth-child(1) .image-center{
+	background: url(../img/1702af929d33e8d210c8bdc781d2ece5.png);
+	background-size: cover;
+	    background-position: top center;
+}
+.case-show-lists li:nth-child(2) .image-center{
+	background: url(../img/d6e253a23b61001d8a40f39ddc424012.jpg);
+	background-size: cover;
+	    background-position: top center;
+}
+.case-show-lists li:nth-child(3) .image-center{
+	background: url(../img/aac829b091dfddce5ff6f24296f9a253.jpg);
+	background-size: cover;
+	    background-position: top center;
+}

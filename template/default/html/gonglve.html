@@ -1,0 +1,165 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/jzgl_tz.css"/>
+
+		<div class="show-container">
+			<div class="crumbs-container">
+				<div class="crumbs">
+					{pboot:position}
+					<span>/</span><a class="active">{content:title}</a>
+				</div>
+			</div>
+
+			<div class="show-center">
+
+
+
+				<div class="show-left konw-show-left">
+					<h1>{content:title}</h1>
+					<h6>
+						<span>发布时间：{content:date style=Y-m-d}&nbsp;&nbsp;来源：{content:author}&nbsp;&nbsp;点击：{content:visits}</span>
+						<!-- <div class="bdsharebuttonbox">
+							<span>分享到：</span>
+							<a href="#" class="bds_tsina" rel="nofollow" data-cmd="tsina" title="分享到新浪微博"></a>
+							<a href="#" class="bds_qzone" rel="nofollow" data-cmd="qzone" title="分享到QQ空间"></a>
+							<a href="#" class="bds_weixin" rel="nofollow" data-cmd="weixin" title="分享到微信"></a>
+						</div> -->
+					</h6>
+					<style type="text/css">
+						.konw-content h1 {
+							display: inline;
+						}
+					</style>
+					<div class="konw-content">
+							{content:ext_zxgl_content}
+					</div>
+					<div class="show-page">
+						<a title="{content:pretitle}" href="{content:prelink}"><button>上一个：{content:pretitle}</button></a>
+						<a title=" {content:nexttitle}	" href="{content:nextlink}"><button>下一个： {content:nexttitle}</button></a>
+					</div>
+					<style type="text/css">
+						.konw-relative ul {
+							display: flex;
+							flex-wrap: wrap;
+						}
+
+						.konw-relative ul li {
+							width: 400px;
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							margin-left: 14px
+						}
+
+						.konw-relative ul li a {
+							color: #5f5f5f;
+							font-size: 14px
+						}
+
+						.konw-relative ul li:hover a {
+							color: #c79e68;
+						}
+					</style>
+					<div class="konw-content konw-relative">
+						<h3 style="margin-bottom: 10px">相关推荐</h3>
+						<ul>
+							{pboot:list scode={sort:scode} num=8}
+							
+							<li><a href="[list:link]">[list:title]</a></li>
+							
+							{/pboot:list}
+							<!-- <li><a href="">卫生间装修需要注意什么？</a></li>
+							<li><a href="">南京装修教您厨房内装修的注意事项</a></li>
+							<li><a href="">厕所装修如何将小空间实现干湿分区呢？</a></li>
+							<li><a href="">厨房的整体家居定制</a></li>
+							<li><a href="">水电装修有哪些注意事项，怎么才能不花冤枉钱</a></li>
+							<li><a href="">怎么才能做好新房的水电装修</a></li>
+							<li><a href="">装修水电为什么那么贵</a></li>
+							<li><a href="">水电装修中的那些坑要怎么避免</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<form action="{pboot:form fcode=6}"  method="post">
+								<div class="show-right">
+									<div class="right">
+										<div class="p-title">算一算我家装修需要多少钱？</div>
+										<ul class="ul">
+											<li class="active"><a href="javascript:void();">免费报价</a></li>
+											<li><a href="javascript:void();">免费量房</a></li>
+										</ul>
+										<div class="from">
+											<div class="city">
+												<input type="text" value="苏州" name="dizhi" required>
+											</div>
+											<div class="tel">
+												<input type="text" value="" name="tel" placeholder="请输入您的手机号码" required>
+											</div>
+											<div class="size">
+												<input type="text" value="" name="size" placeholder="请输入面积" required><i>㎡</i>
+											</div>
+											<div class="button">
+												<a href="javascript:void();">人工精准报价</a>
+												<input type="submit" value="发送报价到手机" />
+											</div>
+											<h6>* 为了您的权益，您的一切信息将被严格保密</h6>
+										</div>
+									</div>
+								</div>
+				</form>					
+								
+								<script type="text/javascript">
+									$(".right .ul>li").click(function(){
+										$(this).toggleClass('active').siblings().removeClass('active');
+									})
+								</script>
+								
+								
+								<style type="text/css">
+									.show-right-active{
+										top: 85px;
+										z-index: 2021;
+										position: fixed;
+									}
+								</style>
+								
+								
+								<script>
+										$(window).scroll(function() {
+											if ($(this).scrollTop() > 100) {
+												$(".right").addClass("show-right-active");
+											} else {
+												$(".right").removeClass("show-right-active");
+											}
+										});
+								</script>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+{include file=footer.html}

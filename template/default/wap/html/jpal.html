@@ -1,0 +1,196 @@
+{include file=header.html}
+
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/jpsj_tz.css" />
+		<div class="page">
+			<div class="page-container">
+				<div class="casus-show">
+					<div class="casus-show-header">
+						<div class="image-center casus-show-banner"></div>
+						<div class="casus-show-title">
+							<h1><span>美好生活</span>小确幸</h1>
+							<h5>舒适家居生活</h5>
+							<h4>一家人在一起，就是美好的生活</h4>
+							<i></i>
+							<button>立即预约设计</button>
+						</div>
+					</div>
+					<div class="casus-show-info">
+						<!-- <div class="casus-show-designer">
+							<div class="image-center designer-image"></div>
+							<div class="designer-info">
+								<div class="title">
+									<h3>DESIGNER</h3>
+									<h5><span>13</span>评论&nbsp;&nbsp;<span>121</span>人气</h5>
+								</div>
+								<div class="name" data-id="1672">
+									<h3>苏悦晴</h3>
+									<div class="star"><i></i><i></i><i></i><i></i><i></i></div>
+									<button class="active">找TA设计</button>
+									<button>我要评论</button>
+								</div>
+								<div class="flag">生活家五星首席设计师</div>
+								<div class="info">
+									<h5>擅长风格：美式、现代（后现代）、新中式、台式港式、地中海</h5>
+									<h5>从业6以上&nbsp;|&nbsp;169套作品</h5>
+								</div>
+							</div>
+						</div> -->
+						<div class="synopsis">
+							<!-- <div class="title">空间分析</div>
+							<p>原始结构楼梯便窄，可餐厅空间局促，顶面梁结构复杂，梁下层高较低</p> -->
+							<style type="text/css">
+								.synopsis div{
+									width: 5.5rem !important;
+								}
+								.synopsis img{
+									width: 100% !important;
+								}
+							</style>
+							{content:content}
+							<div class="image">
+								<div class="image-center houseType-image" style="background-image: url({content:ext_0riginalhousetype})"></div>
+								<h5>原始户型图</h5>
+							</div>
+							<!-- <div class="title">设计师解读</div>
+							<p>客户是地道的苏州本地人，中式风的中规中距的设计</p>
+							<p></p> -->
+						</div>
+					</div>
+					<div class="space">
+						<style type="text/css">
+							.space img{
+								width: 100% !important;
+							}
+						</style>
+						<div class="space-title">
+							<div class="english">LIVING ROOM</div>
+							<div class="chinese">客厅</div>
+						</div>
+						<div class="image-center space-image" style="background-image: url({content:ext_kt_pic})"></div>
+						<div class="summarize">
+							<div class="title">小编客厅解读</div>
+							<p>{content:ext_kt_jiedu}</p>
+						</div>
+					</div>
+					<div class="space">
+						<div class="space-title">
+							<div class="english">RESTAURANT</div>
+							<div class="chinese">餐厅</div>
+						</div>
+						<div class="image-center space-image" style="background-image: url({content:ext_ct_pic})"></div>
+						<div class="summarize">
+							<div class="title">小编餐厅解读</div>
+							<p>{content:ext_ct_jiedu}</p>
+						</div>
+					</div>
+					<div class="space">
+						<div class="space-title">
+							<div class="english">SECOND BEDROOM</div>
+							<div class="chinese">次卧</div>
+						</div>
+						<div class="image-center space-image" style="background-image: url({content:ext_cw_pic})"></div>
+						<div class="summarize">
+							<div class="title">小编次卧解读</div>
+							<p>{content:ext_cw_jiedu}</p>
+						</div>
+					</div>
+					<div class="space">
+						<div class="space-title">
+							<div class="english">MASTER BEDROOM</div>
+							<div class="chinese">主卧</div>
+						</div>
+						<div class="image-center space-image" style="background-image: url({content:ext_zw_pic})"></div>
+						<div class="summarize">
+							<div class="title">小编主卧解读</div>
+							<p>{content:ext_zw_jiedu}</p>
+						</div>
+					</div>
+					<div class="space">
+						<div class="space-title">
+							<div class="english">BATHROOM</div>
+							<div class="chinese">卫生间</div>
+						</div>
+						<div class="image-center space-image" style="background-image: url({content:ext_wsj_pic})"></div>
+						<div class="summarize">
+							<div class="title">小编卫生间解读</div>
+							<p>{content:ext_wsj_jiedu}</p>
+						</div>
+					</div>
+					<div class="space">
+						<div class="space-title">
+							<div class="english">DESIGNER CONCLUSION</div>
+							<div class="chinese">小编总结</div>
+						</div>
+						<div class="all-summarize">
+							<div class="image-center all-summarize-image" style="background-image: url({pboot:sitetplpath}/img/img22.jpg)"></div>
+							<p>{content:ext_xb_jiedu}</p>
+						</div>
+					</div>
+					
+					
+					
+						<form action="{pboot:form fcode=7}"  method="post">
+						<div class="formnew">
+							<input type="text" name="size" placeholder="输入您的房屋面积" required>
+							<input type="tel" name="tel" placeholder="输入电话号码，发送报价明细至手机" required>
+							<input type="submit" class="input_button" value="立即获取报价">
+						</div>
+						</form>	
+						<div class="case-show">
+						<ul class="case-show-lists">
+							
+							{pboot:list scode={sort:scode}}
+							
+							<li>
+								<a href="[list:link]">
+									<div class="image-center case-image"style="background: url([list:ico]);background-size: cover;background-position: top center;"></div>
+									<h5>[list:title]</h5>
+								</a>
+							</li>
+							
+							{/pboot:list}
+							
+							<!-- <li>
+								<a href="">
+									<div class="image-center case-image"></div>
+									<h5>越湖名邸112平简美</h5>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="image-center case-image"></div>
+									<h5>保利悦都142平欧式风格</h5>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="image-center case-image"></div>
+									<h5>【首开如院】149㎡简美风</h5>
+								</a>
+							</li> -->
+							<!-- <div class="layui-flow-more">没有更多了</div> -->
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{include file=footer.html}

@@ -1,0 +1,142 @@
+{include file=header.html}
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/zjgdlist.css" />
+	
+	
+	<a href="#" class="case-banner" style="background: url({pboot:sitetplpath}/img/sitebanner.jpg) center center"></a>
+    <div class="crumbs-container">
+        <div class="crumbs">
+            {pboot:position}
+        </div>
+    </div>
+	
+	
+	<div class="site-filter-container">
+			<div class="site-filter-center">
+				<input type="hidden" id="statusDy" value="-1">
+				<input type="hidden" id="locationDy" value="-1">
+				<ul>
+					<li class="statusDy">
+						<span>在建状态</span>
+						<dl>
+							<style type="text/css">
+								.buxian{
+									    color: #000;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										display: block;
+								}
+								.xuanzhong{
+									color: #fff;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										background: #298769;
+								}
+								.active a{
+									color: #fff;
+								}
+							</style>
+							{pboot:selectall field=	ext_state text=全部 class='buxian'  active='xuanzhong'}
+							{pboot:select field=ext_state}
+							
+							<dd {pboot:if('[select:value]'=='[select:current]')}class="active"" {/pboot:if}><a href="[select:link]">[select:value]</a></dd>
+							{/pboot:select}
+							<!-- <dd class="active">全部</dd>
+							<dd>开工</dd>
+							<dd>水电验收</dd>
+							<dd>木作基层验收</dd>
+							<dd>防水验收</dd>
+							<dd>墙砖验收</dd>
+							<dd>地砖验收</dd>
+							<dd>乳胶漆基层验收</dd>
+							<dd>油面及乳胶漆面漆验收</dd>
+							<dd>竣工验收</dd> -->
+						</dl>
+					</li>
+				</ul>
+	
+			</div>
+			<style>
+				.button-btn{
+					height: 40px;
+					    width: 90px;
+					    font-size: 14px;
+					    text-align: center;
+					    color: #fff;
+					    background: #c79e68;
+					    border: none;
+					    cursor: pointer;
+				}
+			</style>
+			<div class="hot-filter-center">
+					<div class="hot-search">
+						
+					<form action="{pboot:scaction}"  method="get" style="display:flex;">
+						<input type="text" name="keyword" value="" placeholder="输入小区名称" required>
+						<input type="hidden" name="searchtpl" value="zjgdsear.html" >
+						<input type="hidden" name="scode" value="48" >
+						<button type="submit" class="button-btn">搜索</button>
+					</form>
+					</div>
+				</div>
+		</div>
+    
+
+		<div class="site-lists-container">
+				<ul>
+					{pboot:search}
+					<li>
+			<div class="site-list-head">
+				<div class="site-list-headimg" style="background-image: url([search:ico]);"><a href="[search:link]" target="_blank"></a></div>
+				<div class="site-list-info">
+					<h2>[search:title]<span>|</span>[search:ext_zjgd_area]</h2>
+					<h5>所在城市：[search:ext_zjgd_city]</h5>
+					[search:content]
+					<button onclick="javascript:window.location.href='[search:link]'"><i></i>查看详情</button>			
+				</div>	
+			</div>
+			<dl class="site-list-stage"></dl>
+			<!--dl class="site-list-stage">
+							<dd><i></i>地砖验收</dd>
+					<dd class="active"><i></i>乳胶漆基层验收</dd>
+					<dd><i></i>油面及乳胶漆面漆验收</dd>
+					</dl-->			
+		</li>
+		{/pboot:search}
+		</ul>
+				<div class="login-more">
+					<style type="text/css">
+						.login-more a{
+							border: 1px solid silver;
+							margin: 0 3px;
+							border-radius: 3px;
+							padding: 5px;
+							display: inline-block;
+						}
+						.login-more-active{
+							color: #fff;
+							background: #5eb95e;
+							border-color: #5eb95e;
+						}
+						.login-more-active:hover{
+							color:#fff;
+						}
+					</style>
+					<span class="login-more-span">{page:bar}</span>
+					<script type="text/javascript">
+						$(".login-more-span span>a").click(function(){
+							$(this).toggleClass('login-more-active').parent().siblings().children().removeClass('login-more-active');
+						})
+					</script>
+				</div>	
+			</div>
+
+
+
+
+{include file=footer.html}

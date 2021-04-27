@@ -1,0 +1,126 @@
+.page {
+	width: 7.5rem;
+	height: auto;
+	position: relative;
+	left: calc((100% - 7.5rem) / 2)
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+
+.banner {
+	width: 7.5rem;
+	height: 5rem;
+	position: relative;
+}
+
+.analysis-list-banner-wrap {
+	width: 100%;
+	height: 3.4rem;
+}
+
+.swiper-container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	box-sizing: content-box;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	position: relative;
+}
+
+.casus-lists {
+	width: 100%;
+	height: auto;
+	padding: .3rem 0;
+	margin-bottom: .2rem;
+	background: #fff;
+}
+
+.casus-lists li {
+	width: 100%;
+	height: auto;
+	margin: .2rem 0;
+}
+
+.casus-lists li a {
+	display: block;
+	position: relative;
+}
+
+.casus-lists li .casus-img {
+	width: 100%;
+	height: 5.05rem;
+}
+
+.casus-lists li .casus-info {
+	background: #f8f8f8;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	padding: .25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.casus-lists li .casus-info .info {
+	display: flex;
+	flex-direction: column;
+	margin-top: .06rem;
+	font-size: 0.28rem;
+	width: 60%;
+}
+
+.casus-lists li .casus-info .info h4 {
+	color: #000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.3rem;
+	font-weight: 400;
+}
+
+.casus-lists li .casus-info .info-btn {
+	width: 1.8rem;
+	height: 0.64rem;
+	border-radius: 0.08rem;
+	background: #00ae68;
+	color: #fff;
+	font-size: 0.26rem;
+	text-align: center;
+	line-height: 0.64rem;
+}
+
+.casus-lists li:nth-child(1) .image-center {
+	background: url(../img/ead1b4dfc8da52c0029b414e246b69f8.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.casus-lists li:nth-child(2) .image-center {
+	background: url(../img/f036ac8a7e3ab8674b59a9b070e8ba45.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.casus-lists li:nth-child(3) .image-center {
+	background: url(../img/c917d1a39aeb6aa321aeeb06b73ad4ee.jpg);
+	background-size: cover;
+	background-position: top center;
+}

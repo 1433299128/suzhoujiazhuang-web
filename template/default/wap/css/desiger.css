@@ -1,0 +1,157 @@
+.page{
+	width: 100%;
+	    height: auto;
+	    position: relative;
+		/* left: calc((100% - 7.5rem) / 2) */
+}
+.page-container{
+	    width: 100%;
+	    height: auto;
+	    padding-bottom: 1.4rem;
+}
+.designer-show{
+	width: 100%;
+	    height: auto;
+}
+.designer-show .designer{
+	    height: auto;
+	    padding: .3rem;
+	    background: url(../img/sjs_s_bg.jpg);
+	    background-size: cover;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-justify-content: space-between;
+	    justify-content: space-between;
+}
+.designer-show .designer .designer-image{
+	width: 2.2rem;
+	    height: 3.4rem;
+	    border: .05rem solid #c79e68;
+}
+.designer-show .designer .designer-info{
+	width: 4.4rem;
+	    height: auto;
+}
+.designer-show .designer .designer-info .title{
+	font-size: .36rem;
+	    font-weight: 600;
+	    color: #c79e68;
+}
+.designer-show .designer .designer-info .name{
+	display: -webkit-flex;
+	    display: flex;
+	    line-height: .8rem;
+	    margin-top: -.15rem;
+}
+.designer-show .designer .designer-info .name h3{
+	color: #c79e68;
+	    margin-right: .2rem;
+	    font-size: .3rem;
+}
+.star{
+	display: -webkit-flex;
+	    display: flex;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    height: .8rem;
+}
+i{
+	display: inline-block;
+	    background-size: 100% 100%;
+}
+.star i{
+	    background-image: url(../img/star.png);
+	    width: .22rem;
+	    height: .22rem;
+	    margin: 0 .02rem;
+}
+.designer-show .designer .designer-info .flag{
+	font-size: .24rem;
+	    line-height: .6rem;
+	    border-bottom: 1px solid #959595;
+	    margin-top: -.25rem;
+}
+.designer-show .designer .designer-info .info h4{
+	overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    line-height: .55rem;
+	    font-size: .24rem;
+}
+.designer-show .designer .designer-info .info h5{
+	font-size: .22rem;
+}
+.designer-show .designer .designer-info .info h5 span{
+	color: #00ae66;
+	    font-size: .22rem;
+}
+.designer-show .designer .designer-info .info h5{
+	font-size: .22rem;
+}
+.designer-show .designer .designer-info .info h5:last-child{
+	margin-top: .05rem;
+}
+.designer-show .designer .designer-info .btn{
+	display: -webkit-flex;
+	    display: flex;
+}
+input, button{
+	outline: none;
+	    border: none;
+	    -webkit-appearance: none;
+	    background: none;
+	    touch-action: none;
+}
+.designer-show .designer .designer-info .btn button{
+	    width: 1.7rem;
+	    height: .46rem;
+	    border-radius: .23rem;
+	    color: #fff;
+	    font-size: .24rem;
+	    background: #c79e68;
+	    margin-top: .18rem;
+}
+.designer-show .designer .designer-info .btn a button{
+	    width: 1.7rem;
+	    height: .46rem;
+	    border-radius: .23rem;
+	    color: #fff;
+	    font-size: .24rem;
+	    background: #c79e68;
+	    margin-top: .18rem;
+}
+.designer-show .designer .designer-info .btn button:last-child{
+	background: #000;
+	    margin-left: .2rem;
+}
+.designer-show .designer .designer-info .btn a button:last-child{
+	background: #000;
+	    margin-left: .2rem;
+}
+.designer-show .designer .designer-info .btn a:nth-child(1) button{
+	width: 1.7rem;
+	    height: .46rem;
+	    border-radius: .23rem;
+	    color: #fff;
+	    font-size: .24rem;
+	    background: #c79e68;
+	    margin-top: .18rem;
+}
+.designer-show .idea{
+	background: #fff;
+	    padding: .3rem .8rem;
+	    height: auto;
+}
+.designer-show .idea *{
+	    text-align: center;
+}
+.designer-show .idea .title{
+	font-size: .32rem;
+}
+h6{
+font-size: 0.2rem;	
+}
+.designer-show .idea p{
+	font-size: .26rem;
+	    line-height: .4rem;
+}

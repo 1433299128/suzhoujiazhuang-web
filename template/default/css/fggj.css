@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	    height: auto;
+	    min-width: 1300px;
+	    overflow: auto;
+}
+.fggj-container {
+	background: url(../img/fggj-bg.jpg)center top no-repeat;
+	width: 100%;
+}
+
+.fggj-container .ztbd {
+	width: 1200px;
+	position: relative;
+	height: auto;
+	margin: auto;
+}
+
+.fggj-container .ztbd img {
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
+	border: 0;
+}
+
+.sf {
+width: 1920px;
+    height: 850px;
+    position: absolute;
+    top: 0;
+    right: -360px;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.sf img {
+	width: 100%;
+	height: 850px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sf .bgsfbox {
+	width: 100%;
+	    height: 850px;
+	    transform: scale(1,1); 
+	    -webkit-transform: scaleX(1,1);
+	    -moz-transform: scaleX(1,1);
+	    -webkit-animation: 60s sf linear infinite normal; 
+	    animation: 60s sf linear infinite normal; 
+	    position: relative;
+	background: url(../img/fs.jpg);
+	background-size: 1920px 850px;
+	background-position: top center;
+}
+
+.fggj-container .ztbd .bmtopfg {
+	width: 1150px;
+	height: 136px;
+	position: absolute;
+	top: 138px;
+	left: 25px;
+	background: url(../img/ly.png);
+	background-size: 1150px 136px;
+	z-index: 4;
+}
+
+.fggj-container .ztbd .bmtopfg input {
+	height: 39px;
+	padding-left: 10px;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 34px;
+	border: 0;
+	border-radius: 12px;
+	background: none;
+	outline: none;
+}
+
+.fggj-container .ztbd .swiper1-tab {
+	width: 1080px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 474px;
+	left: 60px;
+	height: 55px;
+}
+
+.fggj-container .ztbd .swiper1-tab div {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.fggj-container .ztbd .swiper1-tab div img {
+	width: auto;
+	height: auto;
+	position: absolute;
+
+}
+
+.fggj-container .ztbd .swiper1-tab .default2 {
+	display: none;
+}
+
+.fggj-container .ztbd .zsbm {
+	width: 480px;
+	height: 34px;
+	position: absolute;
+	top: 401px;
+	left: 196px;
+}
+
+.fggj-container .ztbd .zsbm input {
+	height: 31px;
+	padding-left: 10px;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 1px;
+	border: 0;
+	border-radius: 12px;
+	background: none;
+	outline: none;
+}
+
+.fggj-container .ztbd .teamBox {
+	width: 1200px;
+	height: 408px;
+	position: absolute;
+	top: 183px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 9;
+}
+
+.fggj-container .ztbd .teamBox .onn {
+	display: none;
+}
+
+.fggj-container .ztbd .teamBox div:hover {
+	box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+	z-index: 10;
+}
+
+.fggj-container .from input {
+	position: absolute;
+	width: 272px;
+	height: 66px;
+	font-size: 18px;
+	background: none;
+	border: 0;
+	outline: none;
+	color: #fff;
+}

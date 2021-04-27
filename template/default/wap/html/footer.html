@@ -1,0 +1,813 @@
+<footer>
+	<ul style="background: none;border: 0;">
+		<a href="{pboot:sitedomain}">
+			<li>
+				<i></i>
+				<h4>首页</h4>
+			</li>
+		</a>
+		<a href="javascript:void(0);" id="hqdz">
+			<li>
+				<i></i>
+				<h4>获取地址</h4>
+			</li>
+		</a>
+		<a href="tel:{pboot:companyphone}">
+			<li>
+				<i></i>
+				<h4>电话咨询</h4>
+			</li>
+		</a>
+		{pboot:sort scode=46}
+		<a href="[sort:link]">
+			<li>
+				<i></i>
+				<h4>联系我们</h4>
+			</li>
+		</a>
+		{/pboot:sort}
+		<a href="javascript:void(0);" id="zxbj">
+			<li>
+				<i></i>
+				<h4>装修报价</h4>
+			</li>
+		</a>
+	</ul>
+</footer>
+
+
+
+
+<style type="text/css">
+	.floatRightBJ{
+		width: 50px;
+		    height: 44px;
+		    border-radius: 22px;
+		    z-index: 999;
+		    position: fixed;
+		    bottom: 300px;
+		    right: 0;
+		   /* background-color: #000; */
+		    color: #fff;
+		    text-align: center;
+		    padding-top: 6px;
+		    font-size: 12px;
+		    background-image: url({pboot:sitetplpath}/img/bjright.png);
+		    background-size: cover;
+	}
+	
+</style>
+
+<div class="floatRightBJ"></div>
+
+		<style type="text/css">
+					.mdFullInd .box{
+						    position: absolute;
+						    top: 50%;
+						    left: 50%;
+						    width: 100%;
+						    max-width: 720px;
+						    transform: translate(-50%,-50%);
+					}
+					.mdFullInd .container{
+						position: relative;
+							    margin: 0 0.1rem;
+							    background: url({pboot:sitetplpath}/img/mdFullInd_bg.png) no-repeat;
+							    background-size: 100% 100%;
+					}
+					.mdFullInd .closeBtn{
+						z-index: 2;
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 30px;
+						height: 30px;
+						opacity: .3;
+						padding: 6px 5px;
+						line-height: 30px;
+						text-align: center;
+						font-size: 30px;
+						color: #252525;
+					}
+					.mdFullInd .ht{
+						padding-top: 20.57142857%;
+						    text-indent: -999em;
+						    background: url({pboot:sitetplpath}/img/mdFullInd_ht.png) no-repeat;
+						    background-size: 100% auto;
+					}
+					.mdFullInd .ct{
+						/* width: 87.85714285714286%; */
+						    margin: 0 auto;
+					}
+					.mdFullInd .ct .bd{
+						overflow: hidden;
+						    padding: 10px 8.130081300813008% 0;
+						    background: #FFF;
+						    border-radius: 4px;
+						    margin-bottom: 10px;
+					}
+					
+					.mdFullInd .ct .bd .table{
+						display: -webkit-box;
+						    line-height: 34px;
+						    margin-bottom: 15px;
+					}
+					.mdFullInd .ct .bd .table .left{
+						display: block;
+						    width: 80px;
+						    font-weight: bold;
+						    color: #252525;
+					}
+					
+					.mdFullInd .ct .bd .table .left .red, .mdFullInd .ct .bd .table label{
+						display: none;
+					}
+					.mdFullInd .ct .bd .table .right{
+						    -webkit-box-flex: 1;
+						
+					}
+					
+					.mdFullInd .ct .bd .table .right .input-text{
+						background: none;
+						    border-radius: 0;
+						    color: #848484;
+						    border: 1px solid #DEDCDC;
+						    box-sizing: border-box;
+						    font-size: 0.24rem;
+						    font-family: inherit!important;
+						    color: #6A6969;
+						    width: 100%;
+						    height: 34px;
+						    padding-left: 10px;
+							min-width: 189px;
+					}
+					.mdFullInd .ct .bd .table .right .add_on2{
+						    position: absolute;
+						    right: 10px;
+						    top: 0;
+						    color: #252525;
+					}
+					.clear{
+						clear: both;
+					}
+					.mdFullInd .ct .bd .table{
+						display: -webkit-box;
+						    line-height: 34px;
+						    margin-bottom: 15px;
+					}
+					.mdFullInd .ct .bd .table .left{
+						display: block;
+						    width: 80px;
+						    font-weight: bold;
+						    color: #252525;
+					}
+					.mdFullInd .ct .bd .table .left .red, .mdFullInd .ct .bd .table label{
+						display: none;
+					}.mdFullInd .ct .bd .table .right{
+						-webkit-box-flex: 1;
+					}
+					.mdFullInd .ct .cls_btn .btn{
+						background: #C62828;
+						    color: #FFF;
+						    border: 0;
+						    height: 34px;
+						    line-height: 34px;
+					}
+					@media only screen and (max-width: 440px)
+						.mdFullInd .ct .bd{
+							padding: 10px 4% 0;
+						}
+						
+						@media only screen and (max-width: 400px)
+						.mdFullInd .ct .bd .table .left {
+						    display: none;
+						}
+						@media only screen and (max-width: 400px)
+						.mdFullInd .ct .bd .table .left {
+						    display: none;
+						}
+				</style>
+
+<div style="
+    
+    
+    position: fixed;
+    top: 0;
+     left: 0; 
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    z-index: 2022;
+
+" id="left-tc"
+class="mdFullInd">
+<div class="box">
+	<div class="container" style="width: auto;padding: 0;">
+		<a href="javascript:void(0)" class="closeBtn">×</a>
+		<div class="ht imgh">免费获取装修报价</div>
+	    
+		<div class="ct">
+			<form action="{pboot:form fcode=7}"  method="post">	
+				
+		
+				<div class="bd"">
+	                <div class="table ext cls_area">
+	                    <div class="left"><span class="red">*</span> 房屋面积：</div>
+	                    <div class="right">
+	                        <div style="position: relative;">
+								<input type="number" class="input-text" name="size" id="area" value="" placeholder="请输入您的房屋面积"">
+	                                    <span class="add_on2">㎡</span>
+							</div>
+						</div>
+		                <div class="clear"></div>
+					</div>
+					<div class="table ext cls_phone">
+	                    <div class="left"><span class="red">*</span> 手机号码：</div>
+	                    <div class="right">
+	                        <div>
+								<input type="number" class="input-text" name="tel" id="tel" value="" placeholder="请输入您的电话号码">
+	                        </div>
+	                    </div>
+	                    <div class="clear"></div>
+	                </div>
+					<div class="table cls_btn">
+	                	<div class="right">
+							<input style="width: 100%" type="submit" class="btn" value=" 获取报价 ">
+	                    </div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+
+
+
+
+</div>
+
+
+<script>
+	$(function() {
+		$(".mdFullInd").hide();
+		$(".floatRightBJ").click(function() {
+			/* console.log(1) */
+			$(".mdFullInd").show();
+		});
+		$(".closeBtn").click(function() {
+			/* console.log(1) */
+			$(".mdFullInd").hide();
+		});
+	})
+</script>
+
+
+<style type="text/css">
+	.jq-alert {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, .3);
+		z-index: 999999999;
+	}
+
+	.jq-alert .alert {
+		background-color: #fff;
+		width: 80%;
+		height: auto;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.jq-alert .alert .title {
+		position: relative;
+		margin: 0;
+		font-size: .3rem;
+		height: .8rem;
+		line-height: .8rem;
+		text-align: center;
+		font-weight: 400;
+		color: rgba(0, 0, 0, .8);
+	}
+
+	.jq-alert .alert .content {
+		padding: 0 .3rem .3rem;
+		font-size: .28rem;
+		color: rgba(0, 0, 0, .6);
+	}
+
+	.jq-alert .alert .content .prompt {
+		width: 100%;
+	}
+
+	.jq-alert .alert .content .prompt .prompt-content {
+		font-size: .28rem;
+		color: rgba(0, 0, 0, .54);
+	}
+
+	.jq-alert .alert .content .prompt .prompt-text {
+		background: 0 0;
+		border: 0;
+		outline: 0;
+		width: 100%;
+		height: .6rem;
+		box-sizing: border-box;
+		margin-top: .2rem;
+		background-color: #fff;
+		border: 1px solid #dcdcdc;
+		text-indent: .1rem;
+		font-size: .26rem;
+	}
+
+	.jq-alert .alert .fd-btn {
+		position: relative;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.jq-alert .alert .fd-btn a {
+		width: 100%;
+		height: .8rem;
+		font-size: .26rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		color: rgba(0, 0, 0, .8);
+	}
+
+	.jq-alert .alert .fd-btn a.cancel {
+		position: relative;
+		color: rgba(0, 0, 0, .5);
+	}
+
+	.jq-alert .alert .fd-btn a.cancel:after {
+		content: "";
+		position: absolute;
+		top: .1rem;
+		right: 0;
+		width: 1px;
+		height: .6rem;
+		background-color: #f3f3f3;
+	}
+
+	.jq-alert .alert .fd-btn a.confirm {
+		color: #2196f3;
+	}
+</style>
+<form action="{pboot:form fcode=8}" method="post">
+	<div class="jq-alert" id="jq-alert">
+		<div class="alert">
+			<h2 class="title">提示</h2>
+			<div class="content">
+				<div class="prompt">
+					<p class="prompt-content">
+						<!-- 公司地址将发送到您的手机 -->请输入手机号码。我们工作人员将于您联系
+					</p><input type="tel" class="prompt-text" placeholder="请输入您的手机号码" name="tel" required>
+				</div>
+			</div>
+			<div class="fd-btn"><a href="javascript:void(0);" class="cancel" id="cancel">取消</a>
+				<a href="javascript:void(0);" class="confirm"><button type="submit"
+						style="background: transparent;border: none;color: #2196f3;">确定</button></a>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	.layui-layer {
+		-webkit-overflow-scrolling: touch;
+		top: 150px;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		background-color: #fff;
+		-webkit-background-clip: content;
+		border-radius: 2px;
+		box-shadow: 1px 1px 50px rgb(0 0 0 / 30%);
+	}
+
+	.layui-layer,
+	.layui-layer-shade {
+		position: fixed;
+		_position: absolute;
+		pointer-events: auto;
+	}
+
+	.layui-layer-page .layui-layer-content {
+		position: relative;
+		overflow: auto;
+	}
+
+	.reservation-designer {
+		width: 6rem;
+		height: 7.8rem;
+		background: url({pboot:sitetplpath}/img/popup_designer1.jpg);
+		background-size: 6rem 7.8rem;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.footer-quote {
+		background: url({pboot:sitetplpath}/img/popup_quote1.jpg);
+		background-size: 6rem 8.8rem;
+		height: 6.3rem;
+	}
+
+	.reservation-designer h4 {
+		text-align: center;
+		padding-top: .35rem;
+		font-size: .36rem;
+	}
+
+	.reservation-designer h6 {
+		text-align: center;
+		color: #c9c9c9;
+		margin: .05rem 0 .1rem;
+	}
+
+	.reservation-designer .input-wrap {
+		padding: 0 .6rem;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.reservation-designer .input-wrap label {
+		display: block;
+		width: 100%;
+		font-size: 0.26rem;
+		margin: 0.16rem 0 0 .1rem;
+	}
+
+	.reservation-designer .input-wrap input,
+	.reservation-designer .input-wrap select {
+		width: 100%;
+		height: 0.6rem;
+		border-radius: 0.1rem;
+		border: 1px solid #c9c9c9;
+		text-indent: 0.2rem;
+		-webkit-transition: all 0.5s;
+		outline: none;
+		background: #fff;
+		border-radius: .06rem;
+		font-size: .24rem;
+	}
+
+	.reservation-designer .input-wrap select {
+		width: 1.3rem;
+	}
+
+	.reservation-designer .input-wrap .area {
+		width: 3.1rem;
+	}
+
+	.reservation-designer button {
+		width: 100%;
+		height: .7rem;
+		color: #fff;
+		background: #19a87c;
+		border-radius: .08rem;
+		font-size: .26rem;
+		margin-top: .3rem;
+	}
+
+	input,
+	button {
+		outline: none;
+		border: none;
+		-webkit-appearance: none;
+		background: none;
+		touch-action: none;
+	}
+
+	.reservation-designer .close {
+		width: .6rem;
+		height: .6rem;
+		position: absolute;
+		top: .1rem;
+		right: .1rem;
+		background: url({pboot:sitetplpath}/img/close1.png);
+		background-size: cover;
+	}
+</style>
+
+
+
+<form action="{pboot:form fcode=9}" method="post">
+	<div style="
+    
+    
+    position: fixed;
+    top: 0;
+     left: 0; 
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    z-index: 2022;
+
+" id="layui-layer100001">
+		<div class="layui-layer layui-layer-page" id="layui-layer100001" style="z-index: 299325; top: auto; left:auto;">
+			<div class="layui-layer-content">
+				<div class="reservation-designer footer-quote">
+					<h4>5秒获取装修信息</h4>
+					<h6>全国26城数据参考，精准度高达95%</h6>
+					<div class="input-wrap">
+						<label for="">您的称呼：</label>
+						<input type="text" placeholder="请输入您的称呼" id="name" name="name" required>
+						<label for="">手机号码：</label>
+						<input type="number" placeholder="请输入您的手机号码" id="tel" name="tel" required>
+						<label for="">装修城市：</label>
+						<select id="citySelect" name="dizhi">
+							<option value="成都">成都</option>
+							<option value="北京">北京</option>
+							<option value="南充">南充</option>
+							<option value="贵阳">贵阳</option>
+							<option value="西安">西安</option>
+							<option value="昆明">昆明</option>
+							<option value="武汉">武汉</option>
+							<option value="长沙">长沙</option>
+							<option value="合肥">合肥</option>
+							<option value="南京">南京</option>
+							<option value="重庆">重庆</option>
+							<option value="济宁">济宁</option>
+							<option value="天津">天津</option>
+							<option value="苏州" selected="">苏州</option>
+							<option value="济南">济南</option>
+							<option value="广州">广州</option>
+							<option value="大连">大连</option>
+							<option value="青岛">青岛</option>
+							<option value="福州">福州</option>
+							<option value="沈阳">沈阳</option>
+							<option value="太原">太原</option>
+							<option value="杭州">杭州</option>
+							<option value="无锡">无锡</option>
+						</select>
+						<input type="number" placeholder="请输入房屋面积" id="area" class="area" name="size" required>
+
+						<button class="submit">发送报价到手机</button>
+					</div>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+</form>
+
+
+
+<!-- <form action="{pboot:form fcode=9}" method="post">
+	<div style="
+    
+    
+    position: fixed;
+    top: 0;
+     left: 0; 
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    z-index:2050;
+
+" id="sjs">
+		<div class="layui-layer layui-layer-page" style="z-index: 299325; top:auto; left: auto;">
+			<div class="layui-layer-content">
+				<div class="reservation-designer footer-quote">
+					<h4>预约设计师</h4>
+					<h6>APPOINTMENT DESIGNER</h6>
+					<div class="input-wrap">
+						<label for="">您的称呼：</label>
+						<input type="text" placeholder="请输入您的称呼" id="name" name="name">
+						<label for="">手机号码：</label>
+						<input type="number" placeholder="请输入您的手机号码" id="tel" name="tel">
+						<label for="">装修城市：</label>
+						<select id="citySelect" name="dizhi">
+							<option value="成都">成都</option>
+							<option value="北京">北京</option>
+							<option value="南充">南充</option>
+							<option value="贵阳">贵阳</option>
+							<option value="西安">西安</option>
+							<option value="昆明">昆明</option>
+							<option value="武汉">武汉</option>
+							<option value="长沙">长沙</option>
+							<option value="合肥">合肥</option>
+							<option value="南京">南京</option>
+							<option value="重庆">重庆</option>
+							<option value="济宁">济宁</option>
+							<option value="天津">天津</option>
+							<option value="苏州" selected="">苏州</option>
+							<option value="济南">济南</option>
+							<option value="广州">广州</option>
+							<option value="大连">大连</option>
+							<option value="青岛">青岛</option>
+							<option value="福州">福州</option>
+							<option value="沈阳">沈阳</option>
+							<option value="太原">太原</option>
+							<option value="杭州">杭州</option>
+							<option value="无锡">无锡</option>
+						</select>
+						<input type="number" placeholder="请输入房屋面积" id="area" class="area" name="size">
+
+						<button class="submit">发送报价到手机</button>
+					</div>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	$(function() {
+		$(".jq-alert").hide();
+		$("#layui-layer100001").hide();
+		$("#sjs").hide();
+
+
+		$("#hqdz").click(function() {
+			/* console.log(1) */
+			$(".jq-alert").show();
+		});
+		$("#cancel").click(function() {
+			/* console.log(1) */
+			$(".jq-alert").hide();
+		});
+
+		$("#layui-layer100001").hide();
+		$("#zxbj").click(function() {
+			/* console.log(1) */
+			$("#layui-layer100001").show();
+		});
+		$(".close").click(function() {
+			/* console.log(1) */
+			$("#layui-layer100001").hide();
+		});
+
+
+	})
+</script>
+
+
+
+<script>
+	// function hqbj(){
+	// 	$("#layui-layer100001").show();	
+	// }
+	// $(".close").click(function(){
+	// $("#layui-layer100001").hide();
+	// }
+
+	$(function() {
+		$('.hqbj').click(function() {
+
+			$("#layui-layer100001").show();
+		});
+
+		$('.yykdj').click(function() {
+
+			$(".jq-alert").show();
+		});
+
+/* 		$('.yysjs').click(function() {
+
+			$("#sjs").show();
+		});
+
+
+		$(".close").click(function() {
+			
+			$("#sjs").hide();
+		}); */
+
+	});
+</script>
+
+
+
+
+
+
+
+<script>
+	$(function() {
+		function setCurrentSlide(ele, index) {
+			$(".swiper1 .swiper-slide").removeClass("selected");
+			ele.addClass("selected");
+			//swiper1.initialSlide=index;
+		}
+
+		var swiper1 = new Swiper('.swiper1', {
+			//					设置slider容器能够同时显示的slides数量(carousel模式)。
+			//					可以设置为number或者 'auto'则自动根据slides的宽度来设定数量。
+			//					loop模式下如果设置为'auto'还需要设置另外一个参数loopedSlides。
+			slidesPerView: 5.5,
+			paginationClickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+			spaceBetween: 10, //slide之间的距离（单位px）。
+			freeMode: true, //默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合。
+			loop: true, //是否可循环
+			onTab: function(swiper) {
+				var n = swiper1.clickedIndex;
+			}
+		});
+		swiper1.slides.each(function(index, val) {
+			var ele = $(this);
+			ele.on("click", function() {
+				setCurrentSlide(ele, index);
+				swiper2.slideTo(index, 500, false);
+				//mySwiper.initialSlide=index;
+			});
+		});
+
+	});
+</script> 
+
+
+
+
+
+<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 50) {
+			$("header>nav").addClass("nav-active");
+		} else {
+			$("header>nav").removeClass("nav-active");
+		}
+	});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/hxjx_tz.css" />
+		<div class="page">
+			<div class="page-container">
+				<div class="analysis-show">
+					<div class="image-center headimg" style="background-image: url({content:ico})"></div>
+					<ul class="house-info">
+						<li>
+							<i></i>
+							<div>
+								<h5>所属小区：&nbsp;{content:title}</h5>
+							</div>
+						</li>
+						<li>
+							<i></i>
+							<div>
+								<h5>服务客户：&nbsp;54人</h5>
+							</div>
+						</li>
+						<li>
+							<i></i>
+							<div>
+								<h5>服务优势：</h5>
+								{content:content}
+							</div>
+						</li>
+					</ul>
+
+
+					<div class="house-type">
+						<div class="title">设计团队倾力打造·<span>户型深度解析(一)</span></div>
+						<div class="flag">用心打造{content:title}</div>
+						<ul class="house-type-image">
+							<li class="image-center"
+								style="background-image: url({content:ext_tuanzhuang_pic_1})">
+								<div>户型一</div>
+							</li>
+							<li class="image-center"
+								style="background-image: url({content:ext_tuanzhuang_pic_2})">
+							</li>
+							<li class="image-center"
+								style="background-image: url({content:ext_tuanzhuang_pic_3})">
+							</li>
+							<li class="image-center"
+								style="background-image: url({content:ext_tuanzhuang_pic_4})">
+							</li>
+						</ul>
+						<div class="explain">
+							<div class="title">户型解析</div>
+							{content:ext_tuanzhuang_analysis}
+							<div class="title">户型解析</div>
+							{content:ext_tuanzhuang_idea}
+						</div>
+						<div class="common-image"><img src="" alt=""></div>
+					</div>
+				</div>
+				<div class="case-show">
+					<form action="{pboot:form fcode=7}"  method="post">
+					<div class="formnew">
+						<input type="text" name="size" placeholder="输入您的房屋面积" required>
+						<input type="tel" name="tel" placeholder="输入电话号码，发送报价明细至手机" required>
+						<input type="submit" class="input_button" value="立即获取报价">
+					</div>
+					</form>	
+					<div class="case-show">
+					<ul class="case-show-lists">
+						
+						{pboot:list scode={sort:scode}}
+						
+						<li>
+							<a href="[list:link]">
+								<div class="image-center case-image"style="background: url([list:ico]);background-size: cover;background-position: top center;"></div>
+								<h5>[list:title]</h5>
+							</a>
+						</li>
+						
+						{/pboot:list}
+						<!-- <li>
+							<a href="">
+								<div class="image-center case-image"></div>
+								<h5>越湖名邸112平简美</h5>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="image-center case-image"></div>
+								<h5>保利悦都142平欧式风格</h5>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="image-center case-image"></div>
+								<h5>【首开如院】149㎡简美风</h5>
+							</a>
+						</li> -->
+						<!-- <div class="layui-flow-more">没有更多了</div> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		{include file=footer.html}

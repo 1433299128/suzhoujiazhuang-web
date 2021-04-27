@@ -1,0 +1,45 @@
+.page {
+	width: 7.5rem;
+	height: auto;
+	position: relative;
+	left: calc((100% - 7.5rem) / 2)
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+
+.m-special-wrap {
+	width: 7.5rem;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+.m-special-img {
+	position: relative;
+}
+
+.m-special-img {
+	width: 7.5rem;
+	height: auto;
+}
+
+.m-special-img .item {
+	position: absolute;
+	width: 2.85rem;
+	height: auto;
+}
+
+.m-special-img .item h5 {
+	font-size: .25rem;
+	line-height: .4rem;
+	font-weight: 400;
+	color: #000;
+}
+
+.m-special-img .item p {
+	font-size: .25rem;
+}

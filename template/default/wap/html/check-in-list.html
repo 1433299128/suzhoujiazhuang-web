@@ -1,0 +1,49 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/jzgl.css" />
+		<div class="page">
+			<div class="page-container">
+				{include file=zxgldh.html}
+				<ul class="knowledge-lists">
+					
+					
+					{pboot:list scode=20 num=999999999}
+					<li>
+						<a href="[list:link]">
+							<div class="image-center knowledge-image" style="background: url([list:ico]);background-size: cover;background-position: top center;"></div>
+							<div class="knowledge-info">
+								<div class="title">
+									[list:title]
+								</div>
+								<div class="date">
+									[list:date]
+								</div>
+								<div class="description">
+									[list:content]
+								</div>
+							</div>
+							<i></i>
+						</a>
+					</li>
+
+					{/pboot:list}
+
+				</ul>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{include file=footer.html}

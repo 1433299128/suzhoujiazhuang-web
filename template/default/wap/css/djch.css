@@ -1,0 +1,104 @@
+.page {
+	width:100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% - 7.5rem) / 2) */
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+
+.exclusive-wrap a {
+	display: block;
+}
+
+.exclusive-special {
+	width: 6.9rem;
+	height: auto;
+	/* margin: .3rem .3rem; */
+	box-shadow: 0 0.05rem 0.25rem #cfcfd0;
+	margin: 0 auto;
+	margin-bottom: .3rem;
+}
+
+.exclusive-special .exclusive-image {
+	width: 6.9rem;
+	height: 3rem;
+	position: relative;
+}
+
+.exclusive-special .exclusive-image div {
+	position: absolute;
+	top: .2rem;
+	right: .2rem;
+	width: auto;
+	height: .48rem;
+	line-height: .48rem;
+	padding: 0 .3rem;
+	color: #fff;
+	font-size: .26rem;
+	background: #fd9629;
+	border-radius: .24rem;
+}
+
+.exclusive-special .title {
+	height: auto;
+	padding: .2rem .24rem;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	align-items: center;
+}
+
+.exclusive-special .title h5 {
+	font-size: 0.24rem;
+	font-weight: 400;
+	color: #000;
+}
+
+.exclusive-special .title i {
+	width: .22rem;
+	height: .22rem;
+	background: url(../img/dj_icon1.png);
+	display: inline-block;
+	background-size: 100% 100%;
+}
+
+.exclusive-wrap a:nth-child(1) .image-center {
+	background: url(../img/28765cd3fb7876243ec04848e64c5c33.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.exclusive-wrap a:nth-child(2) .image-center {
+	background: url(../img/1e073ee65b484fc96dc8b2d431805ffb.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.exclusive-wrap a:nth-child(3) .image-center {
+	background: url(../img/0228995cb734a0a3679ff0797ae129d4.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.exclusive-wrap a:nth-child(4) .image-center {
+	background: url(../img/eccdabf387850ab0600163bfda4dddef.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.exclusive-wrap a:nth-child(5) .image-center {
+	background: url(../img/f5d0ea85b97ea5e678c0c14baf5947b8.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.exclusive-wrap a:nth-child(6) .image-center {
+	background: url(../img/39b9b3199745b9de00aefeae27ce3a3c.jpg);
+	background-size: cover;
+	background-position: top center;
+}

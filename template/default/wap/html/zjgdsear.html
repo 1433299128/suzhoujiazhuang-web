@@ -1,0 +1,87 @@
+{include file=header.html}
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/hxjx.css" />
+		<div class="page">
+			<div class="page-container">
+				<div class="banner analysis-list-banner-wrap">
+					<div class="swiper-container casus-banner">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="">
+									<img src="{pboot:sitetplpath}/img/e30c6b9973977ec4d95f07a4b60984b9.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="analysis-list-search">
+					<style type="text/css">
+						.button-btn{
+							text-align: center;
+							    background: #c79e68;
+							    color: #fff;
+							    width: 1.2rem;
+								outline: none;
+								border: none;
+						}
+					</style>
+					<form action="{pboot:scaction}"  method="get" style="display:flex;">
+						<input type="text" name="keyword" value="" placeholder="输入小区名称" required>
+						<input type="hidden" name="searchtpl" value="zjgdsear.html" >
+						<input type="hidden" name="scode" value="48" >
+						
+						<button type="submit" class="button-btn">搜索</button>
+					</form>
+				</div>
+
+
+				<ul class="analysis-lists">
+					{pboot:search num=999999999}
+					<li>
+						<a href="[search:link]">
+							<div class="image-center analysis-image" style="background: url([search:ico]);background-size: cover;background-position: top center;">
+								<div>服务客户<br><span>54</span>位</div>
+							</div>
+
+							<div class="title">[search:title]</div>
+						</a>
+					</li>
+					{/pboot:search}
+
+					
+
+				</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{include file=footer.html}
+		

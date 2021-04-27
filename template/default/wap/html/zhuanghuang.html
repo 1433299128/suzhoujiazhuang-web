@@ -1,0 +1,75 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/zxzh_tz.css" />
+		<div class="page">
+			<div class="page-container">
+				<div class="knowledge-show">
+					<div class="knowledge-title">{content:title}</div>
+					<div class="knowledge-author">发布时间：{content:date}&nbsp;&nbsp;作者：{content:author}</div>
+					<div class="knowledge-content">
+						<style type="text/css">
+							.knowledge-content img{
+								width: 100% !important;
+							}
+						</style>
+						{content:ext_zxzh_content}
+					</div>
+					<style type="text/css">
+						.knowledge-tags a {
+							margin-right: 0.1rem
+						}
+					</style>
+					<!-- <div class="knowledge-content knowledge-tags" style="margin-top: 0.3rem">
+						<a>标签：</a>
+						<a href="">基础装修项目报价</a>
+						<a href="">装修项目报价</a>
+						<a href="">基础装修报价</a>
+					</div> -->
+				</div>
+				<form action="{pboot:form fcode=7}"  method="post">
+				<div class="formnew">
+					<input type="text" name="size" placeholder="输入您的房屋面积" required>
+					<input type="tel" name="tel" placeholder="输入电话号码，发送报价明细至手机" required>
+					<input type="submit" class="input_button" value="立即获取报价">
+				</div>
+				</form>
+				<div class="case-show">
+					<ul class="case-show-lists">
+						{pboot:list scode={sort:scode}}
+						
+						<li>
+							<a href="[list:link]">
+								<div class="image-center case-image"style="background: url([list:ico]);background-size: cover;background-position: top center;"></div>
+								<h5>[list:title]</h5>
+							</a>
+						</li>
+						
+						{/pboot:list}
+						<!-- <li>
+							<a href="">
+								<div class="image-center case-image"></div>
+								<h5>越湖名邸112平简美</h5>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="image-center case-image"></div>
+								<h5>保利悦都142平欧式风格</h5>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="image-center case-image"></div>
+								<h5>【首开如院】149㎡简美风</h5>
+							</a>
+						</li> -->
+						<!-- <div class="layui-flow-more">没有更多了</div> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		{include file=footer.html}

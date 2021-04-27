@@ -1,0 +1,134 @@
+.page {
+	width:100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% - 7.5rem) / 2) */
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+
+.knowledge-nav {
+	height: auto;
+	padding: .35rem;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	background: #fff;
+}
+
+.knowledge-nav li {
+	width: auto;
+	height: auto;
+	margin-right: 0.2rem;
+}
+
+.knowledge-nav li a {
+	display: block;
+}
+
+.knowledge-nav li a h4 {
+	text-align: center;
+	font-size: .27rem;
+	margin-top: .16rem;
+	font-weight: 400;
+	color: 000;
+}
+
+.knowledge-lists {
+	height: auto;
+	margin-top: .2rem;
+	background: #fff;
+	padding-bottom: .2rem;
+}
+
+.knowledge-lists li {
+	height: auto;
+	padding: .3rem .2rem;
+	border-bottom: 2px solid #efefef;
+}
+
+.knowledge-lists li a {
+	display: flex;
+	justify-content: space-around;
+}
+
+.knowledge-lists li a .knowledge-image {
+	width: 2.4rem;
+	height: 2rem;
+	border-radius: .1rem;
+}
+
+.knowledge-lists li a .knowledge-info {
+	width: 4rem;
+	height: 100%;
+}
+
+.knowledge-lists li a .knowledge-info .title {
+	font-size: .28rem;
+	font-weight: 600;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: .06rem;
+}
+
+.knowledge-lists li a .knowledge-info .date {
+	font-size: .24rem;
+	color: #727272;
+	margin: .08rem 0;
+}
+
+.knowledge-lists li a .knowledge-info .description {
+	font-size: .24rem;
+	color: #727272;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	line-height: .36rem;
+}
+
+.knowledge-lists li a i {
+	width: .2rem;
+	height: 2rem;
+	background: url(../img/jt_icon1.png) center center no-repeat;
+	background-size: .15rem .24rem;
+}
+
+
+
+.knowledge-lists li:nth-child(1) .image-center {
+	background: url(../img/cb6bb864c55dee363db21d9ed0bd5ebc.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.knowledge-lists li:nth-child(2) .image-center {
+	background: url(../img/91ab9b40e73259c9e5d24339d85c396d.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.knowledge-lists li:nth-child(3) .image-center {
+	background: url(../img/df38fd2e98fc6421f7a7bcffcfb28b81.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.knowledge-lists li:nth-child(4) .image-center {
+	background: url(../img/f96f43ed1d59e3b4281322b20e4ece93.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.knowledge-lists li:nth-child(5) .image-center {
+	background: url(../img/cf0c33aa7fcdc6ef5513833fde54f8c8.jpg);
+	background-size: cover;
+	background-position: top center;
+}

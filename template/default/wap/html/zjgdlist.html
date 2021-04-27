@@ -1,0 +1,111 @@
+{include file=header.html}
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/gdzb.css" />
+		<div class="page">
+			<div class="page-container">
+				<div class="site-list">
+					<div class="banner analysis-list-banner-wrap">
+						<div class="swiper-container casus-banner">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<style type="text/css">
+										.analysis-list-banner-wrap img{
+											height: 3.4rem;
+										}
+									</style>
+									<a href="javascript:void();">
+										<img src="{pboot:sitetplpath}/img/e30c6b9973977ec4d95f07a4b60984b9.jpg">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="analysis-site-select site-list-select">
+						<h5>在建状态</h5>
+						<ul>
+							<style type="text/css">
+								.buxian{
+									    width: auto;
+									        height: .5rem;
+									        padding: 0 .2rem;
+									        line-height: .5rem;
+									        border: 1px solid #bfbfbf;
+									        text-align: center;
+									        margin: 0 .1rem .2rem;
+									        float: left;
+								}
+								.xuanzhong{
+									width: auto;
+									    height: .5rem;
+									    padding: 0 .2rem;
+									    line-height: .5rem;
+										border: 1px solid #bfbfbf;
+										text-align: center;
+										margin: 0 .1rem .2rem;
+										float: left;
+									background: #298769;
+									    color: #fff;
+									    border-color: #298769;
+								}
+							</style>
+							{pboot:selectall field=ext_state text=全部 class='buxian'  active='xuanzhong'}
+							{pboot:select field=ext_state}
+							
+							<li {pboot:if('[select:value]'=='[select:current]')}class="active" {/pboot:if}><a href="[select:link]">[select:value]</a></li>
+							{/pboot:select}
+							
+							
+							<!-- <li class="active">全部</li>
+							<li>开工</li>
+							<li>水电验收</li>
+							<li>木作基层验收</li>
+							<li>防水验收</li>
+							<li>墙砖验收</li>
+							<li>地砖验收</li>
+							<li>乳胶漆基层验收</li>
+							<li>油面及乳胶漆面漆验收</li>
+							<li>竣工验收</li> -->
+						</ul>
+						<div class="more-btn"></div>
+					</div>
+					<div class="clear">
+
+					</div>
+					<ul class="production-site-list">
+						{pboot:list num=999999999}
+						<li>
+							<a href="[list:link]">
+								<div class="image-center site-img" style="background: url([list:ico]);background-size: cover;background-position: top center;"></div>
+							</a>
+							<div class="site-info">
+								<a href="">
+									<h4>[list:title]| [list:ext_zjgd_area]</h4>
+									<h5>所属区域：[list:ext_zjgd_city]</h5>
+									[list:content]
+								</a>
+								<a href="javascript:void(0);" class="yykdj">
+									<button><span>预约看工地</span></button>
+								</a>
+							</div>
+						</li>
+						{/pboot:list}
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script>
+			//鼠标按下展开所有标签
+
+			$(".more-btn").click(function() {
+				$(this).toggleClass('more-btn-active').prev().toggleClass("more-btn--ul-active");
+			})
+		</script>
+
+
+{include file=footer.html}

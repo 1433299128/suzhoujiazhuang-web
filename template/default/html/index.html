@@ -1,0 +1,625 @@
+{include file=header.html}
+
+
+
+<div class="index-banner">
+
+	<!-- Swiper -->
+	<div class="swiper-container index-banner-lunbo">
+		<div class="swiper-wrapper">
+
+			{pboot:slide gid=1}
+			<div class="swiper-slide"
+				style="background: url([slide:src]);background-size: auto 100%;background-position: center center;background-repeat: no-repeat;width: 1383px!important;margin-right: 0!important;">
+				<a href="[slide:link]"></a></div>
+			{/pboot:slide}
+
+
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination">
+
+		</div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+
+
+		<script>
+			var swiper = new Swiper('.index-banner-lunbo', {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				autoplay: {
+				    delay: 3000,//1秒切换一次
+				  },
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+
+	</div>
+	
+	<div style="width: 100%;position: absolute;bottom: 40px;left: 0;z-index: 50;">
+		<form action="{pboot:form fcode=3}"  method="post">
+			<div class="banner-info">
+				<h5 id="ne"><i>免费定制</i> 你的专属设计方案</h5>
+				<div class="banner-info-input">
+					<input type="text" class="info" id="name" placeholder="您的称呼" required>
+					<input type="tel" class="info" id="tel" placeholder="填写手机号，获取免费设计名额" required>
+					<input type="submit" value="立即领取" style="background: #00ae66;color: #fff;vertical-align: bottom;cursor: pointer;">
+				</div>
+			</div>
+		</from>	
+	</div>
+
+	
+	
+</div>
+</div>
+
+<div class="product-container">
+	<div class="product-center">
+		<div class="product-five-box">
+			<a href="javascript:void();"><img src="{pboot:sitetplpath}/img/bj_normal.png"></a>
+			<a href="javascript:void();"><img src="{pboot:sitetplpath}/img/sj_normal.png"></a>
+			<a href="javascript:void();"><img src="{pboot:sitetplpath}/img/lf_normal.png"></a>
+			<a href="javascript:void();"><img src="{pboot:sitetplpath}/img/cggd_normal.png"></a>
+			<a href="javascript:void();"><img src="{pboot:sitetplpath}/img/addr_normal.png"></a>
+
+		</div>
+		<div class="title">
+			<h2>明星产品·全屋定制</h2>
+			<h5>风格百变，收纳无BUG，90%家庭的选择</h5>
+		</div>
+		<div class="product-content">
+			<div class="index-left">
+				{pboot:sort scode=2}
+				<a href="[sort:link]" style="display: block;"><img
+						src="{pboot:sitetplpath}/img/9e36d70d969a14863cc06dcca8699dcf.jpg"></a>
+				{/pboot:sort}
+
+
+			</div>
+			<div class="index-right">
+				<div class="p-title">算一算我家装修需要多少钱？</div>
+				<ul class="ul">
+					<li class="active"><a href="javascript:void();">免费报价</a></li>
+					<li><a href="javascript:void();">免费量房</a></li>
+				</ul>
+				
+				
+				<script type="text/javascript">
+					$(".index-right .ul>li").click(function(){
+						$(this).toggleClass('active').siblings().removeClass('active');
+					})
+				</script>
+				
+<form action="{pboot:form fcode=6}"  method="post">					
+				<div class="from">	
+					<div class="city">
+						<input type="text" value="苏州" name="dizhi" required>
+					</div>
+					<div class="tel">
+						<input type="text" value="" name="tel" placeholder="请输入您的手机号码" required>
+					</div>
+					<div class="size">
+						<input type="text" value="" name="size" placeholder="请输入面积" required><i>㎡</i>
+					</div>
+					<div class="button">
+						<a href="javascript:void();">人工精准报价</a>
+						<input type="submit" value="发送报价到手机" />
+					</div>
+					<h6>* 为了您的权益，您的一切信息将被严格保密</h6>
+				</div>
+</form>				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="case">
+	<div class="case-center">
+		<div class="title">
+			<h2>家装案例·精品制造</h2>
+			<h5>美家养成记，格调美学的灵感提案</h5>
+		</div>
+		<div class="case-nav">
+			<a href="/?jzal_1&ext_jzal_list_style=现代">现代</a><span>/</span>
+			<a href="/?jzal_1&ext_jzal_list_style=欧式">欧式</a><span>/</span>
+			<a href="/?jzal_1&ext_jzal_list_style=美式">美式</a><span>/</span>
+			<a href="/?jzal_1&ext_jzal_list_style=新中式">新中式</a><span>/</span>
+			<a href="/?jzal_1&ext_jzal_list_style=北欧">北欧</a><span>/</span>
+			<a href="/?jzal_1/">更多</a>
+		</div>
+		<div class="case-content">
+
+			{pboot:list scode=8 num=3}
+			<div class="item">
+				<a href="[list:link]">
+					<div class="img">
+						<img src="[list:ico]">
+					</div>
+					<div class="text">
+						<span>[list:title]</span>
+						<span>[list:ext_jpal_list_style]</span>
+					</div>
+				</a>
+			</div>
+			{/pboot:list} {pboot:list scode=1 num=3}
+			<div class="item">
+				<a href="[list:link]">
+					<div class="img">
+						<img src="[list:ico]">
+					</div>
+					<div class="text">
+						<span>[list:title]</span>
+						<span>[list:ext_jzal_area]&nbsp;&nbsp;[list:ext_jzal_list_style]&nbsp;&nbsp;[list:ext_house_type]</span>
+					</div>
+				</a>
+			</div>
+			{/pboot:list}
+
+
+
+
+
+
+		</div>
+		<div class="case-space">
+			<a href="dt/?jzal_1&ext_space=客厅"><img src="{pboot:sitetplpath}/img/index_case_kticon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_kticon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=卧室"><img src="{pboot:sitetplpath}/img/index_case_wsicon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_wsicon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=厨房"><img src="{pboot:sitetplpath}/img/index_case_cficon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_cficon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=餐厅"><img src="{pboot:sitetplpath}/img/index_case_cticon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_cticon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=卫生间"><img src="{pboot:sitetplpath}/img/index_case_wsjicon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_wsjicon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=衣帽间"><img src="{pboot:sitetplpath}/img/index_case_ymjicon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_ymjicon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=书房"><img src="{pboot:sitetplpath}/img/index_case_sficon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_sficon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1&ext_space=阳台"><img src="{pboot:sitetplpath}/img/index_case_yticon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_yticon_s.png" alt="" class="on"></a>
+			<a href="dt/?jzal_1/"><img src="{pboot:sitetplpath}/img/index_case_micon_d.png" alt=""><img
+					src="{pboot:sitetplpath}/img/index_case_micon_s.png" alt="" class="on"></a>
+		</div>
+		<div class="more">
+
+			{pboot:sort scode=1}
+			<a href="[sort:link]">
+				<div class="mr-more">
+					查看更多
+				</div>
+			</a>
+			{/pboot:sort}
+		</div>
+	</div>
+</div>
+
+
+<div class="vrcase-container">
+	<div class="title">
+		<h2>精品案例·精品制造</h2>
+		<h5>美家养成记，格调美学的灵感提案</h5>
+	</div>
+	
+	<div class="vr-case-contant">
+		{pboot:list scode=8 num=1}
+		<div class="vr-case-left">
+			<a href="[list:link]">
+				<img src="[list:ico]" width="920px" height="500px">
+				<div class="text">[list:title]</div>
+			</a>
+		</div>
+		{/pboot:list}
+		{pboot:list scode=8 num=1 start=2}
+		<div class="vr-case-right">
+			<a href="[list:link]">
+				<img src="[list:ico]" width="300px" height="500px">
+				<div class="vrtp1"><img src="{pboot:sitetplpath}/img/vrtp1.png"></div>
+			</a>
+		</div>
+		{/pboot:list}
+	</div>
+
+	
+	<div class="more">
+		{pboot:sort scode=8}
+		<a href="[sort:link]">
+			<div class="mr-more">
+				查看更多
+			</div>
+		</a>
+		{/pboot:sort}
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="index-designer-container">
+	<div class="index-designer-center" style="width: 1240px;">
+		<div class="subhead white-subhead">
+			<h2>你的专属设计师</h2>
+			<h5>梦想设计师触动你的灵感</h5>
+		</div>
+		<div class="index-designer-content" style="width: 1240px;">
+			<div class="swiper-container index-designer-container-lunbo">
+				<div class="swiper-wrapper">
+					
+					{pboot:list scode=3}
+					<div class="swiper-slide">
+						<div class="swiper-shade"></div>
+						{pboot:pics id=[list:id] num=1}
+						<div class="designer-anli"style="background-image: url([pics:src]);">
+							<a href="[list:link]" target="_blank">
+								<div>
+									<<!-- p>120平欧式混搭风，房间整体装饰偏向欧式，房间内家具装修，装饰新奇，整个房间透漏着古典艺术气息。</p> -->
+								</div>
+							</a>
+						</div>
+						{/pboot:pics}
+						<div class="designer-info">
+							<a href="[list:link]" target="_blank">
+								<!-- <div class="designerImg" style="background-image: url([list:ico])"></div> -->
+							</a>
+						<div>
+								<h2>DESIGNER</h2>
+								<h3>[list:title]&nbsp<span>[list:author]</span></h3>
+								[list:content]
+								<a href="[list:link]" target="_blank">
+									<div class="designer-btn">预约设计师</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					{/pboot:list}
+					
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<script>
+					var swiper = new Swiper('.index-designer-container-lunbo', {
+						slidesPerView: 1,
+						spaceBetween: 30,
+						loop: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						autoplay: {
+						    delay: 3000,//1秒切换一次
+						  },
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="hotxq-container">
+	<div class="hotxq-content">
+		<div class="title">
+			<h2>热门小区</h2>
+			<h5>街坊邻里的装修好方案，一搜即达</h5>
+		</div>
+		<div class="hotxq-more">
+			{pboot:sort scode=48}
+			<a href="[sort:link]">更多在建工地</a>
+			{/pboot:sort}
+			{pboot:sort scode=49}
+			<a href="[sort:link]">更多户型解析</a>
+			{/pboot:sort}
+		</div>
+		<div class="index-hotxq-content">
+			<div class="index-hotxq-content-left">
+				<!--引用百度地图API-->
+				<style type="text/css">
+					body {
+						position: relative;
+						margin: 0;
+						padding: 0;
+					}
+
+					.iw_poi_title {
+						color: #CC5522;
+						font-size: 14px;
+						font-weight: bold;
+						overflow: hidden;
+						padding-right: 13px;
+						white-space: nowrap
+					}
+
+					.iw_poi_content {
+						font: 12px arial, sans-serif;
+						overflow: visible;
+						padding-top: 4px;
+						white-space: -moz-pre-wrap;
+						word-wrap: break-word html,
+					}
+
+					.swiper-container {
+						width: 100%;
+						height: 100%;
+						margin-left: auto;
+						margin-right: auto;
+					}
+
+					.swiper-slide {
+						width: 100%;
+						height: 100%;
+						/* Center slide text vertically */
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-box-pack: center;
+						-ms-flex-pack: center;
+						-webkit-justify-content: center;
+						justify-content: center;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						-webkit-align-items: center;
+						align-items: center;
+					}
+				</style>
+				<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+				<div style="width:590px;height:420px;border:#ccc solid 1px;" id="dituContent"></div>
+				<script type="text/javascript">
+					//创建和初始化地图函数：
+					function initMap() {
+						createMap(); //创建地图
+						setMapEvent(); //设置地图事件
+						addMapControl(); //向地图添加控件
+					}
+
+					//创建地图函数：
+					function createMap() {
+						var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+						var point = new BMap.Point(120.591682, 31.305976); //定义一个中心点坐标
+						map.centerAndZoom(point, 15); //设定地图的中心点和坐标并将地图显示在地图容器中
+						window.map = map; //将map变量存储在全局
+					}
+
+					//地图事件设置函数：
+					function setMapEvent() {
+						map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+						map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+						map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+						map.enableKeyboard(); //启用键盘上下左右键移动地图
+					}
+
+					//地图控件添加函数：
+					function addMapControl() {
+						//向地图中添加缩放控件
+						var ctrl_nav = new BMap.NavigationControl({
+							anchor: BMAP_ANCHOR_TOP_LEFT,
+							type: BMAP_NAVIGATION_CONTROL_LARGE
+						});
+						map.addControl(ctrl_nav);
+						//向地图中添加缩略图控件
+						var ctrl_ove = new BMap.OverviewMapControl({
+							anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+							isOpen: 1
+						});
+						map.addControl(ctrl_ove);
+						//向地图中添加比例尺控件
+						var ctrl_sca = new BMap.ScaleControl({
+							anchor: BMAP_ANCHOR_BOTTOM_LEFT
+						});
+						map.addControl(ctrl_sca);
+					}
+
+
+					initMap(); //创建和初始化地图
+				</script>
+
+
+			</div>
+			<div class="index-hotxq-content-right">
+				<ul>
+					{pboot:list scode=48 num=2}
+					<li>
+						<div class="item">
+							<a href="[list:link]">
+								<div class="img">
+									<img src="[list:ico]">
+								</div>
+								<div class="text">
+									<span>在建工地</span>[list:title]
+								</div>
+							</a>
+						</div>
+					</li>
+					{/pboot:list}
+					{pboot:list scode=49 num=2}
+					<li>
+						<div class="item">
+							<a href="[list:link]">
+								<div class="img">
+									<img src="[list:ico]">
+								</div>
+								<div class="text">
+									<span>户型解析</span>[list:title]
+								</div>
+							</a>
+						</div>
+					</li>
+					{/pboot:list}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="Headlines">
+	<div class="Headlines-center">
+		<div class="title">
+			<h2>家装头条播报</h2>
+			<h5>懂得装修才能更好的装修</h5>
+		</div>
+		<div class="type"
+			style="width: 360px;height: 40px;display: flex;justify-content: space-between;margin: 0 auto 35px;">
+
+		</div>
+		<div class="Headlines-content">
+			<div class="index-left-box">
+				<ul>
+
+
+					{pboot:list scode=5 num=3}
+
+
+
+
+					<li>
+						<a href="[list:link]">
+							<img src="[list:ico]">
+
+							<div class="info">
+								<h4>[list:title]</h4>
+								<h5>[list:date style=Y-m-d]</h5>
+								<p>[list:content]</p>
+							</div>
+						</a>
+					</li>
+					{/pboot:list}
+				</ul>
+			</div>
+			<div class="index-right-box">
+				<ul>
+					{pboot:list scode=5 num=6 start=4}
+					<li>
+						<a href="[list:link]">
+							<h4><strong>0[list:i]</strong>
+								<p>[list:title]</p><span>[list:date style=Y-m-d]</span><i></i>
+							</h4>
+						</a>
+					</li>
+					{/pboot:list}
+				</ul>
+			</div>
+		</div>
+		<div class="more">
+			{pboot:sort scode=5}
+			<a href="[sort:link]">
+				<div class="mr-more">
+					查看更多
+				</div>
+			</a>
+			{/pboot:sort}
+		</div>
+		<div class="title">
+			<h2>官网预约 服务流程</h2>
+			<h5>线上预约，到店享好礼</h5>
+		</div>
+		<div class="order">
+			<ul>
+				<li><a href="javascript:void();"><i></i>
+						<h5>在线预约免费量房</h5>
+					</a></li>
+				<li><a href="javascript:void();"><i></i>
+						<h5>预约设计规划初案</h5>
+					</a></li>
+				<li><a href="javascript:void();"><i></i>
+						<h5>参观展厅了解材料</h5>
+					</a></li>
+				<li><a href="javascript:void();"><i></i>
+						<h5>概算价格交纳定金</h5>
+					</a></li>
+				<li><a href="javascript:void();"><i></i>
+						<h5>深度设计确定预算</h5>
+					</a></li>
+				<li><a href="javascript:void();"><i></i>
+						<h5>签订合同进场施工</h5>
+					</a></li>
+				<li><a href="javascript:void();"><i></i>
+						<h5>验收工作售后服务</h5>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- <div class="wall">
+	<ul>
+		<li>
+			<a href=""><img src="{pboot:sitetplpath}/img/8ef493f01c3544f978cd9921bd1a9d2d.jpg" alt=""></a>
+		</li>
+		{pboot:sort scode=15}
+		<li>
+			<a href="[sort:link]"><img src="{pboot:sitetplpath}/img/cf24a960b1e8cd2e3df731127b9edfa6.jpg" alt=""></a>
+		</li>
+		{/pboot:sort}
+		<li>
+			<a href=""><img src="{pboot:sitetplpath}/img/e0963635f8e346f870af3eb2e774f41a.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href=""><img src="{pboot:sitetplpath}/img/100786a7f8b1a0d17bf006f6883d538a.jpg" alt=""></a>
+		</li>
+		<li>
+			<a href=""><img src="{pboot:sitetplpath}/img/376502ae7fc4f7fb155811a3e2e8e8a5.jpg" alt=""></a>
+		</li>
+	</ul>
+</div> -->
+
+
+
+{include file=footer.html}

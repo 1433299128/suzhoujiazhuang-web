@@ -1,0 +1,205 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/zxal_tz.css" />
+
+
+
+
+
+
+
+
+<div class="show-container">
+    <input type="hidden" id="id" value="23805">
+    <div class="crumbs-container">
+        <div class="crumbs">
+            {pboot:position}
+            <span>/</span><a class="active">{content:ext_zxal_title}</a>
+        </div>
+    </div>
+    <div class="show-center">
+        <div class="show-left case-show-left">
+            <h2>{content:ext_zxal_title}</h2>
+            <h6>
+                <span>发布时间：{content:date}&nbsp;&nbsp;查看人数：{content:visits}<!-- &nbsp;&nbsp;分享到： --></span>
+                <!-- <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_tsina" rel="nofollow" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_qzone" rel="nofollow" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_weixin" rel="nofollow" data-cmd="weixin" title="分享到微信"></a>
+                </div> -->
+            </h6>
+            <p>{content:ext_zxal_content}</p>
+            <div>
+                <!-- <ul class="case-show-nav" style="padding-top: 74px;">
+                    <li class="active">{content:ext_zxal_left_1}<i></i></li>
+                    <li class="">{content:ext_zxal_left_2}<i></i></li>
+                    <li class="">{content:ext_zxal_left_3}<i></i></li>
+                    <li class="">{content:ext_zxal_left_4}<i></i></li>
+                </ul> -->
+                <ul class="case-show-content">
+                    <!-- <li>
+                        {content:ext_zxal_content_l_pic}
+                    </li>
+                    <li>
+                        {content:ext_zxal_content_2_pic}
+                    </li>
+                    <li>
+                        {content:ext_zxal_content_3_pic}
+                    </li>
+                    <li>
+                        {content:ext_zxal_content_4_pic}
+                    </li> -->
+					{content:content}
+					
+
+                </ul>
+            </div>
+			<form action="{pboot:form fcode=11}"  method="post">	
+            <div class="case-show-offer">
+                <div class="layui-form form-wrap">
+                    <div class="input-wrap">
+                        <input type="text" name="size" placeholder="输入您的房屋面积" class="layui-input" autocomplete="off" required>
+                        <span>㎡</span>
+                    </div>
+                    <div class="input-wrap">
+                            <div class="layui-select-title"><input type="text" placeholder="请填写几室" value="" name="shi" class="layui-input layui-unselect" required></div>
+                            <div class="layui-select-title"><input type="text" placeholder="请填写几厅" value="" name="ting" class="layui-input layui-unselect" required></div>
+                            <div class="layui-select-title"><input type="text" placeholder="请填写几卫" value="" name="wei" class="layui-input layui-unselect" required></div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" name="tel" placeholder="输入您的手机号码报价结果将发送到您的手机" class="layui-input" autocomplete="off" required>
+                    </div>
+                    <button type="submit">获取报价</button>
+                </div>
+            </div>
+			</form>	
+            <div class="show-page">
+                <a href="{content:prelink}" title="{content:pretitle}" ><button>上一个案例：{content:pretitle}</button></a>
+                <a href="{content:nextlink}" title="{content:nexttitle}" ><button>下一个案例：{content:nexttitle}</button></a>
+            </div>
+            <style type="text/css">
+                /*.anlibj #tel{width: 280px;height: 35px;padding-left: 10px;background: none;border: 1px solid #808080;}
+							.anlibj #tel:focus {
+					            outline: none;
+					            border-color: #00ae66;
+					            background:none;
+					        }*/
+            </style>
+
+            <div class="jpal-tj" style="display: block;margin-left: 50px;margin-bottom:0px">
+                <p class="jpal-tj-title">相关风格推荐</p>
+				
+				<style type="text/css">
+					.jpal-tj-box:hover .jpal-tj-box-title{
+						background-color: #c79e68;
+						border-color: #c79e68;
+						
+					}
+					.jpal-tj-box:hover .jpal-tj-box-title span{
+						color: #fff;
+					}
+				</style>
+                <div class="jpal-tj-bbox" style="justify-content: space-around;">
+					
+					{pboot:list scode=1 num=4}
+                    <a href="[list:link]">
+                        <div class="jpal-tj-box" style="width: 180px;">
+                            <div class="jpal-tj-box-img jpal-tj-box-img-one" style="width: 180px;background-image: url([list:ico]);background-size: cover;background-position: center;">
+                            </div>
+                            <p class="jpal-tj-box-title jpal-tj-box-title-one"><span style="-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;width: 640px;height: 30px">[list:title]</span>
+                                <!--i></i-->
+                            </p>
+                        </div>
+                    </a>
+					{/pboot:list}
+                    
+                </div>
+            </div>
+        </div>
+        <div class="show-right case-show-right">
+            <div class="case-info">
+                <h2>案例信息</h2>
+                <div class="case-info-line"></div>
+                <ul>
+                    <li><span>案例面积：</span>{content:ext_jzal_area}</li>
+                    <!--li><span>案例造价：</span>52万</li-->
+                    <li><span>案例户型：</span>{content:ext_house_type}</li>
+                    <li><span>所在城市：</span>{content:ext_jzal_city}</li>
+                    <li><span>案例风格：</span>{content:ext_jzal_list_style}</li>
+                </ul>
+
+
+                <!--  设计师人物
+						<h2>案例设计师</h2>
+						<div class="case-info-line"></div>
+						<div class="case-info-designer">
+							<div class="case-designer-img" style="background-image: url({pboot:sitetplpath}/img/c9b54e94d63b100dce69d644e27bcdfc.jpg)"></div>
+							<div class="case-designer-info">
+								<h3>高满霞</h3>
+								<a href="/sz/shejishi/1548.html" class="designer-link">查看TA的主页</a>
+								<h6>已有<span>20</span>人预约TA</h6>
+								<a href="" class="designer-button">在线咨询</a>
+								<a href="" class="designer-button">免费申请设计</a>
+							</div>
+						</div>
+						
+						-->
+
+
+            </div>
+            <div class="sidebar-recommend">
+                <h4><span>家装案例推荐</span>
+				{pboot:sort scode=1}
+				<a href="[sort:link]">查看更多</a>
+				{/pboot:sort}
+				</h4>
+                <ul>
+					{pboot:list scode=1 num=4}
+                    <a href="[list:link]">
+                        <li>
+                            <div class="recommend-headimg" style="background-image: url([list:ico]);">
+                            </div>
+                            <div class="recommend-title">[list:title]</div>
+                            <button>查看详情</button>
+                        </li>
+                    </a>
+					{/pboot:list}
+                    
+
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{include file=footer.html}

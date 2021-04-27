@@ -1,0 +1,108 @@
+{include file=header.html}
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/zjgd.css"/>
+
+
+			<div class="crumbs-container">
+				<div class="crumbs">
+					{pboot:position}
+					<span>></span>
+					<span class="active">{content:title}</span>
+				</div>
+			</div>
+
+
+
+
+			<div class="show-container">
+					<div class="show-center">
+						<div class="site-show-head">
+							<div class="site-show-headimg" style="background-image: url({content:ico});"></div>
+							<div class="site-show-info">
+								<style type="text/css">
+									.site-show-info .show-info{
+										margin-top: 70px;
+									}
+								</style>
+								<div class="show-info">
+									<h1>{content:title}<span>|</span>{content:ext_zjgd_area}</h1>
+									{content:content}
+									<h5><i></i>开工时间：<span>2017-08-07</span><a class="gdDy" style="cursor: pointer;font-weight: bold;color: red">预约看工地&nbsp;&gt;</a></h5>
+									<dl></dl>
+								</div>
+								
+								<!--dl>
+																<dd><i></i>地砖验收</dd>
+										<dd class="active"><i></i>乳胶漆基层验收</dd>
+										<dd><i></i>油面及乳胶漆面漆验收</dd>
+														</dl-->
+								<!-- <ul>
+									<li>
+										<div style="background-image: url({content:ext_zjgd_foreman_pic});"></div>
+										<h6>工长：{content:ext_zjgd_content_foreman}</h6>
+									</li>
+									<li>
+										<div style="background-image: url(https://shj-web.oss-cn-hangzhou.aliyuncs.com/uploads/images/20201210/0eb0b78c5734511ed3072be8bc145851.jpg_shj-aliyun-nsy);"></div>
+										<h6>设计师：张新惠</h6>
+									</li>
+									<li>
+										<div style="background-image: url({content:ext_zjgd_quality_pic});"></div>
+										<h6>质检员：{content:ext_zjgd_content_quality}</h6>
+									</li>
+								</ul> --> 
+							</div>
+						</div>
+						<style type="text/css">
+							.site-show-stage{
+								    width: 100%;
+								    height: auto;
+									padding: 80px;
+								   
+								    background: #fff;
+								    margin-bottom: 40px;
+								    box-shadow: 0 5px 10px #dedada;
+
+							}
+			
+						</style>
+						<ul class="site-show-stage">
+							
+							{content:ext_zjgd_content_project}
+							
+							
+							<!-- <li>
+						
+						
+						
+				<div class="stage-info">
+					<div>
+						<i></i>
+						<div>
+							<h4>项目安排：</h4>
+							<h5>{content:ext_zjgd_project_1}</h5>
+						</div>
+					</div>
+					<div>
+						<i></i>
+						<div>
+							<h4>项目安排：</h4>
+							<h5>{content:ext_zjgd_content_foreman}、张新惠、{content:ext_zjgd_content_quality}</h5>
+						</div>
+					</div>
+				</div>
+				<div class="stage-content">
+					
+				</div>				 
+			</li>
+			-->
+			</ul>
+					</div>
+				</div>
+			
+
+
+
+
+
+
+{include file=footer.html}

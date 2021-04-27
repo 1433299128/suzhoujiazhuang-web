@@ -1,0 +1,352 @@
+{include file=header.html}
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/zxal.css"/>
+		<a href="" class="case-banner"></a>
+
+		<div class="crumbs-container">
+			<div class="crumbs">
+				{pboot:position}
+			</div>
+		</div>
+		<div class="case-lists-container">
+			<div class="case-lists-center">
+				<ul>
+					<li>
+						<span>类型</span>
+						<dl>
+							{pboot:select field=ext_jpal_type}
+							
+							<dd {pboot:if('[select:value]'=='[select:current]')}class="case-lists-center-active" {/pboot:if}><a href="[select:link]">[select:value]</a></dd>
+							{/pboot:select}
+							
+							<!-- <dd class="case-lists-center-active"><a href="">案例效果图</a></dd>
+							<dd><a href="">实景案例图</a></dd>
+							<dd><a href="">进入全国案例</a></dd> -->
+						</dl>
+					</li>
+					<li>
+						<span>户型</span>
+						<dl>
+							<style type="text/css">
+								.buxian{
+									    color: #000;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										display: block;
+								}
+								.xuanzhong{
+									color: #fff;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										background: #298769;
+								}
+							
+							</style>
+							{pboot:selectall field=ext_jpal_house_type text=不限 class='buxian'  active='xuanzhong'}
+							{pboot:select field=ext_jpal_house_type}
+							
+							<dd {pboot:if('[select:value]'=='[select:current]')}class="case-lists-center-active" {/pboot:if}><a href="[select:link]">[select:value]</a></dd>
+							{/pboot:select}
+							<!-- <dd class="case-lists-center-active"><a href="">不限</a></dd>
+							<dd><a href="">二居室</a></dd>
+							<dd><a href="">三居室</a></dd>
+							<dd><a href="">四居室</a></dd>
+							<dd><a href="">别墅</a></dd>
+							<dd><a href="">其他户型</a></dd> -->
+						</dl>
+					</li>
+					<li>
+						<span>面积</span>
+						<dl>
+							<style type="text/css">
+								.buxian{
+									    color: #000;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										display: block;
+								}
+								.xuanzhong{
+									color: #fff;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										background: #298769;
+								}
+							
+							</style>
+							{pboot:selectall field=	ext_jpal_size text=不限 class='buxian'  active='xuanzhong'}
+							{pboot:select field=ext_jpal_size}
+							
+							<dd {pboot:if('[select:value]'=='[select:current]')}class="case-lists-center-active" {/pboot:if}><a href="[select:link]">[select:value]</a></dd>
+							{/pboot:select}
+							<!-- <dd class="case-lists-center-active"><a href="">不限</a></dd>
+							<dd><a href="">100㎡以下</a></dd>
+							<dd><a href="">100-140㎡</a></dd>
+							<dd><a href="">140-200㎡</a></dd>
+							<dd><a href="">200-300㎡</a></dd>
+							<dd><a href="">300㎡以上</a></dd> -->
+						</dl>
+					</li>
+					<li>
+						<span>风格</span>
+						<dl>
+							<style type="text/css">
+								.buxian{
+									    color: #000;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										display: block;
+								}
+								.xuanzhong{
+									color: #fff;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										background: #298769;
+								}
+							
+							</style>
+							{pboot:selectall field=ext_jpal_list_style text=不限 class='buxian'  active='xuanzhong'}
+							{pboot:select field=ext_jpal_list_style}
+							
+							<dd {pboot:if('[select:value]'=='[select:current]')}class="case-lists-center-active" {/pboot:if}><a href="[select:link]">[select:value]</a></dd>
+							{/pboot:select}
+							<!-- <dd class="case-lists-center-active"><a href="">不限</a></dd>
+							<dd><a href="">北欧</a></dd>
+							<dd><a href="">简欧</a></dd>
+							<dd><a href="">新中式</a></dd>
+							<dd><a href="">美式</a></dd>
+							<dd><a href="">现代</a></dd>
+							<dd><a href="">田园</a></dd>
+							<dd><a href="">欧式</a></dd>
+							<dd><a href="">美式乡村</a></dd>
+							<dd><a href="">中式</a></dd>
+							<dd><a href="">地中海</a></dd>
+							<dd><a href="">混搭</a></dd>
+							<dd><a href="">其他</a></dd>
+							<dd><a href="">日式</a></dd>
+							<dd><a href="">法式</a></dd>
+							<dd><a href="">港式</a></dd>
+							<dd><a href="">台式</a></dd>
+							<dd><a href="">轻奢</a></dd>
+							<dd><a href="">简美</a></dd>
+							<dd><a href="">工业风</a></dd> -->
+						</dl>
+					</li>
+					<li>
+						<span>空间</span>
+						<dl>
+							
+							<style type="text/css">
+								.buxian{
+									    color: #000;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										display: block;
+								}
+								.xuanzhong{
+									color: #fff;
+									    margin-right: 10px;
+									    height: 30px;
+									    padding: 0 15px;
+									    line-height: 30px;
+										background: #298769;
+								}
+							
+							</style>
+							{pboot:selectall field=	ext_jpal_space text=不限 class='buxian'  active='xuanzhong'}
+							{pboot:select field=ext_jpal_space}
+							
+							<dd {pboot:if('[select:value]'=='[select:current]')}class="case-lists-center-active" {/pboot:if}><a href="[select:link]">[select:value]</a></dd>
+							{/pboot:select}
+							<!-- <dd class="case-lists-center-active"><a href="">不限</a></dd>
+							<dd><a href="">客厅</a></dd>
+							<dd><a href="">卧室</a></dd>
+							<dd><a href="">厨房</a></dd>
+							<dd><a href="">餐厅</a></dd>
+							<dd><a href="">卫生间</a></dd>
+							<dd><a href="">衣帽间</a></dd>
+							<dd><a href="">书房</a></dd>
+							<dd><a href="">阳台</a></dd>
+							<dd><a href="">入户花园</a></dd>
+							<dd><a href="">过道</a></dd>
+							<dd><a href="">玄关</a></dd>
+							<dd><a href="">次卧</a></dd> -->
+						</dl>
+					</li>
+				</ul>
+				<div class="case-filter-search">
+					<div style="margin: 0 auto;">
+						<!-- <button type="button">最新<i>↑</i></button>
+						<button type="button">人气<i>↑</i></button> -->
+						<div>
+							
+							<form action="{pboot:scaction}"  method="get" style="width: 100%;display: flex;">
+							<input type="text" name="keyword" value="" placeholder="输入小区名称、设计师名称" required>
+							<input type="hidden" name="scode" value="1,8" > 
+							<button type="submit">搜索</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="case-img-lists-container">
+			<ul>
+				{pboot:list}
+				<li>
+					<a href="[list:link]">
+						<div class="case-heading" style="background: url([list:ico]);background-position: top center;
+    background-size: cover;"></div>
+						<div class="case-info-wrap">
+							<div class="case-info">
+								<div class="case-buildName">
+									[list:title]
+								</div>
+								<div class="case-type-info">
+									[list:tags]
+								</div>
+							</div>
+							<div class="popup-btn">这样装多少钱</div>
+							<i></i>
+						</div>
+					</a>
+					
+					<!--  设计师人物
+					<div class="case-designer-wrap">
+						<a href="">
+							<div class="designer-info-wrap">
+								<div class="designer-heading" style="background: url([list:ext_authorthumbnail]);background-position: top center;
+    background-size: cover;"></div>
+								<div class="designer-info">
+									<div class="name">[list:author]</div>
+									<div class="ceer">[list:ext_position]</div>
+								</div>
+							</div>
+						</a>
+						<div class="popup-btn">这样装多少钱</div>
+					</div>
+				-->
+				</li>
+				{/pboot:list}
+
+			</ul>
+			<div class="login-more">
+				<style type="text/css">
+					.login-more a{
+						border: 1px solid silver;
+						margin: 0 3px;
+						border-radius: 3px;
+						padding: 5px;
+						display: inline-block;
+					}
+					.login-more-active{
+						color: #fff;
+						background: #5eb95e;
+						border-color: #5eb95e;
+					}
+					.login-more-active:hover{
+						color:#fff;
+					}
+				</style>
+				<span class="login-more-span">{page:bar}</span>
+				<script type="text/javascript">
+					$(".login-more-span span>a").click(function(){
+						$(this).toggleClass('login-more-active').parent().siblings().children().removeClass('login-more-active');
+					})
+				</script>
+			</div>
+		</div>
+		
+
+
+<form action="{pboot:form fcode=5}"  method="post">	
+		<div id="jpaltc"
+			style="position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2022;
+	overflow-y:auto;
+	overflow-x: 0;
+	">
+	
+			<div class="layui-layer layui-layer-page layui-layer-bgNone" id="layui-layer1 tc" 
+				style="z-index: 299325;
+    top: auto;
+    left: auto;
+	position: absolute;">
+				<div class="layui-layer-content">
+					<div style="background-image: url({pboot:sitetplpath}/img/sj020928.jpg);background-size: cover;width: 480px;height: 477px;position: relative;"
+						class="albj2">
+						<input type="text" name="lpm" id="xiaoqu"
+							placeholder="输入楼盘名称，为您匹配合适户型图"
+							style="width: 396px;height: 50px;background-color: #fff;border-radius: 3px;border:1px solid #b5b5b5;display: block;padding-left: 20px;font-size: 16px;position: absolute;top:168px;left: 40px;border: navajowhite;" required>
+						<input type="text" name="size" id="area"
+							placeholder="请输入您的房屋面积"
+							style="width: 396px;height: 50px;background-color: #fff;border-radius: 3px;border:1px solid #b5b5b5;display: block;padding-left: 20px;font-size: 16px;position: absolute;top: 244px;left: 40px;border: navajowhite;" required>
+						<input type="text" name="tel" id="tel"
+							placeholder="输入号码，方便给您方案"
+							style="width: 396px;height: 50px;background-color: #fff;border-radius: 3px;border:1px solid #b5b5b5;display: block;padding-left: 20px;font-size: 16px;position: absolute;top: 321px;left: 40px;border: navajowhite;" required>
+						<div class="albjan" 
+							style="width: 240px;height: 56px;opacity: 0;border-radius: 8px;border:1px solid #b5b5b5;display: block;position: absolute;top: 397px;left: 125px;"
+							data-mode="56">
+							<input type="submit" name="" id="" value="" / style="width: 100%;height: 100%;border: none;background: transparent;font-size: 18px;color: #686868;text-indent: 10px;outline: none;">
+							
+							</div>
+					</div>
+				</div><span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close2"
+						href="javascript:;"></a></span>
+			</div>
+		</div>
+</form>	
+
+
+
+
+<script type="text/javascript">
+	   if(document.cookie.indexOf("a=jpal")==-1){
+	        /* alert("首次打开！"); */
+			$("#jpaltc").show()
+	        var t=new Date(new Date().getTime()+1000*60*60*24*30);
+	        document.cookie="a=jpal; expires="+t.toGMTString();
+			
+	    }else{
+	        /* alert("再次打开！"); */
+			$("#jpaltc").hide();
+	    };
+		$(".layui-layer-close2").click(function() {
+			$("#jpaltc").hide();
+			
+		});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+		
+{include file=footer.html}

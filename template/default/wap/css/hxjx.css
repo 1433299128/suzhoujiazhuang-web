@@ -1,0 +1,139 @@
+.page {
+	width:100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% -100%) / 2) */
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+
+.banner {
+	width:100%;
+	height: 5rem;
+	position: relative;
+	margin-bottom: .2rem;
+}
+
+.analysis-list-banner-wrap {
+	width: 100%;
+	height: 3.4rem;
+}
+
+.swiper-container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	box-sizing: content-box;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	position: relative;
+}
+
+.analysis-list-search {
+	height: auto;
+	border-bottom: 1px solid #eff3f6;
+	padding: .3rem;
+	background: #fff;
+	display: flex;
+}
+
+.analysis-list-search input {
+	height: .6rem;
+	font-size: .24rem;
+	outline: none;
+}
+
+.analysis-list-search input[type='text'] {
+	text-indent: .2rem;
+	width: 5.7rem;
+	border: 1px solid #bfbfbf;
+	border-right: none;
+}
+
+.analysis-list-search input[type='button'] {
+	text-align: center;
+	background: #c79e68;
+	color: #fff;
+	width: 1.2rem;
+	border: none;
+}
+
+.analysis-lists {
+	height: auto;
+	padding: .3rem 0;
+}
+
+.analysis-lists li {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: .3rem;
+}
+
+.analysis-lists li a {
+	display: block;
+}
+
+.analysis-lists li .analysis-image {
+	width: 100%;
+	height: 3.7rem;
+}
+
+.analysis-lists li .analysis-image div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	background: #c79e68;
+	color: #fff;
+	font-size: .22rem;
+	padding: .15rem;
+}
+
+.analysis-lists li .title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: .7rem;
+	line-height: .7rem;
+	text-align: center;
+	color: #fff;
+	font-size: .26rem;
+	background: rgba(0, 0, 0, .5);
+}
+
+.analysis-lists li:nth-child(1) .image-center {
+	background: url(../img/9a0ab49c8488ca9481c1a4fb3c0e0a10.png);
+	background-size: cover;
+	background-position: top center;
+}
+
+.analysis-lists li:nth-child(2) .image-center {
+	background: url(../img/3c15a2831e8c82a7cd1964d9e77591e4.png);
+	background-size: cover;
+	background-position: top center;
+}
+
+.analysis-lists li:nth-child(3) .image-center {
+	background: url(../img/4ef6955f8cd6836926471e8b0b4598cc.jpg);
+	background-size: cover;
+	background-position: top center;
+}

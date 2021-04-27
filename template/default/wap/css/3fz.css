@@ -1,0 +1,69 @@
+.page {
+    width:7.5rem;
+    height: auto;
+    position: relative;
+	left:calc((100% - 7.5rem) / 2);
+}
+
+input {
+	border: none;
+    outline: none;
+}
+
+.special-hotpints-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hotpints {
+    position: absolute;
+    background: none;
+    border: none;
+}
+
+.hotpints .hotpints-resize {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    background: #01AAED;
+    cursor: se-resize;
+    display: none !important;
+    z-index: 99;
+}
+
+.hotpints .DOM {
+    width: 100%;
+    height: 100%
+}
+
+.hotpints>* {
+    position: absolute;
+}
+
+.page-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.4rem;
+}
+
+.m-special-wrap {
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.m-special-img {
+    width:100%;
+    height: auto;
+}
+
+.m-special-img>img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

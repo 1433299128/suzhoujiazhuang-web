@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html style="font-size: 312.5%;">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<link rel="stylesheet" type="text/css" href="./css/spal.css" />
+		<link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+		<script src="./js/jquery-3.5.1.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/swiper-3.4.0.jquery.min.js"></script>
+		<script src="./js/swiper.jquery.min.js"></script>
+
+	</head>
+
+
+	<body>
+		<header>
+			<div class="header-city">
+				<a href=""><span>苏州</span><i></i></a>
+			</div>
+			<div class="header-logo">
+				<img src="./img/logo.png">
+			</div>
+			<div class="header-height"></div>
+
+			<nav>
+				<div class="swiper-container swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide selected"><a href="">首页</a></div>
+						<div class="swiper-slide"><a href="">装修案例</a></div>
+						<div class="swiper-slide"><a href="">精品实景</a></div>
+						<div class="swiper-slide"><a href="">VR体验</a></div>
+						<div class="swiper-slide"><a href="">公司实力</a></div>
+						<div class="swiper-slide"><a href="">设计师</a></div>
+						<div class="swiper-slide"><a href="">视频案例</a></div>
+						<div class="swiper-slide"><a href="">工地直播</a></div>
+						<div class="swiper-slide"><a href="">户型解析</a></div>
+						<div class="swiper-slide"><a href="">独家策划</a></div>
+						<div class="swiper-slide"><a href="">家装攻略</a></div>
+						<div class="swiper-slide"><a href="">联系我们</a></div>
+						<div class="swiper-slide"><a href="">装修装潢</a></div>
+					</div>
+				</div>
+			</nav>
+
+		</header>
+
+
+
+		<div class="page">
+			<div class="page-container">
+				<div class="banner analysis-list-banner-wrap">
+					<div class="swiper-container casus-banner">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="">
+									<img src="./img/d4914cda7f76da006b25cac8c611f913.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="casus-lists">
+					<li>
+						<a href="">
+							<div class="image-center casus-img"></div>
+						</a>
+						<div class="casus-info">
+							<div class="info">
+								<h4>新中式装修案例：臻品、木造、手作，方寸之间皆是优雅</h4>
+							</div>
+							<div class="info-btn">
+								获取报价
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="">
+							<div class="image-center casus-img"></div>
+						</a>
+						<div class="casus-info">
+							<div class="info">
+								<h4>现代简约装修案例：现代派的极简主义</h4>
+							</div>
+							<div class="info-btn">
+								获取报价
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="">
+							<div class="image-center casus-img"></div>
+						</a>
+						<div class="casus-info">
+							<div class="info">
+								<h4>新古典装修案例：宜设而设，精在体宜</h4>
+							</div>
+							<div class="info-btn">
+								获取报价
+							</div>
+						</div>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+
+
+
+
+		<footer>
+			<ul style="background: none;border: 0;">
+				<a href="">
+					<li>
+						<i></i>
+						<h4>首页</h4>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<i></i>
+						<h4>获取地址</h4>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<i></i>
+						<h4>电话咨询</h4>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<i></i>
+						<h4>风格测试</h4>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<i></i>
+						<h4>装修报价</h4>
+					</li>
+				</a>
+			</ul>
+		</footer>
+
+
+
+
+
+		<script>
+			$(function() {
+				function setCurrentSlide(ele, index) {
+					$(".swiper1 .swiper-slide").removeClass("selected");
+					ele.addClass("selected");
+					//swiper1.initialSlide=index;
+				}
+
+				var swiper1 = new Swiper('.swiper1', {
+					//					设置slider容器能够同时显示的slides数量(carousel模式)。
+					//					可以设置为number或者 'auto'则自动根据slides的宽度来设定数量。
+					//					loop模式下如果设置为'auto'还需要设置另外一个参数loopedSlides。
+					slidesPerView: 5.5,
+					paginationClickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+					spaceBetween: 10, //slide之间的距离（单位px）。
+					freeMode: true, //默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合。
+					loop: false, //是否可循环
+					onTab: function(swiper) {
+						var n = swiper1.clickedIndex;
+					}
+				});
+				swiper1.slides.each(function(index, val) {
+					var ele = $(this);
+					ele.on("click", function() {
+						setCurrentSlide(ele, index);
+						swiper2.slideTo(index, 500, false);
+						//mySwiper.initialSlide=index;
+					});
+				});
+
+			});
+		</script>
+
+		<script>
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 50) {
+					$("header>nav").addClass("nav-active");
+				} else {
+					$("header>nav").removeClass("nav-active");
+				}
+			});
+		</script>
+
+
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,530 @@
+{include file=header.html}
+
+
+
+
+		<div class="page-container">
+			<div class="banner">
+
+
+
+
+
+<div class="swiper-container2022" style="overflow: hidden;">
+    <div class="swiper-wrapper">
+		{pboot:slide gid=2}
+      <div class="swiper-slide"><a href="[slide:link]"><img src="[slide:src]" alt=""></a></div>
+	  {/pboot:slide}
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+  
+     <script>
+       var swiper = new Swiper('.swiper-container2022', {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         loop: true,
+         pagination: {
+           el: '.swiper-pagination',
+           clickable: true,
+         },
+       });
+     </script>
+  
+  
+
+				 <!-- <section class="carousel">
+					<ul>
+						
+						{pboot:slide gid=2}
+						<!-- <div class="swiper-slide"
+							style="background: url([slide:src]);background-size: auto 100%;background-position: center center;background-repeat: no-repeat;width: 1383px!important;margin-right: 0!important;"> --><!-- 
+							<li><a href="[slide:link]"><img src="[slide:src]" alt=""></a></li>
+							<!-- <a href="[slide:link]"></a></div> -->
+						<!-- {/pboot:slide} --> 
+						
+						
+						<!-- <li><a href="javascript:void(0);"><img src="{pboot:sitetplpath}/img/4093cb0980480d6762816eee92890b6b.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0);"><img src="{pboot:sitetplpath}/img/939b1eb03c11713a8e45594851f6537c.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0);"><img src="{pboot:sitetplpath}/img/ce22b0768d9272bb5b01991a5a8d8462.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0);"><img src="{pboot:sitetplpath}/img/eae04c421ded1e9c95488c89f07bc849.jpg" alt=""></a></li> -->
+				<!-- 	</ul>
+					<ol class="points"></ol>
+				</section> --> 
+
+
+
+				<!-- <script>
+					window.onload = function() {
+						var carousel = document.querySelector('.carousel');
+						var carouselUl = carousel.querySelector('ul');
+						var carouselLis = carouselUl.querySelectorAll('li');
+						var points = carousel.querySelector('ol');
+						// 屏幕的宽度
+						var screenWidth = document.documentElement.offsetWidth;
+						var timer = null;
+
+						// 设置 ul 的高度
+						carouselUl.style.height = carouselLis[0].offsetHeight + 'px';
+
+						// 动态生成小圆点
+						for (var i = 0; i < carouselLis.length; i++) {
+							var li = document.createElement('li');
+							if (i == 0) {
+								li.classList.add('active');
+							}
+							points.appendChild(li);
+						}
+
+						// 初始三个固定的位置
+						var left = carouselLis.length - 1;
+						var center = 0;
+						var right = 1;
+
+						// 归位（多次使用，封装成函数）
+						setTransform();
+
+						// 调用定时器
+						timer = setInterval(showNext, 2000);
+
+						// 分别绑定touch事件
+						var startX = 0; // 手指落点
+						var startTime = null; // 开始触摸时间
+						carouselUl.addEventListener('touchstart', touchstartHandler); // 滑动开始绑定的函数 touchstartHandler
+						carouselUl.addEventListener('touchmove', touchmoveHandler); // 持续滑动绑定的函数 touchmoveHandler
+						carouselUl.addEventListener('touchend', touchendHandeler); // 滑动结束绑定的函数 touchendHandeler
+
+						// 轮播图片切换下一张
+						function showNext() {
+							// 轮转下标
+							left = center;
+							center = right;
+							right++;
+							//　极值判断
+							if (right > carouselLis.length - 1) {
+								right = 0;
+							}
+							//添加过渡（多次使用，封装成函数）
+							setTransition(1, 1, 0);
+							// 归位
+							setTransform();
+							// 自动设置小圆点
+							setPoint();
+						}
+
+						// 轮播图片切换上一张
+						function showPrev() {
+							// 轮转下标
+							right = center;
+							center = left;
+							left--;
+							//　极值判断
+							if (left < 0) {
+								left = carouselLis.length - 1;
+							}
+							//添加过渡
+							setTransition(0, 1, 1);
+							// 归位
+							setTransform();
+							// 自动设置小圆点
+							setPoint();
+						}
+
+						// 滑动开始
+						function touchstartHandler(e) {
+							// 清除定时器
+							clearInterval(timer);
+							// 记录滑动开始的时间
+							startTime = Date.now();
+							// 记录手指最开始的落点
+							startX = e.changedTouches[0].clientX;
+						}
+						// 滑动持续中
+						function touchmoveHandler(e) {
+							// 获取差值 自带正负
+							var dx = e.changedTouches[0].clientX - startX;
+							// 干掉过渡
+							setTransition(0, 0, 0);
+							// 归位
+							setTransform(dx);
+						}
+						//　滑动结束
+						function touchendHandeler(e) {
+							// 在手指松开的时候，要判断当前是否滑动成功
+							var dx = e.changedTouches[0].clientX - startX;
+							// 获取时间差
+							var dTime = Date.now() - startTime;
+							// 滑动成功的依据是滑动的距离（绝对值）超过屏幕的三分之一 或者滑动的时间小于300毫秒同时滑动的距离大于30
+							if (Math.abs(dx) > screenWidth / 3 || (dTime < 300 && Math.abs(dx) > 30)) {
+								// 滑动成功了
+								// 判断用户是往哪个方向滑
+								if (dx > 0) {
+									// 往右滑 看到上一张
+									showPrev();
+								} else {
+									// 往左滑 看到下一张
+									showNext();
+								}
+							} else {
+								// 添加上过渡
+								setTransition(1, 1, 1);
+								// 滑动失败了
+								setTransform();
+							}
+
+							// 重新启动定时器
+							clearInterval(timer);
+							// 调用定时器
+							timer = setInterval(showNext, 2000);
+						}
+						// 设置过渡
+						function setTransition(a, b, c) {
+							if (a) {
+								carouselLis[left].style.transition = 'transform 1s';
+							} else {
+								carouselLis[left].style.transition = 'none';
+							}
+							if (b) {
+								carouselLis[center].style.transition = 'transform 1s';
+							} else {
+								carouselLis[center].style.transition = 'none';
+							}
+							if (c) {
+								carouselLis[right].style.transition = 'transform 1s';
+							} else {
+								carouselLis[right].style.transition = 'none';
+							}
+						}
+
+						//　封装归位
+						function setTransform(dx) {
+							dx = dx || 0;
+							carouselLis[left].style.transform = 'translateX(' + (-screenWidth + dx) + 'px)';
+							carouselLis[center].style.transform = 'translateX(' + dx + 'px)';
+							carouselLis[right].style.transform = 'translateX(' + (screenWidth + dx) + 'px)';
+						}
+						// 动态设置小圆点的active类
+						var pointsLis = points.querySelectorAll('li');
+
+						function setPoint() {
+							for (var i = 0; i < pointsLis.length; i++) {
+								pointsLis[i].classList.remove('active');
+							}
+							pointsLis[center].classList.add('active');
+						}
+					}
+				</script>
+ -->
+			</div>
+
+
+			<div class="hotdy container">
+				<h3>80%品类进口材料</h3>
+				<h3>20万用户口碑选择</h3>
+
+
+
+			</div>
+
+
+
+			<div class="index-four-nav">
+
+				{pboot:sort scode=1}
+				<a href="[sort:link]">
+					<div>
+						<img src="{pboot:sitetplpath}/img/fnav1.png" style="width: 0.37rem;height: 0.37rem;">
+					</div>
+					<p>装修案例</p>
+				</a>
+				{/pboot:sort}
+				{pboot:sort scode=37}
+				<a href="[sort:link]">
+					<div style="background: linear-gradient(to bottom, #19d791, #0ab777);box-shadow: 0rem 0.1rem 0.18rem rgba(10, 183, 119, 0.4);">
+						<img src="{pboot:sitetplpath}/img/fnav2.png" style="width: 0.37rem;height: 0.37rem;">
+					</div>
+					<p>精品实景</p>
+				</a>
+				{/pboot:sort}
+				{pboot:sort scode=3}
+				<a href="[sort:link]">
+					<div style="background: linear-gradient(to bottom, #3c90e6, #2c77c3);box-shadow: 0rem 0.1rem 0.18rem rgba(44, 119, 195, 0.4);">
+						<img src="{pboot:sitetplpath}/img/fnav3.png" style="width: 0.37rem;height: 0.37rem;">
+					</div>
+					<p>设计师</p>
+				</a>
+				{/pboot:sort}
+				{pboot:sort scode=42}
+				<a href="[sort:link]">
+					<div style="background: linear-gradient(to bottom, #f57354, #e24924);box-shadow: 0rem 0.1rem 0.18rem rgba(226, 73, 36, 0.4);">
+						<img src="{pboot:sitetplpath}/img/fnav4.png" style="width: 0.37rem;height: 0.37rem;">
+					</div>
+					<p>装修日记</p>
+				</a>
+				{/pboot:sort}
+			</div>
+
+
+<form action="{pboot:form fcode=3}"  method="post">	
+			<div class="container-from consult-from">
+
+
+				<input type="text" class="input" placeholder="您的姓名" name="name"  required>
+
+				<input type="tel" class="input" placeholder="输入您的手机号码" name="tel" required>
+
+				<input type="submit" class="button" value="预约咨询">
+			</div>
+</form>	
+
+
+
+<style type="text/css">
+	/* .one{
+		width: 3.1rem!important;
+		margin-right: 15px!important;
+	} */
+	.one:first-child{
+		margin-left: 10px;
+	}
+/* 	.one:last-child{
+		margin-right: 60px;
+	} */
+	/* .one a{
+		display: block;
+	} */ 
+	.xd{
+		font-size: 0.34rem;
+		    color: #fff;
+		    width: 100%;
+		    text-align: center;
+		    position: absolute;
+		    left: 0;
+		    top: 1.3rem;
+		    position: absolute;
+	}
+	.ck{
+		    font-size: 0.24rem;
+		    color: #fff;
+		    width: 100%;
+		    text-align: center;
+		    position: absolute;
+		    left: 0;
+		    position: absolute;
+		    top: 1.8rem;
+	}
+</style>
+			<div class="style-desgin">
+				<div class="title">
+					<h2>装修风格</h2>
+					{pboot:sort scode=1}
+					<a href="[sort:link]">查看全部</a>
+					{/pboot:sort}
+				</div>
+				<div class="label">
+					不同气质，只为遇上不一样的你
+				</div>
+				<div class="swiper-container1" style="overflow: hidden;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide one">
+							{pboot:sort scode=36}
+							<a href="[sort:link]">
+								<img src="{pboot:sitetplpath}/img/4_style.png" >
+								<h3 class="xd">现代</h3>
+								<h5 class="ck">点击查看</h5>
+							</a>
+							{/pboot:sort}
+						</div>
+						<div class="swiper-slide one">
+							{pboot:sort scode=36}
+							<a href="[sort:link]">
+								<img src="{pboot:sitetplpath}/img/6_style.png" >
+								<h3 class="xd">欧式</h3>
+								<h5 class="ck">点击查看</h5>
+							</a>
+							{/pboot:sort}
+						</div>
+						<div class="swiper-slide one">
+							{pboot:sort scode=36}
+							<a href="[sort:link]">
+								<img src="{pboot:sitetplpath}/img/3_style.png" >
+								<h3 class="xd">美式</h3>
+								<h5 class="ck">点击查看</h5>
+							</a>
+							{/pboot:sort}
+						</div>
+						<div class="swiper-slide one">
+							{pboot:sort scode=36}
+							<a href="[sort:link]">
+								<img src="{pboot:sitetplpath}/img/2_style.png" >
+								<h3 class="xd">新中式</h3>
+								<h5 class="ck">点击查看</h5>
+							</a>
+							{/pboot:sort}
+						</div>
+						<div class="swiper-slide one">
+							{pboot:sort scode=36}
+							<a href="[sort:link]">
+								<img src="{pboot:sitetplpath}/img/0_style.png" >
+								<h3 class="xd">北欧</h3>
+								<h5 class="ck">点击查看</h5>
+							</a>
+							{/pboot:sort}
+						</div>
+						<div class="swiper-slide one">
+							{pboot:sort scode=36}
+							<a href="[sort:link]">
+								<img src="{pboot:sitetplpath}/img/11_style.png" >
+								<h3 class="xd">其他</h3>
+								<h5 class="ck">点击查看</h5>
+							</a>
+							{/pboot:sort}
+						</div>
+						
+						<script>
+						    var swiper = new Swiper('.swiper-container1', {
+						      slidesPerView:3,
+						      spaceBetween: 15,
+						      pagination: {
+						        el: '.swiper-pagination',
+						        clickable: true,
+						      },
+						    });
+						  </script>
+					</div>
+				</div>
+				<div class="swiper-hint">
+					向右滑动查看更多
+				</div>
+				<!-- <div class="style-banner">
+					<a href="javascript:void(0);">
+						<img src="{pboot:sitetplpath}/img/4464cec1002dfef4a3a5dae3a3bdeed5.png">
+					</a>
+				</div> -->
+			</div>
+
+
+<form action="{pboot:form fcode=7}"  method="post">	
+			<div class="container quote-form formnew">
+				<div class="quote-banner">
+					<!-- <img src="{pboot:sitetplpath}/img/bj_banner1.png"> -->
+				</div> 
+				<input type="number" placeholder="输入您的房屋套内面积" id="area" name="size" required>
+
+				<input type="tel" placeholder="输入电话，报价结果将发送到您的手机" id="tel" name="tel" required>
+
+				<button type="submit"><i></i>发送报价到手机</button>
+				<style type="text/css">
+					.quote-form .form-hint{
+						margin: .3rem 0 .1rem;
+					}
+				</style>
+				<div class="form-hint">* 您的个人信息将严格保密，请放心填写。</div>
+			</div>
+</form>	
+
+			<div class="content-flow">
+				<div class="flow-container">
+					{pboot:list scode=1 num=999999999}
+					<div class="flow-lists">
+						
+						
+						
+						<div class="flow-case">
+							<a href="[list:link]">
+								<div class="image-center case-img" style="background: url([list:ico]);background-size: cover;
+    background-position: top center;"></div>
+							</a>
+							<div class="case-info">
+								<div class="info">
+									<h3>[list:title]</h3>
+									<div class="title">
+										[list:tags]
+									</div>
+								</div>
+								<div class="info-btn hqbj">获取报价</div>
+								<div style="clear: both"></div>
+							</div>
+							{pboot:sort scode=1}
+							<a href="[sort:link]" class="flow-label flow-label-2">#案例篇</a>
+							{/pboot:sort}
+						</div>
+						
+						
+						
+						
+					</div>
+					{/pboot:list}
+					
+					
+					
+					
+										{pboot:list scode=8 num=999999999}
+										<div class="flow-lists">
+										<div class="flow-case">
+											<a href="[list:link]">
+												<div class="image-center case-img" style="background: url([list:ico]);background-size: cover;
+					background-position: top center;"></div>
+											</a>
+											<div class="case-info">
+												<div class="info">
+													<h3>[list:title]</h3>
+													<div class="title">
+														[list:tags]
+													</div>
+												</div>
+												<div class="info-btn hqbj">获取报价</div>
+												<div style="clear: both"></div>
+											</div>
+											{pboot:sort scode=8}
+											<a href="[sort:link]" class="flow-label flow-label-2" style="border: 1px solid #42bde7;color: #42bde7;">#精品案例</a>
+											{/pboot:sort}
+										</div>
+										</div>
+										{/pboot:list}
+					
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+		
+
+
+
+
+	<script type="text/javascript">
+
+			// function hqbj(){
+			// 	$("#layui-layer100001").show();	
+			// }
+			// $(".close").click(function(){
+			// $("#layui-layer100001").hide();
+			// }
+			
+			$(function(){
+				$('.info-btn').click(function(){
+					
+						$("#layui-layer100001").show();	
+				})
+				
+			})
+	
+		
+	</script>
+
+
+
+
+		
+		
+		
+		
+		{include file=footer.html}
+
+

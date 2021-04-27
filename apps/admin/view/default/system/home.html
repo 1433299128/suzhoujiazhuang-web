@@ -1,0 +1,232 @@
+{include file='common/head.html'}
+
+<div class="layui-body">
+
+    {if(![$dbsecurity]||![$session.pwsecurity])}
+    <blockquote class="layui-elem-quote layui-text-red" id="note">
+        {if(![$dbsecurity])}
+        <p>
+            <i class="fa fa-info-circle" aria-hidden="true"></i> 您的数据库文件存在安全隐患，可能被下载，请尽快修改数据库路径！
+            <a class="layui-btn  layui-btn-sm" href="{url./admin/Index/home}&action=moddb">自动修改</a>
+        </p>
+        {/if} {if(![$session.pwsecurity])}
+        <p>
+            <i class="fa fa-info-circle" aria-hidden="true"></i> 您的账号密码为初始密码，存在安全隐患，请尽快修改密码！
+            <a class="layui-btn  layui-btn-sm" href="{url./admin/Index/ucenter}">立即修改</a>
+        </p>
+        {/if}
+    </blockquote>
+    {/if}
+
+    <blockquote class="layui-elem-quote">
+        当前登录用户：{$user_info->username} {$user_info->realname}，登录时间：{$user_info->update_time}，登录IP：{fun=long2ip([$user_info->last_login_ip])}，累计登录次数：{$user_info->login_count}
+    </blockquote>
+
+    <fieldset class="layui-elem-field">
+        <legend>快捷操作</legend>
+        <div class="layui-field-box">
+            <div class="layui-row">
+                {foreach $model_msg(key,value)}
+                <div class="layui-col-xs6 layui-col-sm4 layui-col-md3 layui-col-lg2">
+                    {if($value->type==1)}
+                    <a href="{url./admin/Single/index/mcode/'.$value->mcode.'}">
+		    		{else}
+		    		<a href="{url./admin/Content/index/mcode/'.$value->mcode.'}">
+		    		{/if}
+			      		<dl class="deskbox center-block">
+			      			 <dt>[value->name]</dt>
+		                     <dd>[value->count]</dd>
+		                 </dl>
+		             </a>
+                </div>
+                {/foreach}
+
+                <div class="layui-col-xs6 layui-col-sm4 layui-col-md3 layui-col-lg2">
+                    <a href="{url./admin/Message/index}">
+                        <dl class="deskbox center-block">
+                            <dt>留言</dt>
+                            <dd>{$sum_msg}</dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12 layui-col-md6">
+            <table class="layui-table table-two">
+                <thead>
+                    <tr>
+                        <th colspan="2">系统信息</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th width="100">应用版本</th>
+                        <td>V{APP_VERSION}-{RELEASE_TIME}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>框架版本</th>
+                        <td>Pboot V{CORE_VERSION}</td>
+                    </tr>
+                    <tr>
+                        <th>主机系统</th>
+                        <td>{$server->php_os}</td>
+                    </tr>
+                    <tr>
+                        <th>主机地址</th>
+                        <td>{$server->server_name}（{$server->server_addr}:{$server->server_port}）</td>
+                    </tr>
+                    <tr>
+                        <th>WEB软件</th>
+                        <td>{$server->server_software}</td>
+                    </tr>
+                    <tr>
+                        <th>PHP版</th>
+                        <td>{$server->php_version}</td>
+                    </tr>
+                    <tr>
+                        <th>数据库驱动</th>
+                        <td>{$server->db_driver}</td>
+                    </tr>
+                    <tr>
+                        <th>文件上传限制</th>
+                        <td>{$server->upload_max_filesize}</td>
+                    </tr>
+                    <tr>
+                        <th>表单提交限制</th>
+                        <td>{$server->post_max_size}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="layui-col-xs12 layui-col-md6">
+            <table class="layui-table table-two">
+                <thead>
+                    <tr>
+                        <th colspan="2">开发信息</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>系统名称</th>
+                        <td>书生商友企业网站开发建设管理系统</td>
+                    </tr>
+
+                    <tr>
+                        <th>官方网站</th>
+                        <td><a href="http://www.768800.com" target="_blank" style="color:#666">www.768800.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>联系电话</th>
+                        <td><a href="http://www.768800.com" target="_blank" style="color:#666">400-111-6878</a></td>
+                    </tr>
+                    <tr>
+                        <th>联系手机</th>
+                        <td><a href="http://www.768800.com" target="_blank" style="color:#666">18118153152</a></td>
+                    </tr>
+                    <tr>
+                        <th>添加微信</th>
+                        <td><a href="http://www.768800.com" target="_blank" style="color:#666">18118153152</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .gz {
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        text-align: center;
+        overflow: auto
+    }
+    
+    .gz img {
+        max-width: 100%;
+        cursor: pointer;
+    }
+    
+    .img1 {
+        max-height: 100%;
+    }
+    
+    .colse1 {
+        position: fixed;
+        z-index: 999;
+        top: 30px;
+        right: 30px;
+        font-size: 28px;
+        background-color: rgb(255, 255, 255);
+        width: 30px;
+        border-radius: 15px;
+        height: 30px;
+        text-align: center;
+        line-height: 28px;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .colse1 {
+        background-color: rgb(0, 0, 0, 0.6);
+        color: #fff;
+    }
+</style>
+
+<div class="gz">
+
+    <img class="img1" src="/apps/admin/view/default/images/gz.jpg" alt="点击放大" title="点击放大">
+
+
+    <div class="colse1 colse2">
+        x
+    </div>
+</div>
+
+
+
+<script>
+    $(function() {
+        $(".colse1").click(function() {
+            $(".gz").css("display", "none");
+        });
+
+
+
+
+
+        $(".gz img").click(function() {
+            //移出css样式
+            $(".gz img").removeClass('img1');
+
+            $(".gz img").css({
+                "width": "100%",
+                "height": "auto",
+            });
+
+            $(".colse1").addClass("colse2")
+        });
+
+    });
+
+    $.ajax({
+        type: 'GET',
+        url: 'https://www.pbootcms.com/index.php?p=/upgrade/check&version={APP_VERSION}.{RELEASE_TIME}.{$revise}&branch={$branch}&snuser={$snuser}&site={$site}',
+        dataType: 'json',
+        success: function(response, status) {
+            if (response.code == 1) {
+                $("#check").html($("#check").html() + '<span class="layui-badge-dot"></span>');
+            }
+        }
+    });
+</script>
+{include file='common/foot.html'}

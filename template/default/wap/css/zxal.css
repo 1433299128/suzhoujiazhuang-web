@@ -1,0 +1,189 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+.page {
+	width: 100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% - 7.5rem) / 2); */
+}
+
+.page .casus-select {
+	width: 7.2rem;
+	height: auto;
+
+	background: #fff;
+	left: 0;
+	z-index: 99;
+	opacity: 1;
+	top: 0;
+	position: absolute;
+	padding: .3rem .15rem;
+}
+
+.casus-select div {
+	height: auto;
+	padding: .1rem .15rem;
+	border: 1px solid #e9e9e9;
+	border-radius: .12rem;
+
+}
+
+.casus-select div .nav {
+	height: .5rem;
+	display: flex;
+}
+
+.casus-select div .nav li {
+	list-style: none;
+	width: calc(100% / 3);
+	height: 100%;
+	border-right: 1px solid #e9e9e9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.casus-select div .nav li:last-child {
+	border: none;
+}
+
+.casus-select div .nav li h5 {
+	font-size: .28rem;
+}
+
+.casus-select div .nav i {
+	width: .2rem;
+	height: .11rem;
+	background: url(../img/jp_icon3.png);
+	background-position: 0 0;
+	background-size: .2rem .3rem;
+	margin-left: .2rem;
+}
+
+.casus-select div .option {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: .1rem;
+}
+
+.casus-select div .option li {
+	width: auto;
+	height: auto;
+	border: 1px solid #e9e9e9;
+	padding: .1rem .24rem;
+	margin: .1rem;
+	font-size: .26rem;
+	border-radius: .06rem;
+	display: inline-block;
+}
+
+.casus-select div .option .active {
+	border-color: #c79e68;
+	color: #c79e68;
+}
+
+.case-lists {
+	width: 100%;
+	height: auto;
+	/* padding-top: 1.5rem; */
+	max-width: 95%;
+	    margin: 0 auto;
+}
+
+.case-lists li {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	margin-bottom: .2rem;
+}
+
+.case-lists li a {
+	display: block;
+}
+
+
+.case-lists li a .case-img {
+	width: 100%;
+	height: 5.05rem;
+	position: relative;
+}
+
+.case-lists li .case-info {
+	height: auto;
+	padding: .2rem .4rem 0.1rem;
+	background: #f8f8f8;
+	display: flex;
+	justify-content: space-between;
+	border-bottom-left-radius: .1rem;
+	border-bottom-right-radius: .1rem;
+	align-items: center;
+}
+
+.case-lists li a .info {
+	width: 4rem;
+	height: 0.88rem;
+}
+
+.case-lists li a .info h3 {
+	margin: .08rem 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: .28rem;
+}
+
+.case-lists li a .info h5 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #686868;
+	font-size: 0.24rem;
+}
+
+.case-lists li .case-info .info-btn {
+	width: 1.8rem;
+	height: 0.64rem;
+	border-radius: .08rem;
+	background: #00ae66;
+	color: #fff;
+	font-size: 0.26rem;
+	text-align: center;
+	line-height: 0.64rem;
+}
+
+.case-lists li:nth-child(1) .image-center {
+	background: url(../img/1702af929d33e8d210c8bdc781d2ece5.png);
+	background-size: cover;
+	background-position: top center;
+}
+
+.case-lists li:nth-child(2) .image-center {
+	background: url(../img/fc233cc05414193e813d5f5b2315d718.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.case-lists li:nth-child(3) .image-center {
+	background: url(../img/2790d961e9699fb3b376910c0242a61b.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+ .on{
+	 display: block;
+ }

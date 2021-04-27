@@ -1,0 +1,112 @@
+{include file=header.html}
+
+
+<link rel="stylesheet" type="text/css" href="{pboot:sitetplpath}/css/jzgl.css" />
+<div class="show-container">
+    <div class="crumbs-container">
+        <div class="crumbs">
+            {pboot:position}
+        </div>
+    </div>
+
+    <div class="show-center">
+        <div class="show-left">
+            <ul>
+                {pboot:list}
+                <li>
+                    <a href="[list:link]">
+                        <div class="know-heading" style="background: url([list:ico]);background-position: center center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;"></div>
+                    </a>
+                    <div class="know-info">
+                        <h2><a href="[list:link]">[list:title]</a></h2>
+                        <h5>[list:date style=Y-m-d]<span>[list:visits]人浏览</span></h5>
+                        <ii>[list:content]</ii>
+                        <div class="konw-list-button">
+                            <a href="[list:link]"><button>查看详情</button></a>
+                        </div>
+                    </div>
+                </li>
+                {/pboot:list}
+
+
+
+
+            </ul>
+            <div class="login-more" style="width: 100%;">
+                <style type="text/css">
+                    .login-more a {
+                        border: 1px solid silver;
+                        margin: 0 3px;
+                        border-radius: 3px;
+                        padding: 5px;
+                        display: inline-block;
+                    }
+                    
+                    .login-more-active {
+                        color: #fff;
+                        background: #5eb95e;
+                        border-color: #5eb95e;
+                    }
+                    
+                    .login-more-active:hover {
+                        color: #fff;
+                    }
+                </style>
+                <span class="login-more-span">{page:bar}</span>
+                <script type="text/javascript">
+                    $(".login-more-span span>a").click(function() {
+                        $(this).toggleClass('login-more-active').parent().siblings().children().removeClass('login-more-active');
+                    })
+                </script>
+            </div>
+        </div>
+        <div class="show-right">
+            <div class="right">
+                <div class="p-title">算一算我家装修需要多少钱？</div>
+                <ul class="ul">
+                    <li class="active"><a href="javascript:void();">免费报价</a></li>
+                    <li><a href="javascript:void();">免费量房</a></li>
+                </ul>
+				
+				
+				<script type="text/javascript">
+					$(".show-right .ul>li").click(function(){
+						$(this).toggleClass('active').siblings().removeClass('active');
+					})
+				</script>
+				
+				<form action="{pboot:form fcode=6}"  method="post">		
+                <div class="from">
+                    <div class="city">
+                        <input type="text" value="苏州" name="dizhi" required>
+                    </div>
+                    <div class="tel">
+                        <input type="text" value="" placeholder="请输入您的手机号码" name="tel" required>
+                    </div>
+                    <div class="size">
+                        <input type="text" value="" placeholder="请输入面积"  name="size" required><i>㎡</i>
+                    </div>
+                    <div class="button">
+                        <a href="javascript:void();">人工精准报价</a>
+                        <input type="submit" value="发送报价到手机" />
+                    </div>
+                    <h6>* 为了您的权益，您的一切信息将被严格保密</h6>
+                </div>
+				
+				</form>	
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{include file=footer.html}

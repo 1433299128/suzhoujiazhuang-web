@@ -1,0 +1,474 @@
+<footer>
+	<div class="footer-center">
+		<div class="footer-content">
+			<div class="footer-nav">
+				<ul>
+					{pboot:sort scode=2}
+					<li><a href="[sort:link]">整装产品</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=12}
+					<li><a href="[sort:link]">轻奢装</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=11}
+					<li><a href="[sort:link]">全屋软装</a></li>
+					{/pboot:sort}
+					<!-- {pboot:sort scode=10}
+					<li><a href="[sort:link]">梵高国际</a></li>
+					{/pboot:sort} -->
+				</ul>
+				<!-- <ul>
+					<li><a href="">了解生活家</a></li>
+					<li><a href="">恩里克·设计</a></li>
+					<li><a href="index.php/sitemap">网站地图</a></li>
+				</ul> -->
+				<ul>
+					
+					{pboot:sort scode=5}
+					<li><a href="[sort:link]">装修攻略</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=19}
+					<li><a href="[sort:link]">装修设计</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=18}
+					<li><a href="[sort:link]">装修木工</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=17}
+					<li><a href="[sort:link]">装修水电</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=20}
+					<li><a href="[sort:link]">装修入住</a></li>
+					{/pboot:sort}
+					
+				</ul>
+				<ul>
+					
+					{pboot:sort scode=1}
+					<li><a href="[sort:link]">装修案例</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=1}
+					<li><a href="[sort:link]">装修风格</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=8}
+					<li><a href="[sort:link]">精品案例</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=48}
+					<li><a href="[sort:link]">装修实景</a></li>
+					{/pboot:sort}
+					{pboot:sort scode=49}
+					<li><a href="[sort:link]">户型解析</a></li>
+					{/pboot:sort}
+
+				</ul>
+				<!-- <ul>
+					<li><a href="">独家策划</a></li>
+					<li><a href="">设计·家</a></li>
+					<li><a href="">品牌实力</a></li>
+					<li><a href="">实用三房</a></li>
+					<li><a href="">工地鉴赏</a></li>
+				</ul> -->
+			</div>
+			<div class="footer-code">
+				<ul>
+					<li>
+						<div class="code-box">
+							<div class="img">
+								<!-- <img src="{label:baiduxcx}"> -->
+							{pboot:qrcode string={pboot:pageurl}}
+								
+							</div>
+							<h6>网站二维码</h6>
+						</div>
+					</li>
+					<li>
+						<div class="code-box">
+							<div class="img">
+								<img src="{pboot:companyweixin}">
+							</div>
+							<h6>关注公众号领福利</h6>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-tel">
+				<img src="{label:lxdh_pic}">
+			</div>
+		</div>
+		<div class="footer-link">
+			<h6>友情链接</h6>
+			<ul>
+				{pboot:link  gid=1}
+				<li><a href="[link:link]" target="_blank">[link:name]</a></li>
+				{/pboot:link}
+			</ul>
+		</div>
+		<div class="footer-copy">
+			<h6>
+				{pboot:sitecopyright}<a href="http://beian.miit.gov.cn/" target="_blank"> &nbsp;&nbsp;备案号：{pboot:siteicp}</a><!-- <a href="#"><img
+						src="{pboot:sitetplpath}/img/hy_83x30.png"> --></a>
+			</h6>
+		</div>
+	</div>
+</footer>
+
+<ul class="right-fix-nav">
+	<li class="mfbj1"><a href="javascript:void(0);"><i></i>
+			<h6>免费报价</h6>
+		</a></li>
+	<li id="lxdh">
+		<a href="javascript:void(0);">
+			<i></i>
+			<h6>服务热线</h6>
+		</a>
+		<div style="height: 59px; position: absolute; background-color: green;left: -160px;top: 85px; color: white;font-size: 21px; padding: 0 10px;line-height: 59px;" id="gsdh">{pboot:companyphone}</div>
+		</li>
+		
+		
+		<li id="gsewm">
+			<a href="javascript:void(0);">
+				<img src="{pboot:companyweixin}" style="width: 39px;margin: 15px 10px 15px 10px">
+			</a>
+			<div style="width:160px;height: 160px; background: #fff;position: absolute;right: 80px;top:120px;border-radius: 5px;" id="ewm">
+				<img src="{pboot:companyweixin}" style="width:140px;padding-top: 10px;">
+			</div>
+			
+			</li>
+			
+	<li><a href="" id="backTop"><i></i>
+			<h6>返回顶部</h6>
+		</a></li>
+		
+</ul>
+
+<script type="text/javascript">
+	$("#gsdh").hide();
+	$("#ewm").hide();
+	$('#lxdh').hover(function() {
+	
+		$("#gsdh").toggle();
+	});
+	
+	$('#gsewm').hover(function() {
+	
+		$("#ewm").toggle();
+	});
+</script>
+
+					
+
+
+
+
+
+<style type="text/css">
+	#bjDy div{
+		position: relative;
+		    width: 420px;
+		    display: block;
+		    margin: 0 auto;
+		    background-color: #fff;
+		    /* height: 515px; */
+		    margin-top: 10px;
+		   /* background-image: url(https://shj-web.oss-cn-hangzhou.aliyuncs.com/static/pcweb/images/navbg.jpg_shj-aliyun-nsy); */
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+			padding-bottom: 30px;
+	}
+	#bjDy div h3{
+		color: #373737;
+		    font-size: 20px;
+		    font-weight: normal;
+		    text-align: center;
+		    margin-top: 39px;
+			margin-bottom: 30px;
+	}
+	#bjDy div input{
+		width: 360px;
+		    height: 52px;
+		    display: flex;
+		    border: 1px solid #d6d7d4;
+		    border-radius: 3px;
+		    font-size: 18px;
+		    margin-top: 20px;
+		    padding-left: 15px;
+	}
+	#bjDy div .btn-btn{
+		display: flex;
+		    width: 360px;
+		    height: 52px;
+		    background-color: #00ae66;
+		    border-radius: 3px;
+		    font-size: 16px;
+		    text-align: center;
+		    text-decoration: none;
+		    align-items: center;
+		    justify-content: center;
+		    margin-top: 26px;
+		    color: #fff;
+			outline: none;
+			border: none;
+	}
+	#bjDy div p{
+		    font-size: 12px;
+		    color: #686868;
+		    margin-left: -50px;
+		    margin-top: 15px;
+		    position: relative;
+	}
+	.layui-layer-setwin{
+		position: absolute;
+		    right: 15px;
+		    *right: 0;
+		    top: 15px;
+		    font-size: 0;
+		    line-height: initial;
+	}
+	.layui-layer-setwin .layui-layer-close2{
+		    position: absolute;
+		    right: -28px;
+		    top: -28px;
+		    width: 30px;
+		    height: 30px;
+		    margin-left: 0;
+		    background-position: -149px -31px;
+		    *right: -18px;
+	}
+</style>
+
+<form action="{pboot:form fcode=4}" method="post">
+	<div
+			style="position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2022;
+	overflow-y:auto;
+	overflow-x: 0;
+	"
+	id="mfbj">
+<div class="layui-layer layui-layer-page layui-layer-bgNone" style="z-index: 299325;
+    top: auto;
+    left: auto;
+	position: absolute;"
+	><div id="" class="layui-layer-content" >
+		<div id="bjDy">
+		<div>
+			<h3>免费预约设计</h3>
+			<input type="text" id="name" placeholder="你的姓名" name="name" style="margin-top:5px;" required>
+			<input type="tel" id="tel" placeholder="请输入你的手机号" name="tel" required>
+			<input type="text" id="area" placeholder="请输入面积" name="size" required>
+			
+			<a href="javascript:;"><button class="btn-btn" type="submit">立即预约</button></a>
+			
+		</div>
+	</div>
+	</div><span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close2" href="javascript:;" id="gb"></a></span></div>
+
+	</div>
+</form>
+
+
+<script>
+	
+	$(function() {
+		
+		$("#mfbj").hide();
+		$('.mfbj').click(function() {
+
+			$("#mfbj").show();
+		});
+		
+		$('.mfbj1').hover(function() {
+		
+			$("#mfbj").show();
+		});
+		
+		
+		$('#gb').click(function() {
+
+			$("#mfbj").hide();
+		});
+
+/* 		$('.yysjs').click(function() {
+
+			$("#sjs").show();
+		});
+
+
+		$(".close").click(function() {
+			
+			$("#sjs").hide();
+		}); */
+		
+		$('.ljgd').click(function() {
+			$("#mfbj").show();
+		});
+		
+
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="{pboot:form fcode=12}" method="post">
+<div style="width: 100%;height: 500px;position: fixed;background: rgba(0, 0, 0, 0.8);bottom: -430px;left: 0;z-index: 999999;"class="zk">
+	<div class="floatBottom" style="width: 1014px;margin: 0 auto;position: relative;">
+		<!-- <img src="{pboot:sitetplpath}/img/bottom_person.png"
+			style="position: absolute;width: 114px;height: 128px;top: -50px;left: 478px"> -->
+			<img src="{pboot:sitetplpath}/img/bottomtc20190702.png" >
+		<input type="text" id="area" style="top: 166px;width: 289px;height: 43px;left: 125px;padding-left: 12px" placeholder="请输入您的房屋面积" name="size" required>
+		<select style="top: 221px;width: 98px;height: 43px;left: 125px;padding-left: 12px" name="shi">
+			<option value="1室">1室</option>
+			<option selected="2室" value="2室">2室</option>
+			<option value="3室">3室</option>
+			<option value="4室">4室</option>
+			<option value="5室">5室</option>
+		</select>
+		<select style="top: 221px;width: 98px;height: 43px;left: 235px;padding-left: 12px" name="ting">
+			<option value="1厅">1厅</option>
+			<option value="2厅">2厅</option>
+			<option value="3厅">3厅</option>
+		</select>
+		<select id="chuSelect" style="top: 221px;width: 98px;height: 43px;left:340px;padding-left: 12px" name="chu">
+			<option value="1厨">1厨</option>
+			<option value="2厨">2厨</option>
+			<option value="3厨">3厨</option>
+		</select>
+		<select id="weiSelect" style="top: 276px;width: 153px;height: 43px;left: 125px;padding-left: 12px" name="wsj">
+			<option value="1卫生间">1卫生间</option>
+			<option value="2卫生间">2卫生间</option>
+			<option value="3卫生间">3卫生间</option>
+		</select>
+		<select id="yangSelect" style="top: 276px;width: 153px;height: 43px;left: 285px;padding-left: 12px" name="yt">
+			<option value="1阳台">1阳台</option>
+			<option value="2阳台">2阳台</option>
+			<option value="3阳台">3阳台</option>
+		</select>
+		<input type="text" id="tel" style="top: 331px;width: 318px;height: 43px;left: 125px;padding-left: 12px" placeholder="报价结果将发送到您手机" name="tel" required>
+		<!-- <div class="asksub"
+			style="cursor: pointer;width: 121px;height: 120px;top: 219px;left: 935px;position: absolute;border-radius: 50%;">
+			</div>
+			 -->
+			<input type="submit" style="cursor: pointer;width: 121px;height: 120px;top: 219px;left:480px;position: absolute;border-radius: 50%;" value="">
+		<div class="bottomup" style="background-image: url({pboot:sitetplpath}/img/bup.png);">
+		</div>
+		<div class="bottomups" style="width: 100%;height: 78px;position: absolute;top: 0px;left: 0;"></div>
+		<!-- <input type="text" style="width: 142px;height: 50px;top: 60px;left: 788px;" id="area" name="area" placeholder="你家面积㎡">
+				<input type="text" style="width: 230px;height: 50px;top: 60px;left: 940px;" id="tel" name="tel" placeholder="你的手机号">
+				<a href="/yuyue?mode=18" class="askshj" style="width: 140px;height: 50px;top: 60px;left: 1189px;"></a>
+				<a  class="asksub" onClick="saveInfo(this, 1)" data-from="底部滚动栏" style="cursor: pointer;width: 170px;height: 50px;top: 60px;left: 1350px;" data-mode="18"></a> -->
+	</div>
+</div>
+
+</form>
+
+<script>
+	$('.bottomups').click(function() {
+		$('.zk').toggleClass('showbottom');
+	});
+</script>
+
+
+<script>
+		//导航
+		$(function() {
+			// 鼠标经过导航栏添加背景颜色
+			$("nav .content .nav>li").hover(function() {
+				$(this).addClass("on");
+			}, function() {
+				$(this).removeClass("on");
+			});
+	
+			// 鼠标经过 展示二级菜单
+			$("nav .content .nav>li").mouseover(function() {
+				// $(this) jQuery 当前元素  this不要加引号
+				// show() 显示元素  hide() 隐藏元素
+				$(this).children("ul").show();
+			});
+	
+			// 鼠标离开 关闭二级菜单
+			$("nav .content .nav>li").mouseout(function() {
+				$(this).children("ul").hide();
+			})
+			//鼠标经过二级菜单添加背景颜色
+			$("nav .content .nav ul>li").hover(function() {
+				$(this).addClass("onn");
+			}, function() {
+				$(this).removeClass("onn");
+			});
+			//鼠标经过按钮图片时切换图片
+			$(".case .case-center .case-space>a").hover(function() {
+				$(this).children("img.on").show().siblings().hide();
+			}, function() {
+				$(this).children("img.on").hide().siblings().show();
+			});
+	
+		})
+	</script>
+	
+	<script>
+		if (window.$) {
+			$(window).scroll(function() {
+				if ($(document).scrollTop() >= 500) {
+					$("#backTop").fadeIn();
+				} else {
+					$("#backTop").fadeOut();
+				}
+			});
+	</script>
+	
+	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 100) {
+				$("nav").addClass("nav-active");
+			} else {
+				$("nav").removeClass("nav-active");
+			}
+		});
+	</script>
+	
+	
+</body>
+</html>

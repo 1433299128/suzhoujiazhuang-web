@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.lxwm-container {
+	background: url(../img/bg.jpg)center top no-repeat;
+	width: 100%;
+}
+
+.lxwm-container .ztbd {
+	width: 1200px;
+	position: relative;
+	height: auto;
+	margin: auto;
+}
+
+.lxwm-container .ztbd img {
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
+	border: 0;
+}
+
+.lxwm-container .ztbd .item {
+	position: absolute;
+	width: 262px;
+	height: auto;
+}
+
+.lxwm-container .ztbd .item h4 {
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 30px;
+	padding: 0 20px;
+	color: #000;
+}
+
+.lxwm-container .ztbd .item p {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 35px;
+	line-height: 25px;
+	margin-top: 20px;
+}
+
+.lxwm-container .ztbd .item p span {
+	font-size: 10pt;
+	font-family: 微软雅黑, sans-serif
+}

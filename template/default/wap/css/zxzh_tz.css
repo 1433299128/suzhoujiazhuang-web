@@ -1,0 +1,231 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	color: #000;
+}
+
+input,
+button {
+	outline: none;
+	border: none;
+	background: none;
+	touch-action: none;
+}
+
+h3 {
+	font-size: 0.34rem;
+}
+
+.page {
+	width: 100%;
+	height: auto;
+	position: relative;
+	/* left: calc((100% -100%) / 2) */
+}
+
+.page .page-container {
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.4rem;
+}
+
+.knowledge-show {
+	height: auto;
+	padding: .3rem;
+	background: #fff;
+}
+
+.knowledge-title {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: .32rem;
+	text-align: center;
+}
+
+.knowledge-author {
+	width: 100%;
+	line-height: .6rem;
+	font-size: .24rem;
+	color: #727272;
+}
+
+.knowledge-content {
+	width: 100%;
+	height: auto;
+}
+
+.knowledge-content * {
+	font-size: .26rem;
+	line-height: .4rem
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-center {
+	background-size: cover;
+	background-position: top center;
+}
+
+.formnew {
+	background-color: #fff;
+	margin-bottom: 0.2rem;
+	margin-top: 0.2rem;
+	padding-top: 0.01rem;
+	padding-bottom: 0.3rem;
+}
+
+.formnew {
+	width:100%;
+	height: auto;
+	background-image: url(../img/case_show_offer_bg.jpg);
+	background-size: cover;
+	padding-top: 1.8rem;
+}
+
+.formnew input {
+	display: block;
+	height: 0.75rem;
+	border-radius: 0.05rem;
+	margin: 0 auto;
+	font-size: 0.26rem;
+}
+
+.formnew input {
+	border-radius: .1rem;
+	margin-bottom: .2rem;
+}
+
+.formnew input[type='text'] {
+	background-image: url(../img/dh.png);
+	background-color: #eaeaea;
+	padding-left: 1rem;
+	padding-right: 0.2rem;
+	background-size: 0.35rem 0.34rem;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position-x: 0.3rem;
+	background-color: #fff !important;
+}
+
+.formnew input[type='tel'] {
+	background-image: url(../img/fz.png);
+	background-color: #eaeaea;
+	padding-left: 1rem;
+	padding-right: 0.2rem;
+	background-size: 0.39rem 0.37rem;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position-x: 0.3rem;
+	margin-bottom: 0.2rem;
+	background-color: #fff !important;
+}
+
+.formnew .input_button {
+	background-image: url(../img/bgyy.jpg);
+	background-size: 0.82rem 0.85rem;
+	background-position: left;
+	color: #fff;
+	margin-top: 0.3rem;
+}
+
+.case-show {
+	height: auto;
+}
+
+.case-show-lists {
+	background: #fff;
+	height: auto;
+	padding: .3rem .2rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.case-show-lists li {
+	width: 3.45rem;
+	height: auto;
+}
+
+.case-show-lists li:nth-child(odd) {
+	margin-right: .2rem;
+}
+
+.case-show-lists li a {
+	display: block;
+}
+
+.case-show-lists li a .case-image {
+	width: 3.45rem;
+	height: 2.6rem;
+	border-radius: .12rem;
+}
+
+.case-show-lists li a h5 {
+	font-size: 0.24rem;
+	text-align: center;
+	line-height: .6rem;
+	margin-bottom: .1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.layui-flow-more {
+	margin: 10px 0;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+}
+
+.layui-flow-more {
+	width: 100%;
+	padding: .3rem 0;
+}
+
+.case-show-lists li:nth-child(1) .image-center {
+	background: url(../img/1702af929d33e8d210c8bdc781d2ece5.png);
+	background-size: cover;
+	background-position: top center;
+}
+
+.case-show-lists li:nth-child(2) .image-center {
+	background: url(../img/d6e253a23b61001d8a40f39ddc424012.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.case-show-lists li:nth-child(3) .image-center {
+	background: url(../img/aac829b091dfddce5ff6f24296f9a253.jpg);
+	background-size: cover;
+	background-position: top center;
+}
